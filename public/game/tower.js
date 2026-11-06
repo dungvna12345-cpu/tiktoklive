@@ -1,30 +1,30 @@
 /**
- * Module Vẽ Tháp Sách 20 Tầng, Camera Theo Dõi và Nhân Vật Leo Tháp
- * Tọa độ hệ chuẩn 540x960
+ * Module Tháp Sách Ma Thuật 3D Cổ Điển & Nhân Vật Leo Tháp (tower.js)
+ * Sách bìa da chạm trổ chỉ vàng cổ điển, bệ đá cẩm thạch Hy Lạp, khung avatar hoàng gia.
  */
 
-// Bảng màu 20 cuốn sách phong phú, sang trọng
-const BOOK_COLORS = [
-  { spine: '#C0392B', cover: '#E74C3C', text: '#FFFFFF' }, // Tập 1: Đỏ ruby
-  { spine: '#2980B9', cover: '#3498DB', text: '#FFFFFF' }, // Tập 2: Xanh sapphire
-  { spine: '#27AE60', cover: '#2ECC71', text: '#FFFFFF' }, // Tập 3: Xanh ngọc
-  { spine: '#D35400', cover: '#E67E22', text: '#FFFFFF' }, // Tập 4: Cam hổ phách
-  { spine: '#8E44AD', cover: '#9B59B6', text: '#FFFFFF' }, // Tập 5: Tím thạch anh
-  { spine: '#16A085', cover: '#1ABC9C', text: '#FFFFFF' }, // Tập 6: Xanh biển sâu
-  { spine: '#2C3E50', cover: '#34495E', text: '#FFFFFF' }, // Tập 7: Lam than
-  { spine: '#B9770E', cover: '#F39C12', text: '#FFFFFF' }, // Tập 8: Vàng mù tạt
-  { spine: '#A93226', cover: '#CD6155', text: '#FFFFFF' }, // Tập 9: Đỏ gạch
-  { spine: '#2471A3', cover: '#5499C7', text: '#FFFFFF' }, // Tập 10: Xanh denim
-  { spine: '#1E8449', cover: '#52BE80', text: '#FFFFFF' }, // Tập 11: Xanh rêu
-  { spine: '#BA4A00', cover: '#DC7633', text: '#FFFFFF' }, // Tập 12: Đất nung
-  { spine: '#7D3C98', cover: '#A569BD', text: '#FFFFFF' }, // Tập 13: Tím oải hương
-  { spine: '#117A65', cover: '#48C9B0', text: '#FFFFFF' }, // Tập 14: Xanh mòng két
-  { spine: '#78281F', cover: '#922B21', text: '#FFFFFF' }, // Tập 15: Đỏ mận
-  { spine: '#1F618D', cover: '#2980B9', text: '#FFFFFF' }, // Tập 16: Lam biếc
-  { spine: '#196F3D', cover: '#27AE60', text: '#FFFFFF' }, // Tập 17: Lục bảo
-  { spine: '#B7950B', cover: '#D4AC0D', text: '#FFFFFF' }, // Tập 18: Hoàng kim
-  { spine: '#6C3483', cover: '#884EA0', text: '#FFFFFF' }, // Tập 19: Tím hoàng gia
-  { spine: '#D4AF37', cover: '#FFD700', text: '#78350F' }  // Tập 20: ĐỈNH THÁP VÀNG
+// Bảng 20 phối màu sách ma thuật bìa da hoàng tộc cực sang
+const ROYAL_BOOK_PALETTES = [
+  { spine: '#7F1D1D', shadow: '#450A0A', gold: '#FDE047', icon: '⚜️' }, // Đỏ Ruby Hoàng Tộc
+  { spine: '#1E3A8A', shadow: '#172554', gold: '#FDE047', icon: '⭐' }, // Lam Sapphire Đại Dương
+  { spine: '#14532D', shadow: '#052E16', gold: '#FDE047', icon: '🌿' }, // Lục Bảo Thần Rừng
+  { spine: '#581C87', shadow: '#3B0764', gold: '#FDE047', icon: '🔮' }, // Tím Thạch Anh Huyền Bí
+  { spine: '#78350F', shadow: '#451A03', gold: '#FDE047', icon: '📜' }, // Nâu Da Cổ Điển
+  { spine: '#831843', shadow: '#500724', gold: '#FDE047', icon: '🍷' }, // Đỏ Rượu Vang Đế Vương
+  { spine: '#164E63', shadow: '#083344', gold: '#FDE047', icon: '🌙' }, // Xanh Mộng Ảo Đêm
+  { spine: '#701A75', shadow: '#4A044E', gold: '#FDE047', icon: '✨' }, // Tím Hoa Cà Hoàng Gia
+  { spine: '#134E4A', shadow: '#042F2E', gold: '#FDE047', icon: '🛡️' }, // Xanh Khổng Tước Cổ
+  { spine: '#713F12', shadow: '#422006', gold: '#FDE047', icon: '🗡️' }, // Nâu Hổ Phách Cổ
+  { spine: '#1E293B', shadow: '#0F172A', gold: '#FDE047', icon: '⚔️' }, // Hắc Kim Thiết Giáp
+  { spine: '#881337', shadow: '#4C0519', gold: '#FDE047', icon: '💎' }, // Hồng Ngọc Lộng Lẫy
+  { spine: '#312E81', shadow: '#1E1B4B', gold: '#FDE047', icon: '🌌' }, // Lam Thiên Hà Huyền Diệu
+  { spine: '#064E3B', shadow: '#022C22', gold: '#FDE047', icon: '🍀' }, // Xanh Cỏ May Mắn
+  { spine: '#4C1D95', shadow: '#2E1065', gold: '#FDE047', icon: '🕯️' }, // Tím Ngọn Nến Thần
+  { spine: '#6B21A8', shadow: '#3B0764', gold: '#FDE047', icon: '🌠' }, // Tím Sao Băng
+  { spine: '#1E40AF', shadow: '#1E1B4B', gold: '#FDE047', icon: '🔱' }, // Lam Quyền Trượng
+  { spine: '#0F766E', shadow: '#115E59', gold: '#FDE047', icon: '🗝️' }, // Xanh Chìa Khóa Vàng
+  { spine: '#9A3412', shadow: '#7C2D12', gold: '#FDE047', icon: '🔥' }, // Cam Lửa Bất Diệt
+  { spine: '#B45309', shadow: '#78350F', gold: '#FEF08A', icon: '👑' }  // Vàng Kim Hoàng Đế
 ];
 
 class TowerRenderer {
@@ -32,27 +32,20 @@ class TowerRenderer {
     this.targetCameraFloor = 0;
     this.currentCameraFloor = 0;
 
-    // Chiều cao mỗi cuốn sách
     this.floorHeight = 52;
-    this.bookWidth = 340;
-    this.towerCenterX = 230; // Đặt lệch trái nhẹ để chừa góc phải cho bảng xếp hạng
+    this.bookWidth = 346;
+    this.towerCenterX = 232;
 
-    // Bộ nhớ cache hình ảnh avatar người chơi
     this.avatarCache = new Map();
-
-    // Vị trí nội suy chuyển động nhân vật
-    this.characterPositions = new Map(); // userId -> { x, y, currentFloor, targetFloor, jumpTime }
+    this.characterPositions = new Map();
   }
 
   update(dt, players, topFloor = 0, targetFloor = 7749) {
-    // Camera bám theo người dẫn đầu mà không giới hạn ở tầng 14
     this.targetCameraFloor = Math.max(0, Math.min(targetFloor, topFloor - 2));
 
-    // Lerp camera mượt mà
-    const lerpSpeed = 3.5;
+    const lerpSpeed = 3.6;
     this.currentCameraFloor += (this.targetCameraFloor - this.currentCameraFloor) * Math.min(1, dt * lerpSpeed);
 
-    // Cập nhật vị trí chuyển động của các nhân vật
     const now = performance.now();
     for (const p of players) {
       let charPos = this.characterPositions.get(p.userId);
@@ -66,7 +59,6 @@ class TowerRenderer {
         this.characterPositions.set(p.userId, charPos);
       }
 
-      // Nếu có sự thay đổi tầng
       if (charPos.floor !== p.floor) {
         charPos.oldFloor = charPos.renderFloor;
         charPos.floor = p.floor;
@@ -75,26 +67,21 @@ class TowerRenderer {
       }
 
       if (charPos.jumpProgress < 1) {
-        charPos.jumpProgress += dt * 2.2; // Tốc độ nhảy ~0.45s
+        charPos.jumpProgress += dt * 2.3;
         if (charPos.jumpProgress >= 1) {
           charPos.jumpProgress = 1;
           charPos.renderFloor = charPos.floor;
         } else {
-          // Tính quỹ đạo nhảy hình parabol
           const pNorm = charPos.jumpProgress;
           const currentBase = charPos.oldFloor + (charPos.floor - charPos.oldFloor) * pNorm;
-          const jumpArc = Math.sin(pNorm * Math.PI) * 0.45; // Nhảy bổng lên
+          const jumpArc = Math.sin(pNorm * Math.PI) * 0.5;
           charPos.renderFloor = currentBase + jumpArc;
         }
       }
     }
   }
 
-  /**
-   * Chuyển đổi từ số tầng sang tọa độ Y trên màn hình
-   */
   floorToScreenY(floorNumber) {
-    // Đáy nhìn thấy ở tầm Y = 880
     const baseY = 880;
     return baseY - (floorNumber - this.currentCameraFloor) * this.floorHeight;
   }
@@ -104,22 +91,21 @@ class TowerRenderer {
     const topFloor = players.reduce((max, p) => Math.max(max, p.floor), 0);
     const targetFloor = state.targetFloor || 7749;
 
-    // 1. Vẽ Mặt Đất (Tầng 0)
-    this.drawGround(ctx);
+    // 1. Bệ Đá Cẩm Thạch Cổ Đại (Mặt Đất)
+    this.drawAncientPedestal(ctx);
 
-    // 2. Vẽ tháp sách vô hạn (tính toán các cuốn sách đang lọt vào khung hình)
+    // 2. Tháp Sách Ma Thuật (Vẽ động các cuốn sách trong tầm nhìn)
     const minVisible = Math.max(1, Math.floor(this.currentCameraFloor - 3));
     const maxVisible = Math.min(targetFloor, Math.ceil(this.currentCameraFloor + 13));
 
     for (let f = minVisible; f <= maxVisible; f++) {
       const bookY = this.floorToScreenY(f);
-      // Chỉ vẽ các cuốn sách nằm trong tầm nhìn
       if (bookY > 330 && bookY < 950) {
-        this.drawBook(ctx, f, bookY, f === targetFloor);
+        this.drawMagicBook(ctx, f, bookY, f === targetFloor);
       }
     }
 
-    // 3. Phân nhóm người chơi theo từng tầng để bố trí vị trí đứng
+    // 3. Phân nhóm người chơi theo tầng
     const floorGroups = new Map();
     for (const p of players) {
       const f = p.floor;
@@ -127,13 +113,12 @@ class TowerRenderer {
       floorGroups.get(f).push(p);
     }
 
-    // 4. Vẽ các nhân vật người chơi
+    // 4. Vẽ các nhân vật người chơi với khung mặt dây chuyền hoàng gia
     for (const [floorNum, group] of floorGroups.entries()) {
       const displayCount = Math.min(group.length, 12);
       const overflow = group.length - displayCount;
 
-      // Khoảng cách giữa các nhân vật trên gáy sách
-      const availableWidth = this.bookWidth - 40;
+      const availableWidth = this.bookWidth - 44;
       const spacing = displayCount > 1 ? Math.min(26, availableWidth / (displayCount - 1)) : 0;
       const startX = this.towerCenterX - ((displayCount - 1) * spacing) / 2;
 
@@ -141,118 +126,193 @@ class TowerRenderer {
         const player = group[i];
         const charPos = this.characterPositions.get(player.userId);
         const renderFloor = charPos ? charPos.renderFloor : floorNum;
-        const charY = this.floorToScreenY(renderFloor) - 18;
+        const charY = this.floorToScreenY(renderFloor) - 20;
         const charX = startX + i * spacing;
 
         const isLeader = player.floor === topFloor && topFloor > 0 && i === 0;
         const isFastest = state.fastestUserIds && state.fastestUserIds.includes(player.userId);
 
-        this.drawCharacter(ctx, player, charX, charY, isLeader, isFastest, i < 3 && floorNum === topFloor);
+        this.drawRoyalCharacter(ctx, player, charX, charY, isLeader, isFastest, i < 3 && floorNum === topFloor);
       }
 
-      // Nếu tầng có hơn 12 người thì vẽ huy hiệu "+N"
       if (overflow > 0) {
         const badgeX = startX + displayCount * spacing + 12;
-        const badgeY = this.floorToScreenY(floorNum) - 18;
+        const badgeY = this.floorToScreenY(floorNum) - 20;
         this.drawOverflowBadge(ctx, badgeX, badgeY, overflow);
       }
     }
   }
 
-  drawGround(ctx) {
+  /**
+   * Bệ Đá Cẩm Thạch Thần Thoại Hy Lạp (Mặt Đất)
+   */
+  drawAncientPedestal(ctx) {
     const groundY = this.floorToScreenY(0);
-    if (groundY < 350 || groundY > 960) return;
+    if (groundY < 340 || groundY > 960) return;
 
     ctx.save();
-    // Bệ đá/gỗ nền tháp
-    const w = this.bookWidth + 50;
+    const w = this.bookWidth + 64;
     const x = this.towerCenterX - w / 2;
 
-    ctx.fillStyle = '#3E2723';
+    // Đổ bóng bệ đá
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.6)';
+    ctx.shadowBlur = 12;
+    ctx.shadowOffsetY = 6;
+
+    // Bệ đá cẩm thạch trắng ngà chạm khắc
+    const marbleGrad = ctx.createLinearGradient(x, groundY, x + w, groundY + 44);
+    marbleGrad.addColorStop(0, '#CBD5E1');
+    marbleGrad.addColorStop(0.5, '#F1F5F9');
+    marbleGrad.addColorStop(1, '#94A3B8');
+
+    ctx.fillStyle = marbleGrad;
     ctx.beginPath();
-    ctx.roundRect(x, groundY, w, 40, [8, 8, 0, 0]);
+    ctx.roundRect(x, groundY, w, 44, [10, 10, 0, 0]);
     ctx.fill();
 
-    // Thảm cỏ trang trí
-    ctx.fillStyle = '#4CAF50';
-    ctx.fillRect(x - 10, groundY + 36, w + 20, 24);
+    // Viền vàng chạm trổ
+    ctx.strokeStyle = '#D97706';
+    ctx.lineWidth = 2;
+    ctx.stroke();
 
-    // Chữ Mặt Đất
-    ctx.fillStyle = '#E0E0E0';
-    ctx.font = 'bold 12px "Baloo 2", sans-serif';
+    // Rãnh hoa văn cổ điển
+    ctx.strokeStyle = '#64748B';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(x + 20, groundY + 8);
+    ctx.lineTo(x + w - 20, groundY + 8);
+    ctx.moveTo(x + 20, groundY + 36);
+    ctx.lineTo(x + w - 20, groundY + 36);
+    ctx.stroke();
+
+    // Dòng chữ MẶT ĐẤT dập vàng nổi
+    ctx.shadowBlur = 0;
+    ctx.fillStyle = '#78350F';
+    ctx.font = 'bold 13px "Baloo 2", sans-serif';
     ctx.textAlign = 'center';
-    ctx.fillText('MẶT ĐẤT (TẦNG 0)', this.towerCenterX, groundY + 22);
+    ctx.textBaseline = 'middle';
+    ctx.fillText('🏛️ BỆ ĐÁ KHỞI NGUYÊN (MẶT ĐẤT)', this.towerCenterX, groundY + 22);
+
     ctx.restore();
   }
 
-  drawBook(ctx, floorNum, y, isSummit = false) {
+  /**
+   * Vẽ cuốn sách ma thuật bìa da 3D chạm trổ chỉ vàng
+   */
+  drawMagicBook(ctx, floorNum, y, isSummit = false) {
     const x = this.towerCenterX - this.bookWidth / 2;
-    const h = 44;
-    const color = isSummit
-      ? { spine: '#D4AF37', cover: '#FFD700', text: '#78350F' }
-      : BOOK_COLORS[(floorNum - 1) % BOOK_COLORS.length];
+    const h = 46;
+    const pal = isSummit
+      ? { spine: '#D97706', shadow: '#78350F', gold: '#FEF08A', icon: '👑' }
+      : ROYAL_BOOK_PALETTES[(floorNum - 1) % ROYAL_BOOK_PALETTES.length];
 
     ctx.save();
 
-    // 1. Đổ bóng gáy sách
-    ctx.shadowColor = 'rgba(0, 0, 0, 0.25)';
-    ctx.shadowBlur = 6;
-    ctx.shadowOffsetY = 3;
+    // 1. Đổ bóng sống gáy sách 3D
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.45)';
+    ctx.shadowBlur = 8;
+    ctx.shadowOffsetY = 4;
 
-    // 2. Thân gáy sách
-    ctx.fillStyle = color.spine;
+    // 2. Thân gáy sách bìa da bo cong
+    const spineGrad = ctx.createLinearGradient(x, y, x, y + h);
+    spineGrad.addColorStop(0, pal.spine);
+    spineGrad.addColorStop(0.15, pal.shadow);
+    spineGrad.addColorStop(0.5, pal.spine);
+    spineGrad.addColorStop(0.85, pal.shadow);
+    spineGrad.addColorStop(1, pal.spine);
+
+    ctx.fillStyle = spineGrad;
     ctx.beginPath();
-    ctx.roundRect(x, y, this.bookWidth, h, 6);
+    ctx.roundRect(x, y, this.bookWidth, h, 8);
     ctx.fill();
     ctx.restore();
 
     ctx.save();
-    // 3. Đường chỉ viền gáy mạ vàng / bóng bẩy
-    ctx.strokeStyle = isSummit ? '#FEF08A' : 'rgba(255, 255, 255, 0.25)';
+    // 3. Góc sách bọc vàng kim loại chạm khắc (Corner gold brackets)
+    const bracketSize = 14;
+    ctx.fillStyle = isSummit ? '#FDE047' : '#D97706';
+    // Góc trên trái
+    this.drawCornerFiligree(ctx, x + 4, y + 4, bracketSize);
+    // Góc trên phải
+    this.drawCornerFiligree(ctx, x + this.bookWidth - 4 - bracketSize, y + 4, bracketSize);
+
+    // 4. Hai đường chỉ vàng dập chìm trên gáy da (Gold Filigree Inlays)
+    ctx.strokeStyle = isSummit ? '#FEF08A' : 'rgba(253, 224, 71, 0.55)';
     ctx.lineWidth = 1.5;
     ctx.beginPath();
-    ctx.moveTo(x + 16, y + 4);
-    ctx.lineTo(x + 16, y + h - 4);
-    ctx.moveTo(x + this.bookWidth - 16, y + 4);
-    ctx.lineTo(x + this.bookWidth - 16, y + h - 4);
+    ctx.moveTo(x + 28, y + 5);
+    ctx.lineTo(x + 28, y + h - 5);
+    ctx.moveTo(x + this.bookWidth - 28, y + 5);
+    ctx.lineTo(x + this.bookWidth - 28, y + h - 5);
     ctx.stroke();
 
-    // 4. Nhãn tên tập sách
-    ctx.fillStyle = color.text;
+    // 5. Biểu tượng ma thuật 2 bên gáy
+    ctx.font = '13px serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(pal.icon, x + 16, y + h / 2);
+    ctx.fillText(pal.icon, x + this.bookWidth - 16, y + h / 2);
+
+    // 6. Nhãn tên tập sách khắc dát vàng nổi
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
+    ctx.shadowBlur = 4;
+    ctx.shadowOffsetY = 1;
+
+    ctx.fillStyle = '#FEF08A';
     ctx.font = isSummit ? 'bold 15px "Baloo 2", sans-serif' : 'bold 13px "Baloo 2", sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
 
-    const label = isSummit ? `🏆 ĐỈNH THÁP (TẬP ${floorNum}) 🏆` : `TẬP ${floorNum}`;
+    const label = isSummit
+      ? `👑 ĐỈNH THÁP HUYỀN THOẠI (TẬP ${floorNum}) 👑`
+      : `TẬP ${floorNum}`;
     ctx.fillText(label, this.towerCenterX, y + h / 2);
 
-    // Điểm nhấn lấp lánh cho tầng đỉnh tháp
+    // Viền vàng phát sáng cho tầng đỉnh tháp
     if (isSummit) {
-      ctx.strokeStyle = '#F59E0B';
+      ctx.strokeStyle = '#FDE047';
       ctx.lineWidth = 2.5;
+      ctx.shadowColor = 'rgba(253, 224, 71, 0.9)';
+      ctx.shadowBlur = 14;
       ctx.beginPath();
-      ctx.roundRect(x, y, this.bookWidth, h, 6);
+      ctx.roundRect(x, y, this.bookWidth, h, 8);
       ctx.stroke();
     }
 
     ctx.restore();
   }
 
-  drawCharacter(ctx, player, x, y, isLeader, isFastest, showName) {
-    const r = 16;
+  drawCornerFiligree(ctx, x, y, size) {
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x + size, y);
+    ctx.lineTo(x, y + size);
+    ctx.closePath();
+    ctx.fill();
+  }
+
+  /**
+   * Vẽ nhân vật với Khung Mặt Dây Chuyền Hoàng Gia (Royal Pendant)
+   */
+  drawRoyalCharacter(ctx, player, x, y, isLeader, isFastest, showName) {
+    const r = 17;
     ctx.save();
 
-    // Đổ bóng nhân vật
-    ctx.shadowColor = 'rgba(0, 0, 0, 0.35)';
-    ctx.shadowBlur = 5;
-    ctx.shadowOffsetY = 2;
+    // Hào quang vàng kim nếu là Leader
+    if (isLeader) {
+      ctx.shadowColor = 'rgba(250, 204, 21, 0.9)';
+      ctx.shadowBlur = 16;
+    } else {
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.45)';
+      ctx.shadowBlur = 6;
+      ctx.shadowOffsetY = 3;
+    }
 
-    // Vòng tròn avatar
+    // Avatar hình tròn
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI * 2);
     ctx.clip();
 
-    // Kiểm tra và vẽ avatar từ proxy nếu có
     let avatarImg = null;
     if (player.avatarUrl) {
       avatarImg = this.getOrCreateAvatarImage(player.avatarUrl);
@@ -261,12 +321,12 @@ class TowerRenderer {
     if (avatarImg && avatarImg.complete && avatarImg.naturalWidth > 0) {
       ctx.drawImage(avatarImg, x - r, y - r, r * 2, r * 2);
     } else {
-      // Fallback: Vẽ hình tròn màu kèm chữ cái đầu
-      ctx.fillStyle = player.color || '#3B82F6';
+      // Fallback mặt dây chuyền phong thủy
+      ctx.fillStyle = player.color || '#4338CA';
       ctx.fillRect(x - r, y - r, r * 2, r * 2);
 
       ctx.fillStyle = '#FFFFFF';
-      ctx.font = 'bold 14px "Baloo 2", sans-serif';
+      ctx.font = 'bold 15px "Baloo 2", sans-serif';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       const initial = (player.nickname || 'N').charAt(0).toUpperCase();
@@ -275,60 +335,67 @@ class TowerRenderer {
 
     ctx.restore();
 
-    // Viền avatar (Vàng cho Leader, Xanh cho người thường)
+    // Khung mạ vàng viền ngoài hoàng gia
     ctx.save();
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI * 2);
-    ctx.strokeStyle = isLeader ? '#F59E0B' : '#FFFFFF';
-    ctx.lineWidth = isLeader ? 3 : 2;
+    ctx.strokeStyle = isLeader ? '#FDE047' : '#D1D5DB';
+    ctx.lineWidth = isLeader ? 3.5 : 2;
     ctx.stroke();
 
-    // Vương miện nhỏ xinh cho người dẫn đầu
+    // Vương miện hoàng gia lộng lẫy cho người dẫn đầu
     if (isLeader) {
-      ctx.font = '12px serif';
+      ctx.font = '16px serif';
       ctx.textAlign = 'center';
-      ctx.fillText('👑', x, y - r - 2);
+      ctx.fillText('👑', x, y - r - 4);
     }
 
-    // Hiệu ứng đóng băng (khối băng bao bọc)
+    // Khối pha lê băng ma thuật bao bọc
     if (player.isFrozen) {
-      ctx.fillStyle = 'rgba(186, 230, 253, 0.65)';
+      ctx.fillStyle = 'rgba(186, 230, 253, 0.7)';
       ctx.beginPath();
-      ctx.roundRect(x - r - 2, y - r - 2, (r + 2) * 2, (r + 2) * 2, 4);
+      ctx.roundRect(x - r - 3, y - r - 3, (r + 3) * 2, (r + 3) * 2, 6);
       ctx.fill();
       ctx.strokeStyle = '#38BDF8';
-      ctx.lineWidth = 1.5;
+      ctx.lineWidth = 2;
       ctx.stroke();
-      ctx.font = '10px serif';
-      ctx.fillText('❄️', x, y);
+      ctx.font = '12px serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('❄️', x, y + 4);
     }
 
-    // Chấm nhỏ báo hiệu đã trả lời câu hỏi hiện tại
+    // Viên ngọc ma thuật xanh bích báo đã nộp đáp án
     if (player.hasAnswered) {
-      ctx.fillStyle = '#22C55E';
+      ctx.fillStyle = '#10B981';
+      ctx.shadowColor = '#10B981';
+      ctx.shadowBlur = 8;
       ctx.beginPath();
-      ctx.arc(x + r - 3, y - r + 3, 4, 0, Math.PI * 2);
+      ctx.arc(x + r - 3, y - r + 3, 5, 0, Math.PI * 2);
       ctx.fill();
       ctx.strokeStyle = '#FFFFFF';
-      ctx.lineWidth = 1;
+      ctx.lineWidth = 1.2;
       ctx.stroke();
     }
 
-    // Hiển thị tên cho Top 3 hoặc người nhanh nhất
+    // Thẻ tên hiệp sĩ phong cách danh thiếp hoàng gia
     if (showName || isFastest) {
       ctx.font = 'bold 10px "Be Vietnam Pro", sans-serif';
       const name = player.nickname || '';
       const textW = ctx.measureText(name).width;
 
-      ctx.fillStyle = 'rgba(15, 23, 42, 0.75)';
+      ctx.fillStyle = 'rgba(15, 23, 42, 0.85)';
       ctx.beginPath();
-      ctx.roundRect(x - textW / 2 - 4, y - r - 16, textW + 8, 14, 4);
+      ctx.roundRect(x - textW / 2 - 6, y - r - 18, textW + 12, 15, 4);
       ctx.fill();
 
-      ctx.fillStyle = isFastest ? '#FDE047' : '#FFFFFF';
+      ctx.strokeStyle = isFastest ? '#FDE047' : '#D97706';
+      ctx.lineWidth = 1;
+      ctx.stroke();
+
+      ctx.fillStyle = isFastest ? '#FEF08A' : '#FFFFFF';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
-      ctx.fillText(name, x, y - r - 9);
+      ctx.fillText(name, x, y - r - 10);
     }
 
     ctx.restore();
@@ -336,18 +403,18 @@ class TowerRenderer {
 
   drawOverflowBadge(ctx, x, y, count) {
     ctx.save();
-    const r = 12;
-    ctx.fillStyle = '#475569';
+    const r = 13;
+    ctx.fillStyle = '#1E1B4B';
     ctx.beginPath();
     ctx.arc(x, y, r, 0, Math.PI * 2);
     ctx.fill();
 
-    ctx.strokeStyle = '#FFFFFF';
-    ctx.lineWidth = 1.5;
+    ctx.strokeStyle = '#FACC15';
+    ctx.lineWidth = 2;
     ctx.stroke();
 
-    ctx.fillStyle = '#FFFFFF';
-    ctx.font = 'bold 10px "Baloo 2", sans-serif';
+    ctx.fillStyle = '#FEF08A';
+    ctx.font = 'bold 11px "Baloo 2", sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(`+${count}`, x, y + 1);
@@ -362,7 +429,6 @@ class TowerRenderer {
 
     const img = new Image();
     img.crossOrigin = 'anonymous';
-    // Chuyển qua proxy /avatar để tránh lỗi CORS
     img.src = `/avatar?u=${encodeURIComponent(url)}`;
     this.avatarCache.set(url, img);
     return img;

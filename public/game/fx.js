@@ -1,28 +1,62 @@
 /**
- * Module Hiệu Ứng Hình Ảnh & Màn Hình Vinh Danh (fx.js)
- * Mây trôi, gió thổi, pháo hoa, banner thông báo phóng to, màn hình Chạm Đỉnh Tháp.
+ * Module Hiệu Ứng Hình Ảnh Phong Cách Thư Viện Ma Thuật & Hoàng Gia (fx.js)
+ * Bầu trời đêm huyền ảo, sao băng, bụi tiên stardust lấp lánh, sắc lệnh hoàng gia, pháo hoa kim bảo.
  */
 
 class EffectsManager {
   constructor() {
+    // 1. Sao trời đêm lấp lánh
+    this.stars = [];
+    for (let i = 0; i < 70; i++) {
+      this.stars.push({
+        x: Math.random() * 540,
+        y: Math.random() * 700,
+        radius: 0.8 + Math.random() * 1.8,
+        alpha: 0.2 + Math.random() * 0.8,
+        twinkleSpeed: 1.5 + Math.random() * 3,
+        twinklePhase: Math.random() * Math.PI * 2
+      });
+    }
+
+    // 2. Sao băng (Shooting stars)
+    this.shootingStars = [];
+    this.nextShootingStarTime = performance.now() + 2500;
+
+    // 3. Bụi tiên ma thuật bay lơ lửng (Floating Magic Stardust)
+    this.magicDust = [];
+    for (let i = 0; i < 45; i++) {
+      this.magicDust.push({
+        x: Math.random() * 540,
+        y: Math.random() * 960,
+        vx: (Math.random() - 0.5) * 14,
+        vy: -15 - Math.random() * 25,
+        radius: 1 + Math.random() * 2.2,
+        color: ['#FDE047', '#FBBF24', '#C084FC', '#67E8F9', '#F472B6'][Math.floor(Math.random() * 5)],
+        alpha: 0.2 + Math.random() * 0.7,
+        pulseSpeed: 2 + Math.random() * 3
+      });
+    }
+
+    // 4. Mây dạ quang tím hồng
     this.clouds = [
-      { x: 40, y: 390, speed: 12, scale: 0.8 },
-      { x: 300, y: 440, speed: 8, scale: 1.1 },
-      { x: 180, y: 560, speed: 15, scale: 0.9 },
-      { x: 420, y: 680, speed: 10, scale: 1.0 }
+      { x: 30, y: 390, speed: 8, scale: 0.9, alpha: 0.18 },
+      { x: 280, y: 460, speed: 6, scale: 1.2, alpha: 0.15 },
+      { x: 150, y: 580, speed: 10, scale: 0.85, alpha: 0.16 },
+      { x: 400, y: 700, speed: 7, scale: 1.1, alpha: 0.14 }
     ];
 
-    this.particles = [];
-    this.banners = []; // [{ title, subtitle, startTime, duration: 3.5 }]
+    this.particles = []; // Pháo hoa / kim tuyến
+    this.banners = [];   // Sắc lệnh hoàng gia
     this.windParticles = [];
 
-    // Khởi tạo các hạt gió
-    for (let i = 0; i < 25; i++) {
+    // Vệt gió ma thuật khi Gió x2
+    for (let i = 0; i < 28; i++) {
       this.windParticles.push({
         x: Math.random() * 540,
-        y: 350 + Math.random() * 500,
-        len: 20 + Math.random() * 30,
-        speed: 180 + Math.random() * 120
+        y: 350 + Math.random() * 520,
+        len: 25 + Math.random() * 45,
+        speed: 220 + Math.random() * 140,
+        color: Math.random() > 0.5 ? '#67E8F9' : '#A855F7'
       });
     }
   }
@@ -32,74 +66,177 @@ class EffectsManager {
       title,
       subtitle,
       startTime: performance.now(),
-      duration: 3500 // Hiển thị trong 3.5 giây
+      duration: 3800
     });
   }
 
-  spawnConfetti(count = 60) {
-    const colors = ['#EF4444', '#F59E0B', '#10B981', '#3B82F6', '#8B5CF6', '#EC4899'];
+  spawnConfetti(count = 70) {
+    // Tông màu hoàng gia: Vàng kim, Ngọc lục bảo, Hồng ngọc ruby, Tím thạch anh, Lam sapphire
+    const colors = ['#F59E0B', '#FBBF24', '#FEF08A', '#10B981', '#EF4444', '#8B5CF6', '#38BDF8'];
     for (let i = 0; i < count; i++) {
       this.particles.push({
-        x: 270 + (Math.random() - 0.5) * 200,
-        y: 400 + Math.random() * 100,
-        vx: (Math.random() - 0.5) * 280,
-        vy: -150 - Math.random() * 200,
-        size: 5 + Math.random() * 6,
+        x: 270 + (Math.random() - 0.5) * 220,
+        y: 380 + Math.random() * 120,
+        vx: (Math.random() - 0.5) * 320,
+        vy: -180 - Math.random() * 220,
+        size: 5 + Math.random() * 7,
         color: colors[Math.floor(Math.random() * colors.length)],
         rotation: Math.random() * Math.PI * 2,
-        rotSpeed: (Math.random() - 0.5) * 8,
+        rotSpeed: (Math.random() - 0.5) * 9,
         life: 1,
-        decay: 0.35 + Math.random() * 0.3
+        decay: 0.3 + Math.random() * 0.35,
+        isStar: Math.random() > 0.6
       });
     }
   }
 
   update(dt, isWindActive = false) {
-    // 1. Cập nhật mây trôi
+    const now = performance.now();
+
+    // 1. Cập nhật mây dạ quang
     for (const c of this.clouds) {
       c.x += c.speed * dt;
       if (c.x > 620) {
-        c.x = -120;
+        c.x = -130;
         c.y = 360 + Math.random() * 400;
       }
     }
 
-    // 2. Cập nhật hạt gió x2
+    // 2. Cập nhật bụi tiên ma thuật
+    for (const d of this.magicDust) {
+      d.x += d.vx * dt;
+      d.y += d.vy * dt;
+      if (d.y < 200) {
+        d.y = 960 + Math.random() * 40;
+        d.x = Math.random() * 540;
+      }
+      if (d.x < -20) d.x = 560;
+      if (d.x > 560) d.x = -20;
+    }
+
+    // 3. Sao băng xuất hiện ngẫu nhiên
+    if (now > this.nextShootingStarTime) {
+      this.shootingStars.push({
+        x: 100 + Math.random() * 400,
+        y: 20 + Math.random() * 150,
+        len: 80 + Math.random() * 100,
+        speed: 650 + Math.random() * 300,
+        angle: Math.PI / 4 + (Math.random() - 0.5) * 0.2,
+        alpha: 1
+      });
+      this.nextShootingStarTime = now + 4000 + Math.random() * 6000;
+    }
+
+    for (let i = this.shootingStars.length - 1; i >= 0; i--) {
+      const s = this.shootingStars[i];
+      const move = s.speed * dt;
+      s.x += Math.cos(s.angle) * move;
+      s.y += Math.sin(s.angle) * move;
+      s.alpha -= dt * 1.8;
+      if (s.alpha <= 0 || s.x > 600 || s.y > 600) {
+        this.shootingStars.splice(i, 1);
+      }
+    }
+
+    // 4. Cập nhật hạt gió x2
     if (isWindActive) {
       for (const w of this.windParticles) {
         w.x += w.speed * dt;
-        if (w.x > 560) {
-          w.x = -50;
-          w.y = 350 + Math.random() * 500;
+        if (w.x > 580) {
+          w.x = -60;
+          w.y = 350 + Math.random() * 520;
         }
       }
     }
 
-    // 3. Cập nhật hạt pháo hoa confetti
+    // 5. Cập nhật hạt pháo hoa
     for (let i = this.particles.length - 1; i >= 0; i--) {
       const p = this.particles[i];
       p.x += p.vx * dt;
       p.y += p.vy * dt;
-      p.vy += 320 * dt; // Trọng lực
+      p.vy += 340 * dt;
       p.rotation += p.rotSpeed * dt;
       p.life -= p.decay * dt;
-
       if (p.life <= 0) {
         this.particles.splice(i, 1);
       }
     }
 
-    // 4. Lọc bỏ các banner đã hết hạn
-    const now = performance.now();
+    // 6. Lọc banner hết hạn
     this.banners = this.banners.filter(b => now - b.startTime < b.duration);
   }
 
   drawSkyAndClouds(ctx) {
-    // Vẽ các đám mây xốp trắng nhẹ trên nền trời
+    const now = performance.now() / 1000;
+
+    // A. Vẽ các ngôi sao trời đêm lấp lánh
     ctx.save();
-    ctx.fillStyle = 'rgba(255, 255, 255, 0.45)';
+    for (const star of this.stars) {
+      const twinkle = Math.sin(now * star.twinkleSpeed + star.twinklePhase) * 0.4 + 0.6;
+      ctx.globalAlpha = star.alpha * twinkle;
+      ctx.fillStyle = '#FFFFFF';
+      ctx.beginPath();
+      ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+      ctx.fill();
+
+      // Hào quang sao sáng
+      if (star.radius > 1.4) {
+        ctx.globalAlpha = star.alpha * twinkle * 0.3;
+        ctx.fillStyle = '#FDE047';
+        ctx.beginPath();
+        ctx.arc(star.x, star.y, star.radius * 2.5, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+    ctx.restore();
+
+    // B. Vẽ sao băng
+    ctx.save();
+    for (const s of this.shootingStars) {
+      ctx.globalAlpha = Math.max(0, s.alpha);
+      const grad = ctx.createLinearGradient(
+        s.x, s.y,
+        s.x - Math.cos(s.angle) * s.len,
+        s.y - Math.sin(s.angle) * s.len
+      );
+      grad.addColorStop(0, '#FFFFFF');
+      grad.addColorStop(0.3, '#FDE047');
+      grad.addColorStop(1, 'rgba(253, 224, 71, 0)');
+
+      ctx.strokeStyle = grad;
+      ctx.lineWidth = 2.5;
+      ctx.lineCap = 'round';
+      ctx.beginPath();
+      ctx.moveTo(s.x, s.y);
+      ctx.lineTo(s.x - Math.cos(s.angle) * s.len, s.y - Math.sin(s.angle) * s.len);
+      ctx.stroke();
+    }
+    ctx.restore();
+
+    // C. Mây dạ quang huyền ảo
+    ctx.save();
     for (const c of this.clouds) {
+      ctx.globalAlpha = c.alpha;
+      const cloudGrad = ctx.createRadialGradient(c.x + 30, c.y, 10, c.x + 30, c.y, 80);
+      cloudGrad.addColorStop(0, '#C084FC');
+      cloudGrad.addColorStop(0.7, '#818CF8');
+      cloudGrad.addColorStop(1, 'rgba(129, 140, 248, 0)');
+      ctx.fillStyle = cloudGrad;
       this.drawPuffyCloud(ctx, c.x, c.y, c.scale);
+    }
+    ctx.restore();
+
+    // D. Vẽ bụi tiên ma thuật lơ lửng
+    ctx.save();
+    for (const d of this.magicDust) {
+      const pulse = Math.sin(now * d.pulseSpeed) * 0.3 + 0.7;
+      ctx.globalAlpha = d.alpha * pulse;
+      ctx.fillStyle = d.color;
+      ctx.shadowColor = d.color;
+      ctx.shadowBlur = 6;
+      ctx.beginPath();
+      ctx.arc(d.x, d.y, d.radius, 0, Math.PI * 2);
+      ctx.fill();
     }
     ctx.restore();
   }
@@ -109,21 +246,22 @@ class EffectsManager {
     ctx.translate(x, y);
     ctx.scale(scale, scale);
     ctx.beginPath();
-    ctx.arc(0, 0, 24, 0, Math.PI * 2);
-    ctx.arc(22, -10, 20, 0, Math.PI * 2);
-    ctx.arc(42, 2, 22, 0, Math.PI * 2);
-    ctx.arc(20, 12, 18, 0, Math.PI * 2);
+    ctx.arc(0, 0, 32, 0, Math.PI * 2);
+    ctx.arc(30, -12, 28, 0, Math.PI * 2);
+    ctx.arc(58, 4, 30, 0, Math.PI * 2);
+    ctx.arc(28, 16, 26, 0, Math.PI * 2);
     ctx.fill();
     ctx.restore();
   }
 
   drawWindLines(ctx) {
     ctx.save();
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.4)';
-    ctx.lineWidth = 2;
+    ctx.lineWidth = 2.5;
     ctx.lineCap = 'round';
-
     for (const w of this.windParticles) {
+      ctx.strokeStyle = w.color;
+      ctx.shadowColor = w.color;
+      ctx.shadowBlur = 8;
       ctx.beginPath();
       ctx.moveTo(w.x, w.y);
       ctx.lineTo(w.x + w.len, w.y);
@@ -140,115 +278,191 @@ class EffectsManager {
       ctx.rotate(p.rotation);
       ctx.globalAlpha = Math.max(0, p.life);
       ctx.fillStyle = p.color;
-      ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+      ctx.shadowColor = p.color;
+      ctx.shadowBlur = 8;
+
+      if (p.isStar) {
+        // Vẽ hình ngôi sao 4 cánh hoàng gia
+        ctx.beginPath();
+        ctx.moveTo(0, -p.size);
+        ctx.quadraticCurveTo(0, 0, p.size, 0);
+        ctx.quadraticCurveTo(0, 0, 0, p.size);
+        ctx.quadraticCurveTo(0, 0, -p.size, 0);
+        ctx.quadraticCurveTo(0, 0, 0, -p.size);
+        ctx.fill();
+      } else {
+        ctx.fillRect(-p.size / 2, -p.size / 2, p.size, p.size);
+      }
       ctx.restore();
     }
     ctx.restore();
   }
 
+  /**
+   * Vẽ Sắc Lệnh Hoàng Gia (Royal Decree Scroll Banner)
+   */
   drawBanners(ctx) {
     if (this.banners.length === 0) return;
     const now = performance.now();
-    const banner = this.banners[this.banners.length - 1]; // Lấy banner mới nhất
+    const banner = this.banners[this.banners.length - 1];
     const elapsed = (now - banner.startTime) / 1000;
     const totalSec = banner.duration / 1000;
 
-    // Hiệu ứng phóng to zoom-in rồi mờ dần
     let scale = 1;
     let alpha = 1;
 
-    if (elapsed < 0.25) {
-      // Phóng to nhanh lúc xuất hiện
-      scale = 0.5 + (elapsed / 0.25) * 0.55;
+    if (elapsed < 0.28) {
+      scale = 0.4 + (elapsed / 0.28) * 0.65;
     } else if (elapsed > totalSec - 0.4) {
-      // Mờ dần lúc biến mất
       alpha = Math.max(0, (totalSec - elapsed) / 0.4);
     }
 
     ctx.save();
-    ctx.translate(270, 390);
+    ctx.translate(270, 395);
     ctx.scale(scale, scale);
     ctx.globalAlpha = alpha;
 
-    // Nền hộp banner
-    const bw = 420;
-    const bh = 64;
-    ctx.shadowColor = 'rgba(0, 0, 0, 0.5)';
-    ctx.shadowBlur = 16;
+    const bw = 430;
+    const bh = 68;
+
+    // Đổ bóng sắc lệnh ma thuật
+    ctx.shadowColor = 'rgba(245, 158, 11, 0.6)';
+    ctx.shadowBlur = 24;
     ctx.shadowOffsetY = 6;
 
-    const grad = ctx.createLinearGradient(-bw / 2, 0, bw / 2, 0);
-    grad.addColorStop(0, '#F59E0B');
-    grad.addColorStop(0.5, '#EF4444');
-    grad.addColorStop(1, '#EC4899');
+    // Nền dải ruy băng hoàng gia (Royal Velvet Crimson to Imperial Gold)
+    const ribbonGrad = ctx.createLinearGradient(-bw / 2, 0, bw / 2, 0);
+    ribbonGrad.addColorStop(0, '#4C0519');
+    ribbonGrad.addColorStop(0.2, '#9F1239');
+    ribbonGrad.addColorStop(0.5, '#BE123C');
+    ribbonGrad.addColorStop(0.8, '#9F1239');
+    ribbonGrad.addColorStop(1, '#4C0519');
 
-    ctx.fillStyle = grad;
+    ctx.fillStyle = ribbonGrad;
     ctx.beginPath();
-    ctx.roundRect(-bw / 2, -bh / 2, bw, bh, 32);
+    ctx.roundRect(-bw / 2, -bh / 2, bw, bh, 14);
     ctx.fill();
 
-    ctx.strokeStyle = '#FFFFFF';
-    ctx.lineWidth = 3;
+    // Khung mạ vàng chạm trổ (Gold Filigree Border)
+    ctx.strokeStyle = '#FACC15';
+    ctx.lineWidth = 2.5;
     ctx.stroke();
 
-    // Tiêu đề banner
-    ctx.shadowColor = 'transparent';
-    ctx.fillStyle = '#FFFFFF';
+    ctx.strokeStyle = '#FEF08A';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.roundRect(-bw / 2 + 3, -bh / 2 + 3, bw - 6, bh - 6, 12);
+    ctx.stroke();
+
+    // Con dấu hoàng gia 2 bên đầu sắc lệnh
+    this.drawRoyalCrest(ctx, -bw / 2 + 22, 0);
+    this.drawRoyalCrest(ctx, bw / 2 - 22, 0);
+
+    // Chữ tiêu đề vàng kim dập nổi
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.9)';
+    ctx.shadowBlur = 4;
+    ctx.shadowOffsetY = 2;
+
+    ctx.fillStyle = '#FEF08A';
     ctx.font = 'bold 18px "Baloo 2", sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText(banner.title, 0, banner.subtitle ? -9 : 0);
+    ctx.fillText(banner.title, 0, banner.subtitle ? -10 : 0);
 
-    // Phụ đề (nếu có)
     if (banner.subtitle) {
       ctx.font = '600 13px "Be Vietnam Pro", sans-serif';
-      ctx.fillStyle = '#FEF08A';
+      ctx.fillStyle = '#FFFFFF';
       ctx.fillText(banner.subtitle, 0, 15);
     }
 
     ctx.restore();
   }
 
+  drawRoyalCrest(ctx, x, y) {
+    ctx.save();
+    ctx.translate(x, y);
+    ctx.fillStyle = '#D97706';
+    ctx.beginPath();
+    ctx.arc(0, 0, 14, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.strokeStyle = '#FDE047';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    ctx.fillStyle = '#FEF08A';
+    ctx.font = '12px serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('⚜️', 0, 1);
+    ctx.restore();
+  }
+
   /**
-   * Vẽ màn hình vinh danh "CHẠM ĐỈNH THÁP!" khi có người chiến thắng
+   * Màn hình vinh danh "CHẠM ĐỈNH THÁP!" phong cách Thư Viện Hoàng Gia
    */
   drawVictoryScreen(ctx, state, getAvatarImgFn) {
     const winner = state.winner;
     if (!winner) return;
 
     ctx.save();
-    // Nền mờ huyền ảo
-    ctx.fillStyle = 'rgba(15, 23, 42, 0.88)';
+    // Nền nhung huyền bí
+    ctx.fillStyle = 'rgba(11, 8, 26, 0.94)';
     ctx.fillRect(0, 0, 540, 960);
 
     const cx = 270;
-    const cy = 480;
+    const cy = 475;
 
-    // Hiệu ứng hào quang xoay
-    const grad = ctx.createRadialGradient(cx, cy - 30, 20, cx, cy - 30, 220);
-    grad.addColorStop(0, 'rgba(253, 224, 71, 0.35)');
-    grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
-    ctx.fillStyle = grad;
+    // Hào quang ma thuật xoay bừng sáng
+    const now = performance.now() / 1000;
+    const auraGrad = ctx.createRadialGradient(cx, cy - 35, 30, cx, cy - 35, 240);
+    auraGrad.addColorStop(0, 'rgba(250, 204, 21, 0.45)');
+    auraGrad.addColorStop(0.5, 'rgba(192, 132, 252, 0.25)');
+    auraGrad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+    ctx.fillStyle = auraGrad;
     ctx.beginPath();
-    ctx.arc(cx, cy - 30, 220, 0, Math.PI * 2);
+    ctx.arc(cx, cy - 35, 240, 0, Math.PI * 2);
     ctx.fill();
 
-    // Tiêu đề rực rỡ
-    ctx.fillStyle = '#FACC15';
+    // Tia sáng thần thánh xoay tròn
+    ctx.save();
+    ctx.translate(cx, cy - 35);
+    ctx.rotate(now * 0.2);
+    ctx.strokeStyle = 'rgba(254, 240, 138, 0.15)';
+    ctx.lineWidth = 14;
+    for (let i = 0; i < 12; i++) {
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.lineTo(260, 0);
+      ctx.stroke();
+      ctx.rotate(Math.PI / 6);
+    }
+    ctx.restore();
+
+    // Tiêu đề CHẠM ĐỈNH THÁP!
+    ctx.fillStyle = '#FDE047';
     ctx.font = 'bold 36px "Baloo 2", sans-serif';
     ctx.textAlign = 'center';
-    ctx.shadowColor = 'rgba(250, 204, 21, 0.8)';
-    ctx.shadowBlur = 20;
-    ctx.fillText('🏆 CHẠM ĐỈNH THÁP! 🏆', cx, cy - 180);
+    ctx.shadowColor = 'rgba(245, 158, 11, 0.9)';
+    ctx.shadowBlur = 24;
+    ctx.fillText('👑 CHẠM ĐỈNH THÁP! 👑', cx, cy - 185);
 
     ctx.shadowBlur = 0;
-    ctx.fillStyle = '#FFFFFF';
+    ctx.fillStyle = '#E2E8F0';
     ctx.font = 'bold 18px "Be Vietnam Pro", sans-serif';
-    ctx.fillText(`VÔ ĐỊCH VÒNG ${state.round || 1}`, cx, cy - 140);
+    ctx.fillText(`VÔ ĐỊCH VÒNG ${state.round || 1} · THẦN THÁP TRI THỨC`, cx, cy - 145);
 
-    // Avatar khổng lồ của người chiến thắng
-    const avatarR = 64;
-    const avatarY = cy - 40;
+    // Bệ đá hoàng kim nâng avatar
+    ctx.fillStyle = '#78350F';
+    ctx.beginPath();
+    ctx.ellipse(cx, cy + 28, 90, 18, 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.strokeStyle = '#FACC15';
+    ctx.lineWidth = 2.5;
+    ctx.stroke();
+
+    // Avatar khổng lồ người chiến thắng
+    const avatarR = 66;
+    const avatarY = cy - 42;
 
     ctx.save();
     ctx.beginPath();
@@ -263,10 +477,10 @@ class EffectsManager {
     if (avatarImg && avatarImg.complete && avatarImg.naturalWidth > 0) {
       ctx.drawImage(avatarImg, cx - avatarR, avatarY - avatarR, avatarR * 2, avatarR * 2);
     } else {
-      ctx.fillStyle = '#EF4444';
+      ctx.fillStyle = '#831843';
       ctx.fillRect(cx - avatarR, avatarY - avatarR, avatarR * 2, avatarR * 2);
-      ctx.fillStyle = '#FFFFFF';
-      ctx.font = 'bold 44px "Baloo 2", sans-serif';
+      ctx.fillStyle = '#FEF08A';
+      ctx.font = 'bold 46px "Baloo 2", sans-serif';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       const initial = (winner.nickname || 'W').charAt(0).toUpperCase();
@@ -274,32 +488,41 @@ class EffectsManager {
     }
     ctx.restore();
 
-    // Viền vàng kim cương cho avatar
+    // Viền khung hoàng gia mạ vàng
     ctx.strokeStyle = '#FACC15';
     ctx.lineWidth = 6;
     ctx.beginPath();
     ctx.arc(cx, avatarY, avatarR, 0, Math.PI * 2);
     ctx.stroke();
 
-    // Vương miện khổng lồ trên đầu
-    ctx.font = '40px serif';
+    ctx.strokeStyle = '#FEF08A';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(cx, avatarY, avatarR + 5, 0, Math.PI * 2);
+    ctx.stroke();
+
+    // Vương miện hoàng gia lộng lẫy
+    ctx.font = '44px serif';
     ctx.textAlign = 'center';
-    ctx.fillText('👑', cx, avatarY - avatarR - 10);
+    ctx.fillText('👑', cx, avatarY - avatarR - 12);
 
     // Tên người chiến thắng
     ctx.fillStyle = '#FFFFFF';
     ctx.font = 'bold 26px "Baloo 2", sans-serif';
-    ctx.fillText(winner.nickname || 'Người chơi', cx, cy + 60);
+    ctx.shadowColor = 'rgba(0,0,0,0.8)';
+    ctx.shadowBlur = 6;
+    ctx.fillText(winner.nickname || 'Người chơi', cx, cy + 68);
 
-    // Thống kê thành tích
-    ctx.fillStyle = '#94A3B8';
-    ctx.font = '500 16px "Be Vietnam Pro", sans-serif';
-    ctx.fillText(`Số câu đúng: ${winner.correctCount || 0} câu · Đạt Tầng 20`, cx, cy + 95);
-
-    // Dòng đếm ngược bắt đầu vòng mới
+    // Thành tích
+    ctx.shadowBlur = 0;
     ctx.fillStyle = '#FDE047';
+    ctx.font = '600 16px "Be Vietnam Pro", sans-serif';
+    ctx.fillText(`✨ Trả lời đúng: ${winner.correctCount || 0} câu · Chinh phục Tầng ${winner.floor || state.targetFloor || 7749}`, cx, cy + 100);
+
+    // Đếm ngược vòng mới
+    ctx.fillStyle = '#A5B4FC';
     ctx.font = 'bold 15px "Baloo 2", sans-serif';
-    ctx.fillText(`Vòng mới sẽ bắt đầu sau ${state.timer || 7}s...`, cx, cy + 145);
+    ctx.fillText(`Vòng mới sẽ bắt đầu sau ${state.timer || 7}s...`, cx, cy + 150);
 
     ctx.restore();
   }

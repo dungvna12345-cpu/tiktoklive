@@ -9,7 +9,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: #0b1021;
+  background-color: #07040D;
   font-family: 'Be Vietnam Pro', sans-serif;
   user-select: none;
 }
@@ -22,7 +22,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at center, #1a2238 0%, #0b1021 100%);
+  background: radial-gradient(circle at center, #1E1035 0%, #07040D 100%);
 }
 
 #canvas-container {
@@ -30,8 +30,9 @@ html, body {
   /* Aspect ratio 9:16 */
   width: min(100vw, calc(100vh * 9 / 16));
   height: min(100vh, calc(100vw * 16 / 9));
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
+  box-shadow: 0 0 50px rgba(245, 158, 11, 0.25), 0 20px 60px rgba(0, 0, 0, 0.85);
+  border: 2px solid rgba(250, 204, 21, 0.35);
+  border-radius: 12px;
   overflow: hidden;
 }
 
@@ -44,17 +45,18 @@ canvas#game-canvas {
 /* Audio control toggle button on screen */
 #audio-toggle {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 14px;
+  left: 14px;
   z-index: 100;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  background: rgba(15, 23, 42, 0.7);
+  border: 1.5px solid rgba(250, 204, 21, 0.6);
+  background: rgba(30, 16, 53, 0.85);
+  box-shadow: 0 0 14px rgba(245, 158, 11, 0.35);
   backdrop-filter: blur(8px);
-  color: #fff;
-  font-size: 18px;
+  color: #FEF08A;
+  font-size: 16px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -63,28 +65,31 @@ canvas#game-canvas {
 }
 
 #audio-toggle:hover {
-  transform: scale(1.1);
-  background: rgba(30, 41, 59, 0.9);
+  transform: scale(1.12);
+  background: rgba(58, 28, 100, 0.95);
+  border-color: #FDE047;
 }
 
 /* Small LIVE reconnection badge in top corner */
 #reconnect-badge {
   display: none;
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 14px;
+  right: 14px;
   z-index: 100;
-  background: rgba(239, 68, 68, 0.85);
-  color: white;
-  padding: 6px 12px;
+  background: rgba(190, 18, 60, 0.9);
+  border: 1px solid rgba(253, 224, 71, 0.5);
+  color: #FEF08A;
+  padding: 6px 14px;
   border-radius: 20px;
   font-size: 12px;
-  font-weight: 600;
-  backdrop-filter: blur(4px);
+  font-weight: 700;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 16px rgba(225, 29, 72, 0.6);
   animation: pulse 1.5s infinite;
 }
 
 @keyframes pulse {
   0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.7; transform: scale(0.96); }
+  50% { opacity: 0.75; transform: scale(0.96); }
 }

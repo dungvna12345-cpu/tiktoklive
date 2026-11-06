@@ -1,6 +1,6 @@
 /**
- * Main Render Pipeline (render.js)
- * Tích hợp toàn bộ các lớp vẽ: Bầu trời, Tiêu đề, Thẻ câu hỏi, Tháp sách, Bảng xếp hạng, Ticker và Banners.
+ * Main Render Pipeline Phong Cách Thư Viện Ma Thuật & Hoàng Gia (render.js)
+ * Tích hợp Bầu trời đêm huyền diệu, Tháp sách cổ, Cuộn giấy hoàng gia, Bảng hiệp sĩ và Ticker ruy băng.
  */
 
 class GameRenderer {
@@ -13,19 +13,19 @@ class GameRenderer {
     this.effects = new window.EffectsManager();
 
     this.marqueeX = 540;
-    this.tickerText = '📚 THÁP SÁCH: Bình luận A/B/C/D để trả lời câu hỏi · Đúng leo tầng, chạm tầng 20 trước thắng! · Tặng quà để mở thang tre, cáp treo, gió đẩy x2, đóng băng đối thủ!';
+    this.tickerText = '⚜️ THÁP SÁCH MA THUẬT: Bình luận A/B/C/D để giải đố · Đúng leo tầng, chạm Đỉnh Tháp trước thắng! · Tặng hoa hồng hoặc bảo vật để triệu hồi thang tre, cáp treo phóng vút!';
   }
 
   update(dt, state) {
     const targetFloor = state.targetFloor || 7749;
-    this.tickerText = `📚 THÁP SÁCH: Bình luận A/B/C/D để trả lời câu hỏi · Đúng leo tầng, chạm tầng ${targetFloor} trước thắng! · Tặng hoa hồng hoặc quà để leo tháp thần tốc!`;
+    this.tickerText = `⚜️ THÁP SÁCH MA THUẬT: Bình luận A/B/C/D để giải đố · Đúng leo tầng, chinh phục Tầng ${targetFloor}! · Tặng hoa hồng hoặc bảo vật để triệu hồi thang tre, cáp treo phóng vút!`;
     this.cardRenderer.update(dt);
     this.towerRenderer.update(dt, state.players || [], state.leaderboard?.[0]?.floor || 0, targetFloor);
     this.effects.update(dt, state.isWindX2);
 
     // Cập nhật chữ chạy ticker dưới đáy
-    this.marqueeX -= dt * 65;
-    if (this.marqueeX < -1200) {
+    this.marqueeX -= dt * 62;
+    if (this.marqueeX < -1300) {
       this.marqueeX = 540;
     }
   }
@@ -34,148 +34,181 @@ class GameRenderer {
     const ctx = this.ctx;
     ctx.clearRect(0, 0, 540, 960);
 
-    // 1. Nền trời xanh tươi sáng
-    this.drawSkyBackground(ctx);
+    // 1. Nền Bầu Trời Đêm Ma Thuật Huyền Bí
+    this.drawMysticNightSky(ctx);
 
-    // 2. Mây trôi
+    // 2. Sao trời đêm, sao băng và mây dạ quang
     this.effects.drawSkyAndClouds(ctx);
 
-    // 3. Hiệu ứng gió x2
+    // 3. Vệt lốc xoáy ma thuật khi Gió x2
     if (state.isWindX2) {
       this.effects.drawWindLines(ctx);
     }
 
-    // 4. Tháp sách 7749 tầng và nhân vật
+    // 4. Tháp sách ma thuật 3D & Nhân vật
     this.towerRenderer.draw(ctx, state);
 
-    // 5. Thanh tiêu đề trên cùng
-    this.drawHeader(ctx, state);
+    // 5. Thanh tiêu đề Hoàng Gia trên cùng
+    this.drawRoyalHeader(ctx, state);
 
-    // 6. Thẻ câu hỏi dạng trang vở học trò
+    // 6. Thẻ câu hỏi Cuộn Giấy Hoàng Gia Cổ
     this.cardRenderer.draw(ctx, state);
 
-    // 7. Bảng xếp hạng Top 6 và Thanh tiến độ đích
-    this.drawLeaderboardOverlay(ctx, state);
+    // 7. Bảng Vinh Danh Hiệp Sĩ (Top 6) & Thanh Tiến Độ
+    this.drawRoyalLeaderboard(ctx, state);
 
-    // 8. Hạt pháo hoa / confetti
+    // 8. Hạt pháo hoa và kim tuyến
     this.effects.drawParticles(ctx);
 
-    // 9. Banner thông báo phóng to
+    // 9. Sắc lệnh hoàng gia (Banners)
     this.effects.drawBanners(ctx);
 
-    // 10. Dải chữ chạy hướng dẫn dưới cùng
-    this.drawBottomTicker(ctx);
+    // 10. Dải ruy băng chữ chạy dưới cùng
+    this.drawRoyalBottomTicker(ctx);
 
-    // 11. Màn hình vinh danh khi chạm đỉnh tháp
+    // 11. Màn hình Chạm Đỉnh Tháp khi có người chiến thắng
     if (state.phase === 'VICTORY') {
       this.effects.drawVictoryScreen(ctx, state, (url) => this.towerRenderer.getOrCreateAvatarImage(url));
     }
   }
 
-  drawSkyBackground(ctx) {
-    // Gradient bầu trời chuyển tiếp mượt mà từ xanh thiên thanh xuống lam dịu
-    const grad = ctx.createLinearGradient(0, 0, 0, 960);
-    grad.addColorStop(0, '#38BDF8');
-    grad.addColorStop(0.45, '#7DD3FC');
-    grad.addColorStop(0.85, '#BAE6FD');
-    grad.addColorStop(1, '#E0F2FE');
+  /**
+   * Bầu trời đêm ma thuật với gradient nhung huyền ảo và quầng cực quang tím
+   */
+  drawMysticNightSky(ctx) {
+    const skyGrad = ctx.createLinearGradient(0, 0, 0, 960);
+    skyGrad.addColorStop(0, '#090514');   // Đêm đen huyền bí
+    skyGrad.addColorStop(0.35, '#160B29'); // Tím thạch anh đậm
+    skyGrad.addColorStop(0.7, '#241242');  // Tím dạ quang hoàng gia
+    skyGrad.addColorStop(1, '#0F172A');    // Lam than sâu thẳm
 
-    ctx.fillStyle = grad;
+    ctx.fillStyle = skyGrad;
     ctx.fillRect(0, 0, 540, 960);
+
+    // Quầng cực quang tím hồng lãng đãng góc trên
+    const aurora = ctx.createRadialGradient(270, 180, 40, 270, 180, 260);
+    aurora.addColorStop(0, 'rgba(168, 85, 247, 0.18)');
+    aurora.addColorStop(0.5, 'rgba(99, 102, 241, 0.1)');
+    aurora.addColorStop(1, 'rgba(0, 0, 0, 0)');
+    ctx.fillStyle = aurora;
+    ctx.beginPath();
+    ctx.arc(270, 180, 260, 0, Math.PI * 2);
+    ctx.fill();
   }
 
-  drawHeader(ctx, state) {
+  drawRoyalHeader(ctx, state) {
     ctx.save();
 
-    // Tiêu đề THÁP SÁCH lớn
-    ctx.fillStyle = '#0F172A';
+    // Tiêu đề THÁP SÁCH dập vàng kim nổi
+    ctx.shadowColor = 'rgba(250, 204, 21, 0.7)';
+    ctx.shadowBlur = 10;
+    ctx.shadowOffsetY = 2;
+
+    ctx.fillStyle = '#FDE047';
     ctx.font = 'bold 26px "Baloo 2", sans-serif';
     ctx.textAlign = 'left';
     ctx.textBaseline = 'top';
-    ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
-    ctx.shadowBlur = 4;
-    ctx.fillText('THÁP SÁCH 📚', 20, 14);
+    ctx.fillText('THÁP SÁCH ⚜️', 18, 12);
 
-    // Dòng phụ: Vòng chơi & mục tiêu
-    const targetFloor = state.targetFloor || 7749;
-    ctx.fillStyle = '#1E293B';
-    ctx.font = '600 12px "Be Vietnam Pro", sans-serif';
+    // Dòng phụ: Vòng chơi & mục tiêu thần thoại
     ctx.shadowBlur = 0;
-    ctx.fillText(`VÒNG ${state.round || 1} · AI CHẠM TẦNG ${targetFloor} TRƯỚC THẮNG!`, 22, 43);
+    const targetFloor = state.targetFloor || 7749;
+    ctx.fillStyle = '#E2E8F0';
+    ctx.font = '600 12px "Be Vietnam Pro", sans-serif';
+    ctx.fillText(`VÒNG ${state.round || 1} · CHINH PHỤC ĐỈNH THÁP ${targetFloor} TẦNG`, 20, 42);
 
-    // Ô số người đang leo tháp ở góc phải
+    // Ô số hiệp sĩ đang leo tháp ở góc phải
     const totalClimbers = state.totalPlayers || (state.players ? state.players.length : 0);
-    const badgeW = 95;
-    const badgeH = 26;
-    const badgeX = 540 - badgeW - 18;
-    const badgeY = 16;
+    const badgeW = 108;
+    const badgeH = 28;
+    const badgeX = 540 - badgeW - 16;
+    const badgeY = 15;
 
-    ctx.fillStyle = 'rgba(15, 23, 42, 0.75)';
+    // Khung mạ vàng hoàng gia
+    ctx.fillStyle = 'rgba(15, 23, 42, 0.85)';
     ctx.beginPath();
-    ctx.roundRect(badgeX, badgeY, badgeW, badgeH, 13);
+    ctx.roundRect(badgeX, badgeY, badgeW, badgeH, 14);
     ctx.fill();
 
-    ctx.fillStyle = '#FFFFFF';
+    ctx.strokeStyle = '#FACC15';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    ctx.fillStyle = '#FEF08A';
     ctx.font = 'bold 12px "Baloo 2", sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText(`🧗 ${totalClimbers} đang leo`, badgeX + badgeW / 2, badgeY + badgeH / 2 + 1);
+    ctx.fillText(`🧗 ${totalClimbers} hiệp sĩ`, badgeX + badgeW / 2, badgeY + badgeH / 2 + 1);
 
     ctx.restore();
   }
 
-  drawLeaderboardOverlay(ctx, state) {
+  /**
+   * Bảng Vinh Danh Hiệp Sĩ (Top 6) & Thanh Tiến Độ Đích
+   */
+  drawRoyalLeaderboard(ctx, state) {
     const list = state.leaderboard || [];
     if (list.length === 0) return;
 
     ctx.save();
-    const panelW = 120;
+    const panelW = 126;
     const panelX = 540 - panelW - 14;
     const panelY = 390;
 
-    // Tiêu đề bảng xếp hạng
-    ctx.fillStyle = 'rgba(15, 23, 42, 0.75)';
+    // Tiêu đề bảng vàng
+    ctx.fillStyle = 'rgba(76, 5, 25, 0.9)';
     ctx.beginPath();
-    ctx.roundRect(panelX, panelY, panelW, 22, [6, 6, 0, 0]);
+    ctx.roundRect(panelX, panelY, panelW, 24, [8, 8, 0, 0]);
     ctx.fill();
 
-    ctx.fillStyle = '#FDE047';
-    ctx.font = 'bold 10px "Baloo 2", sans-serif';
+    ctx.strokeStyle = '#FACC15';
+    ctx.lineWidth = 1.5;
+    ctx.stroke();
+
+    ctx.fillStyle = '#FEF08A';
+    ctx.font = 'bold 11px "Baloo 2", sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText('LEO CAO NHẤT 👑', panelX + panelW / 2, panelY + 11);
+    ctx.fillText('BẢNG VÀNG HIỆP SĨ 👑', panelX + panelW / 2, panelY + 12);
 
     // Danh sách Top 6
-    let itemY = panelY + 22;
-    const itemH = 28;
+    let itemY = panelY + 24;
+    const itemH = 29;
 
     for (let i = 0; i < Math.min(6, list.length); i++) {
       const p = list[i];
       const isTop1 = i === 0;
 
-      ctx.fillStyle = isTop1 ? 'rgba(30, 41, 59, 0.85)' : 'rgba(15, 23, 42, 0.65)';
+      // Nền hàng
+      ctx.fillStyle = isTop1 ? 'rgba(88, 28, 135, 0.85)' : 'rgba(15, 23, 42, 0.75)';
       ctx.beginPath();
       ctx.roundRect(panelX, itemY, panelW, itemH, 0);
       ctx.fill();
 
-      // Huy hiệu số thứ tự #1..#6
-      ctx.fillStyle = isTop1 ? '#FACC15' : '#94A3B8';
+      // Viền phân cách
+      ctx.strokeStyle = 'rgba(250, 204, 21, 0.2)';
+      ctx.lineWidth = 0.8;
+      ctx.stroke();
+
+      // Huy hiệu #1 vàng, #2 bạc, #3 đồng
+      const medalColors = ['#FACC15', '#E2E8F0', '#F97316', '#94A3B8', '#94A3B8', '#94A3B8'];
+      ctx.fillStyle = medalColors[i] || '#94A3B8';
       ctx.font = 'bold 11px "Baloo 2", sans-serif';
       ctx.textAlign = 'left';
       ctx.textBaseline = 'middle';
-      ctx.fillText(`${i + 1}`, panelX + 6, itemY + itemH / 2);
+      ctx.fillText(`${i + 1}`, panelX + 7, itemY + itemH / 2);
 
       // Tên rút gọn
-      ctx.fillStyle = '#FFFFFF';
+      ctx.fillStyle = isTop1 ? '#FEF08A' : '#FFFFFF';
       ctx.font = '600 10px "Be Vietnam Pro", sans-serif';
-      let name = p.nickname || 'Viewer';
-      if (ctx.measureText(name).width > 55) {
+      let name = p.nickname || 'Hiệp sĩ';
+      if (ctx.measureText(name).width > 56) {
         name = name.slice(0, 6) + '…';
       }
       ctx.fillText(name, panelX + 22, itemY + itemH / 2);
 
-      // Số tầng hiện tại
-      ctx.fillStyle = '#38BDF8';
+      // Tầng hiện tại
+      ctx.fillStyle = '#67E8F9';
       ctx.font = 'bold 11px "Baloo 2", sans-serif';
       ctx.textAlign = 'right';
       ctx.fillText(`T.${p.floor || 0}`, panelX + panelW - 6, itemY + itemH / 2);
@@ -183,54 +216,67 @@ class GameRenderer {
       itemY += itemH;
     }
 
-    // Thanh tiến độ "ĐÍCH: TẦNG 20"
+    // Thanh Tiến Độ Đích Thần Thánh
     const leaderFloor = list[0] ? list[0].floor : 0;
-    const progH = 20;
-    ctx.fillStyle = 'rgba(15, 23, 42, 0.8)';
+    const progH = 22;
+    ctx.fillStyle = 'rgba(15, 23, 42, 0.9)';
     ctx.beginPath();
-    ctx.roundRect(panelX, itemY, panelW, progH, [0, 0, 6, 6]);
+    ctx.roundRect(panelX, itemY, panelW, progH, [0, 0, 8, 8]);
     ctx.fill();
 
-    // Thanh tiến độ lấp đầy
-    const fillRatio = Math.max(0, Math.min(1, leaderFloor / (state.targetFloor || 20)));
+    ctx.strokeStyle = '#D97706';
+    ctx.lineWidth = 1.2;
+    ctx.stroke();
+
+    const target = state.targetFloor || 7749;
+    const fillRatio = Math.max(0, Math.min(1, leaderFloor / target));
     if (fillRatio > 0) {
-      ctx.fillStyle = '#22C55E';
+      const manaGrad = ctx.createLinearGradient(panelX, 0, panelX + panelW, 0);
+      manaGrad.addColorStop(0, '#10B981');
+      manaGrad.addColorStop(1, '#059669');
+      ctx.fillStyle = manaGrad;
       ctx.beginPath();
-      ctx.roundRect(panelX + 2, itemY + 2, (panelW - 4) * fillRatio, progH - 4, 3);
+      ctx.roundRect(panelX + 2, itemY + 2, (panelW - 4) * fillRatio, progH - 4, 4);
       ctx.fill();
     }
 
-    ctx.fillStyle = '#FFFFFF';
+    ctx.fillStyle = '#FEF08A';
     ctx.font = 'bold 9px "Baloo 2", sans-serif';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText(`ĐÍCH: ${leaderFloor}/${state.targetFloor || 20}`, panelX + panelW / 2, itemY + progH / 2);
+    ctx.fillText(`ĐÍCH: ${leaderFloor}/${target}`, panelX + panelW / 2, itemY + progH / 2 + 1);
 
     ctx.restore();
   }
 
-  drawBottomTicker(ctx) {
+  /**
+   * Dải Ruy Băng Sắc Lệnh Chữ Chạy Dưới Cùng
+   */
+  drawRoyalBottomTicker(ctx) {
     ctx.save();
-    const h = 32;
+    const h = 34;
     const y = 960 - h;
 
-    // Dải đen mờ dưới cùng
-    ctx.fillStyle = 'rgba(15, 23, 42, 0.9)';
+    // Ruy băng nhung đỏ thẫm viền chỉ vàng
+    ctx.fillStyle = '#4C0519';
     ctx.fillRect(0, y, 540, h);
 
-    ctx.fillStyle = '#38BDF8';
-    ctx.fillRect(0, y, 540, 1.5);
+    ctx.strokeStyle = '#FACC15';
+    ctx.lineWidth = 1.8;
+    ctx.beginPath();
+    ctx.moveTo(0, y);
+    ctx.lineTo(540, y);
+    ctx.stroke();
 
-    // Chữ chạy hướng dẫn luật chơi
     ctx.beginPath();
     ctx.rect(0, y, 540, h);
     ctx.clip();
 
-    ctx.fillStyle = '#F8FAFC';
+    ctx.fillStyle = '#FEF08A';
     ctx.font = '600 12px "Be Vietnam Pro", sans-serif';
     ctx.textAlign = 'left';
     ctx.textBaseline = 'middle';
-    ctx.fillText(this.tickerText, this.marqueeX, y + h / 2);
+    ctx.fillText(this.tickerText, this.marqueeX, y + h / 2 + 1);
 
     ctx.restore();
   }
