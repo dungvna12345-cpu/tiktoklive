@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THÁP SÁCH - Game Đố Vui Leo Tháp TikTok LIVE</title>
+
+  <!-- Google Fonts: Baloo 2 (Tiêu đề, điểm số) & Be Vietnam Pro (Nội dung câu hỏi) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-wrapper">
+    <div id="canvas-container">
+      <!-- Nút bật tắt âm thanh -->
+      <button id="audio-toggle" title="Bật/Tắt âm thanh">🔊</button>
+
+      <!-- Huy hiệu thông báo kết nối lại ở góc phải -->
+      <div id="reconnect-badge">Đang kết nối lại...</div>
+
+      <!-- Canvas hiển thị chính (9:16) -->
+      <canvas id="game-canvas"></canvas>
+    </div>
+  </div>
+
+  <!-- Socket.IO Client -->
+  <script src="/socket.io/socket.io.js"></script>
+
+  <!-- Game Scripts -->
+  <script src="audio.js"></script>
+  <script src="card.js"></script>
+  <script src="tower.js"></script>
+  <script src="fx.js"></script>
+  <script src="render.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

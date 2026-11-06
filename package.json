@@ -1,0 +1,27 @@
+{
+  "name": "thap-sach",
+  "version": "1.0.0",
+  "description": "THÁP SÁCH - Game đố vui leo tháp tương tác trên TikTok LIVE",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node --watch server/index.js",
+    "test": "node --test test/**/*.test.js"
+  },
+  "keywords": [
+    "tiktok-live",
+    "trivia-game",
+    "interactive-stream",
+    "tower-climbing"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "socket.io": "^4.8.1",
+    "tiktok-live-connector": "^2.5.0"
+  }
+}

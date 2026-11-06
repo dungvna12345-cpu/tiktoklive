@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - THÁP SÁCH TikTok LIVE</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-area">
+      <span class="logo-title">📚 THÁP SÁCH</span>
+      <span class="logo-badge">ADMIN CONTROL</span>
+    </div>
+
+    <div class="live-status-bar">
+      <div class="status-indicator">
+        <span id="live-dot" class="status-dot disconnected"></span>
+        <span id="live-status-text">Chưa kết nối</span>
+      </div>
+      <span style="color: var(--border);">|</span>
+      <div style="font-size: 13px;">
+        👁️ <strong id="live-viewers">0</strong> người xem
+      </div>
+      <span style="color: var(--border);">|</span>
+      <a href="/game" target="_blank" class="btn btn-secondary btn-sm" style="text-decoration: none;">
+        📺 Mở Màn Hình Game
+      </a>
+    </div>
+  </header>
+
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="tab-control">🎮 Điều Khiển & LIVE</button>
+    <button class="tab-btn" data-tab="tab-simulator">🤖 Chế Độ Giả Lập</button>
+    <button class="tab-btn" data-tab="tab-questions">❓ Ngân Hàng Câu Hỏi</button>
+    <button class="tab-btn" data-tab="tab-gifts">🎁 Cấu Hình Quà Tặng</button>
+    <button class="tab-btn" data-tab="tab-stats">📊 Thống Kê Người Chơi</button>
+    <button class="tab-btn" data-tab="tab-settings">⚙️ Cài Đặt Luật Chơi</button>
+  </nav>
+
+  <main>
+    <!-- TAB 1: ĐIỀU KHIỂN & LIVE -->
+    <div id="tab-control" class="tab-pane active">
+      <div class="grid-2">
+        <div>
+          <!-- Kết nối TikTok LIVE -->
+          <div class="card">
+            <div class="card-title">📡 Kết Nối Phiên LIVE TikTok</div>
+            <div class="form-group">
+              <label>Tên tài khoản TikTok (có hoặc không có @):</label>
+              <div style="display: flex; gap: 10px;">
+                <input type="text" id="tiktok-username-input" placeholder="ví dụ: dung_phuong hoặc @user">
+                <button id="btn-connect-live" class="btn btn-primary" style="white-space: nowrap;">Kết Nối</button>
+                <button id="btn-disconnect-live" class="btn btn-danger" style="display: none; white-space: nowrap;">Ngắt Kết Nối</button>
+              </div>
+            </div>
+            <div id="connection-detail" style="font-size: 12px; color: var(--text-muted); margin-top: 8px;">
+              Nhập username tài khoản đang phát trực tiếp công khai để game tự động lắng nghe bình luận và quà.
+            </div>
+          </div>
+
+          <!-- Điều Khiển Game -->
+          <div class="card">
+            <div class="card-title">🕹️ Điều Khiển Game Trực Tiếp</div>
+            <div style="margin-bottom: 16px; font-size: 14px;">
+              Trạng thái: <strong id="game-phase-text" style="color: #60A5FA;">ĐANG CHỜ</strong> · 
+              Vòng: <strong id="game-round-text">1</strong> · 
+              Câu: <strong id="game-qnum-text">1</strong>
+            </div>
+
+            <div class="btn-group">
+              <button id="btn-skip-q" class="btn btn-primary">⏭️ Qua Câu Mới</button>
+              <button id="btn-pause-game" class="btn btn-warning">⏸️ Tạm Dừng</button>
+              <button id="btn-resume-game" class="btn btn-success" style="display: none;">▶️ Tiếp Tục</button>
+              <button id="btn-reset-round" class="btn btn-danger">🔄 Bắt Đầu Lại Vòng</button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <!-- Log Sự Kiện Realtime -->
+          <div class="card">
+            <div class="card-title">
+              <span>📋 Nhật Ký Sự Kiện Realtime</span>
+              <button id="btn-clear-log" class="btn btn-secondary btn-sm">Xóa log</button>
+            </div>
+            <div id="realtime-log" class="log-box"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: CHẾ ĐỘ GIẢ LẬP (SIMULATOR) -->
+    <div id="tab-simulator" class="tab-pane">
+      <div class="grid-2">
+        <div>
+          <div class="card">
+            <div class="card-title">👥 Khán Giả Ảo (Bots)</div>
+            <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
+              Dùng để thử nghiệm khi chưa lên sóng. Các bot tự động trả lời với tỉ lệ chính xác 45%–85% và thời gian ngẫu nhiên.
+            </p>
+
+            <div class="btn-group" style="margin-bottom: 16px;">
+              <button id="btn-spawn-20-bots" class="btn btn-primary">➕ Thêm 20 Người Xem Ảo</button>
+              <button id="btn-toggle-auto-gift" class="btn btn-secondary">🎁 Bật Bot Tự Tặng Quà</button>
+            </div>
+            <div id="simulator-status" style="font-size: 13px; color: #86EFAC;"></div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">💬 Gửi Bình Luận Thủ Công</div>
+            <div class="form-group">
+              <label>Tên hiển thị:</label>
+              <input type="text" id="sim-chat-nick" value="Khán Giả Test">
+            </div>
+            <div class="form-group">
+              <label>Nội dung bình luận (A, B, C, D hoặc bất kỳ):</label>
+              <div style="display: flex; gap: 8px;">
+                <input type="text" id="sim-chat-text" placeholder="a, chon b, c nha, dap an d...">
+                <button id="btn-send-sim-chat" class="btn btn-primary">Gửi</button>
+              </div>
+            </div>
+            <div style="display: flex; gap: 6px; margin-top: 8px;">
+              <button class="btn btn-secondary btn-sm quick-ans-btn" data-ans="A">Đáp án A</button>
+              <button class="btn btn-secondary btn-sm quick-ans-btn" data-ans="B">Đáp án B</button>
+              <button class="btn btn-secondary btn-sm quick-ans-btn" data-ans="C">Đáp án C</button>
+              <button class="btn btn-secondary btn-sm quick-ans-btn" data-ans="D">Đáp án D</button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <div class="card-title">🎁 Giả Lập Tặng Quà & Tương Tác</div>
+            <div class="form-group">
+              <label>Tên người tặng:</label>
+              <input type="text" id="sim-gift-nick" value="Đại Gia TikTok">
+            </div>
+            <div class="form-group">
+              <label>Chọn quà thử nghiệm:</label>
+              <select id="sim-gift-select">
+                <option value="5655|Rose">🌹 Hoa Hồng (Thang tre)</option>
+                <option value="5487|Finger Heart">🫰 Thả Tim (Gợi ý 50:50)</option>
+                <option value="5281|Doughnut">🍩 Bánh Rán (Gió đẩy x2)</option>
+                <option value="5372|Cap">🧢 Nón (Đóng băng người dẫn đầu)</option>
+                <option value="5650|Fireworks">🎆 Pháo Hoa (Cáp treo +4 tầng)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Số lượng quà:</label>
+              <input type="number" id="sim-gift-count" value="1" min="1" max="9999">
+            </div>
+            <button id="btn-send-sim-gift" class="btn btn-success" style="width: 100%; margin-bottom: 12px;">
+              Gửi Quà Tặng
+            </button>
+
+            <!-- Nút bấm nhanh các mốc hoa hồng và quà khủng -->
+            <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px;">
+              <button class="btn btn-secondary btn-sm quick-gift-btn" data-gift="5655|Rose|1">🌹 1 Hoa hồng (+1T)</button>
+              <button class="btn btn-secondary btn-sm quick-gift-btn" data-gift="5655|Rose|10">🌹 10 Hoa hồng (+10T)</button>
+              <button class="btn btn-secondary btn-sm quick-gift-btn" data-gift="5655|Rose|99">🌹 99 Hoa hồng (+99T)</button>
+              <button class="btn btn-secondary btn-sm quick-gift-btn" data-gift="5655|Rose|520">🌹 520 Hoa hồng (+520T)</button>
+              <button class="btn btn-warning btn-sm quick-gift-btn" data-gift="5650|Fireworks|1">🎆 Pháo hoa (+50T)</button>
+            </div>
+
+            <div style="border-top: 1px solid var(--border); padding-top: 14px;">
+              <label>Tương tác khác:</label>
+              <div class="btn-group">
+                <button id="btn-sim-like-100" class="btn btn-secondary btn-sm">❤️ +100 Like</button>
+                <button id="btn-sim-like-500" class="btn btn-warning btn-sm">🎉 +500 Like (Gió x2)</button>
+                <button id="btn-sim-follow" class="btn btn-secondary btn-sm">➕ Giả Lập Follow (+1T)</button>
+                <button id="btn-sim-share" class="btn btn-secondary btn-sm">🚀 Giả Lập Share (+1T)</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: NGÂN HÀNG CÂU HỎI -->
+    <div id="tab-questions" class="tab-pane">
+      <div class="card">
+        <div class="card-title">
+          <span>📚 Danh Sách Câu Hỏi (<span id="q-total-count">0</span> câu)</span>
+          <div class="btn-group">
+            <button id="btn-open-add-q" class="btn btn-success btn-sm">➕ Thêm Câu Hỏi</button>
+            <button id="btn-export-q" class="btn btn-secondary btn-sm">📥 Xuất JSON</button>
+            <label class="btn btn-secondary btn-sm" style="cursor: pointer; margin-bottom: 0;">
+              📤 Nhập JSON <input type="file" id="input-import-q" accept=".json" style="display: none;">
+            </label>
+          </div>
+        </div>
+
+        <!-- Bộ lọc câu hỏi -->
+        <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap;">
+          <input type="text" id="q-search-input" placeholder="Tìm kiếm câu hỏi..." style="max-width: 280px;">
+          <select id="q-topic-filter" style="max-width: 180px;">
+            <option value="">Tất cả chủ đề</option>
+          </select>
+          <select id="q-level-filter" style="max-width: 160px;">
+            <option value="">Tất cả độ khó</option>
+            <option value="1">Level 1 (Dễ)</option>
+            <option value="2">Level 2 (Vừa)</option>
+            <option value="3">Level 3 (Thử thách)</option>
+          </select>
+        </div>
+
+        <div style="max-height: 480px; overflow-y: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 50px;">ID</th>
+                <th>Câu Hỏi</th>
+                <th style="width: 130px;">Chủ Đề</th>
+                <th style="width: 90px;">Độ Khó</th>
+                <th style="width: 80px;">Đ/Án</th>
+                <th style="width: 120px;">Hành Động</th>
+              </tr>
+            </thead>
+            <tbody id="q-table-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: CẤU HÌNH QUÀ TẶNG -->
+    <div id="tab-gifts" class="tab-pane">
+      <div class="card">
+        <div class="card-title">
+          <span>🎁 Bảng Ánh Xạ Quà Tặng Sang Hiệu Ứng Game</span>
+          <button id="btn-save-gifts" class="btn btn-primary btn-sm">Lưu Ánh Xạ</button>
+        </div>
+        <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
+          Khi khán giả tặng quà trên LIVE, hệ thống sẽ dò theo giftId hoặc tên quà để kích hoạt hiệu ứng leo tháp tương ứng.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Hiệu Ứng</th>
+              <th>Mô Tả Hiệu Ứng</th>
+              <th>Tên Quà Nhận Diện (cách nhau bằng dấu phẩy)</th>
+              <th>Gift IDs</th>
+            </tr>
+          </thead>
+          <tbody id="gifts-mapping-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TAB 5: THỐNG KÊ NGƯỜI CHƠI -->
+    <div id="tab-stats" class="tab-pane">
+      <div class="card">
+        <div class="card-title">
+          <span>🏆 Bảng Thống Kê Người Chơi (SQLite)</span>
+          <button id="btn-reset-stats" class="btn btn-danger btn-sm">🗑️ Xóa Toàn Bộ Thống Kê</button>
+        </div>
+
+        <div style="max-height: 480px; overflow-y: auto;">
+          <table>
+            <thead>
+              <tr>
+                <th>Người Chơi</th>
+                <th>Tầng Hiện Tại</th>
+                <th>Tầng Cao Nhất</th>
+                <th>Số Câu Đúng</th>
+                <th>Top 1 Nhanh Nhất</th>
+                <th>Vô Địch (Thắng)</th>
+                <th>Tổng Quà Tặng</th>
+              </tr>
+            </thead>
+            <tbody id="players-stats-body"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 6: CÀI ĐẶT LUẬT CHƠI -->
+    <div id="tab-settings" class="tab-pane">
+      <div class="card" style="max-width: 600px;">
+        <div class="card-title">⚙️ Tùy Chỉnh Thời Gian & Luật Chơi</div>
+        <form id="settings-form">
+          <div class="form-group">
+            <label>Tầng Đích Chiến Thắng (mặc định 7749):</label>
+            <input type="number" id="cfg-target-floor" min="10" max="999999" value="7749">
+          </div>
+          <div class="form-group">
+            <label>Thời gian ĐỌC ĐỀ (giây):</label>
+            <input type="number" id="cfg-read-sec" min="1" max="10" value="3">
+          </div>
+          <div class="form-group">
+            <label>Thời gian TRẢ LỜI (giây):</label>
+            <input type="number" id="cfg-answer-sec" min="5" max="60" value="15">
+          </div>
+          <div class="form-group">
+            <label>Thời gian CÔNG BỐ ĐÁP ÁN (giây):</label>
+            <input type="number" id="cfg-reveal-sec" min="3" max="20" value="7">
+          </div>
+          <div class="form-group">
+            <label>Thời gian Màn hình VINH DANH CHIẾN THẮNG (giây):</label>
+            <input type="number" id="cfg-victory-sec" min="3" max="20" value="7">
+          </div>
+          <div class="form-group">
+            <label>Tần suất CÂU THỬ THÁCH (cứ mỗi N câu):</label>
+            <input type="number" id="cfg-challenge-interval" min="2" max="20" value="5">
+          </div>
+          <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Lưu Cài Đặt</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

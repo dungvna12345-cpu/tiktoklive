@@ -1,0 +1,4202 @@
+[
+  {
+    "id": 1,
+    "question": "Hành tinh nào gần Mặt Trời nhất trong Hệ Mặt Trời?",
+    "options": [
+      "Sao Thủy",
+      "Sao Kim",
+      "Sao Hỏa",
+      "Sao Mộc"
+    ],
+    "answer": 0,
+    "fact": "Sao Thủy chỉ mất 88 ngày Trái Đất để quay quanh Mặt Trời nhưng một ngày trên đó dài tới 59 ngày Trái Đất.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 2,
+    "question": "Công thức hóa học của nước là gì?",
+    "options": [
+      "CO2",
+      "H2O",
+      "O2",
+      "NaCl"
+    ],
+    "answer": 1,
+    "fact": "Một phân tử nước gồm 2 nguyên tử hydro liên kết với 1 nguyên tử oxy bằng liên kết cộng hóa trị.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 3,
+    "question": "Chất khí nào chiếm tỉ lệ lớn nhất trong khí quyển Trái Đất?",
+    "options": [
+      "Oxy",
+      "Cacbonic",
+      "Nitơ",
+      "Argon"
+    ],
+    "answer": 2,
+    "fact": "Khí Nitơ (N2) chiếm khoảng 78% thể tích khí quyển, trong khi Oxy chỉ chiếm khoảng 21%.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 4,
+    "question": "Kim loại nào là chất lỏng ở nhiệt độ phòng?",
+    "options": [
+      "Chì",
+      "Thủy ngân",
+      "Bạc",
+      "Nhôm"
+    ],
+    "answer": 1,
+    "fact": "Thủy ngân có nhiệt độ nóng chảy là -38.83 °C, là kim loại duy nhất ở dạng lỏng ở nhiệt độ thường.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 5,
+    "question": "Tế bào quang hợp của cây xanh chứa sắc tố màu gì?",
+    "options": [
+      "Đỏ",
+      "Xanh lục",
+      "Vàng",
+      "Tím"
+    ],
+    "answer": 1,
+    "fact": "Diệp lục hấp thụ ánh sáng xanh lam và đỏ tốt nhất, phản xạ ánh sáng xanh lục nên lá cây có màu xanh.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 6,
+    "question": "Đơn vị đo cường độ dòng điện là gì?",
+    "options": [
+      "Vôn (V)",
+      "Ampe (A)",
+      "Ohm (Ω)",
+      "Watt (W)"
+    ],
+    "answer": 1,
+    "fact": "Đơn vị Ampe được đặt theo tên nhà vật lý người Pháp André-Marie Ampère, cha đẻ của điện từ học.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 7,
+    "question": "Vận tốc ánh sáng trong chân không xấp xỉ bao nhiêu?",
+    "options": [
+      "300.000 km/s",
+      "150.000 km/s",
+      "1.000 km/s",
+      "30.000 km/s"
+    ],
+    "answer": 0,
+    "fact": "Ánh sáng từ Mặt Trời mất khoảng 8 phút 20 giây để đi đến Trái Đất với tốc độ gần 300.000 km/s.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 8,
+    "question": "Nguyên tố hóa học nào có độ âm điện lớn nhất?",
+    "options": [
+      "Oxy",
+      "Clo",
+      "Flo",
+      "Heli"
+    ],
+    "answer": 2,
+    "fact": "Flo có độ âm điện xấp xỉ 3.98 theo thang Pauling, là phi kim hoạt động hóa học mạnh nhất.",
+    "topic": "Khoa học",
+    "level": 3
+  },
+  {
+    "id": 9,
+    "question": "ADN người có cấu trúc dạng gì?",
+    "options": [
+      "Xoắn đơn",
+      "Xoắn kép",
+      "Vòng tròn dẹt",
+      "Hình cầu"
+    ],
+    "answer": 1,
+    "fact": "Mô hình xoắn kép của ADN được James Watson và Francis Crick khám phá vào năm 1953.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 10,
+    "question": "Bộ phận nào trong cơ thể người sản xuất insulin?",
+    "options": [
+      "Gan",
+      "Thận",
+      "Tuyến tụy",
+      "Dạ dày"
+    ],
+    "answer": 2,
+    "fact": "Các tế bào beta trong đảo tụy của tuyến tụy chịu trách nhiệm tiết insulin để điều hòa đường huyết.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 11,
+    "question": "Âm thanh không thể truyền qua môi trường nào?",
+    "options": [
+      "Chân không",
+      "Nước",
+      "Sắt",
+      "Không khí"
+    ],
+    "answer": 0,
+    "fact": "Sóng âm là sóng cơ học, cần các hạt vật chất dao động để truyền đi nên không thể lan truyền trong chân không.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 12,
+    "question": "Hiện tượng cầu vồng hình thành do hiện tượng vật lý nào?",
+    "options": [
+      "Nhiễu xạ",
+      "Tán sắc ánh sáng",
+      "Phản xạ toàn phần",
+      "Cộng hưởng"
+    ],
+    "answer": 1,
+    "fact": "Cầu vồng xuất hiện khi ánh sáng mặt trời bị khúc xạ và tán sắc qua hàng triệu giọt nước mưa li ti.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 13,
+    "question": "Kim loại dẫn điện tốt nhất ở điều kiện tiêu chuẩn là gì?",
+    "options": [
+      "Vàng",
+      "Đồng",
+      "Bạc",
+      "Nhôm"
+    ],
+    "answer": 2,
+    "fact": "Bạc dẫn điện tốt nhất, tiếp theo là đồng và vàng, nhưng đồng phổ biến hơn vì giá thành rẻ hơn nhiều.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 14,
+    "question": "Lực nào giữ Trái Đất quay quanh Mặt Trời?",
+    "options": [
+      "Lực từ trường",
+      "Lực hấp dẫn",
+      "Lực ma sát",
+      "Lực hạt nhân"
+    ],
+    "answer": 1,
+    "fact": "Định luật vạn vật hấp dẫn của Isaac Newton giải thích chuyển động của các hành tinh trong Hệ Mặt Trời.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 15,
+    "question": "Nguyên tố nào phổ biến nhất trong vũ trụ?",
+    "options": [
+      "Hydro",
+      "Heli",
+      "Oxy",
+      "Cacbon"
+    ],
+    "answer": 0,
+    "fact": "Hydro chiếm khoảng 75% tổng khối lượng nguyên tố trong vũ trụ, là nhiên liệu chính nuôi dưỡng các ngôi sao.",
+    "topic": "Khoa học",
+    "level": 3
+  },
+  {
+    "id": 16,
+    "question": "Đỉnh núi nào được mệnh danh là nóc nhà của Đông Dương?",
+    "options": [
+      "Fansipan",
+      "Ngọc Linh",
+      "Pusilung",
+      "Bạch Mộc Lương Tử"
+    ],
+    "answer": 0,
+    "fact": "Fansipan cao 3.143 mét, thuộc dãy Hoàng Liên Sơn, nằm giữa Lào Cai và Lai Châu.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 17,
+    "question": "Sông nào dài nhất thế giới theo ghi nhận phổ biến?",
+    "options": [
+      "Sông Amazon",
+      "Sông Nile",
+      "Sông Mê Kông",
+      "Sông Dương Tử"
+    ],
+    "answer": 1,
+    "fact": "Sông Nile ở châu Phi dài khoảng 6.650 km, chảy qua 11 quốc gia trước khi đổ ra Địa Trung Hải.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 18,
+    "question": "Quốc gia nào có diện tích lãnh thổ lớn nhất thế giới?",
+    "options": [
+      "Canada",
+      "Mỹ",
+      "Nga",
+      "Trung Quốc"
+    ],
+    "answer": 2,
+    "fact": "Nước Nga có diện tích hơn 17 triệu km², trải dài qua 11 múi giờ và chiếm 1/8 diện tích đất liền Trái Đất.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 19,
+    "question": "Hồ nước ngọt tự nhiên lớn nhất Việt Nam là hồ nào?",
+    "options": [
+      "Hồ Ba Bể",
+      "Hồ Dầu Tiếng",
+      "Hồ Trị An",
+      "Hồ Thác Bà"
+    ],
+    "answer": 0,
+    "fact": "Hồ Ba Bể nằm ở tỉnh Bắc Kạn, được UNESCO công nhận là một trong 20 hồ nước ngọt đặc biệt cần bảo vệ.",
+    "topic": "Địa lý",
+    "level": 2
+  },
+  {
+    "id": 20,
+    "question": "Đại dương nào có diện tích lớn nhất trên Trái Đất?",
+    "options": [
+      "Đại Tây Dương",
+      "Ấn Độ Dương",
+      "Thái Bình Dương",
+      "Bắc Băng Dương"
+    ],
+    "answer": 2,
+    "fact": "Thái Bình Dương chiếm hơn 30% diện tích bề mặt Trái Đất, lớn hơn toàn bộ diện tích các lục địa gộp lại.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 21,
+    "question": "Vịnh Hạ Long thuộc địa phận tỉnh nào của Việt Nam?",
+    "options": [
+      "Hải Phòng",
+      "Quảng Ninh",
+      "Thái Bình",
+      "Nam Định"
+    ],
+    "answer": 1,
+    "fact": "Vịnh Hạ Long có gần 2.000 hòn đảo đá vôi lớn nhỏ, hai lần được UNESCO vinh danh Di sản Thiên nhiên Thế giới.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 22,
+    "question": "Đất nước nào được mệnh danh là 'Xứ sở hoa anh đào'?",
+    "options": [
+      "Hàn Quốc",
+      "Nhật Bản",
+      "Triều Tiên",
+      "Đài Loan"
+    ],
+    "answer": 1,
+    "fact": "Hoa anh đào (Sakura) là biểu tượng văn hóa thanh cao và sức sống mãnh liệt của người dân Nhật Bản.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 23,
+    "question": "Sa mạc nào là sa mạc nóng lớn nhất thế giới?",
+    "options": [
+      "Gobi",
+      "Sahara",
+      "Kalahari",
+      "Atacama"
+    ],
+    "answer": 1,
+    "fact": "Sa mạc Sahara ở Bắc Phi có diện tích hơn 9 triệu km², xấp xỉ diện tích của toàn nước Mỹ.",
+    "topic": "Địa lý",
+    "level": 2
+  },
+  {
+    "id": 24,
+    "question": "Thành phố nào là thủ đô của nước Úc (Australia)?",
+    "options": [
+      "Sydney",
+      "Melbourne",
+      "Canberra",
+      "Brisbane"
+    ],
+    "answer": 2,
+    "fact": "Nhiều người nhầm Sydney là thủ đô của Úc, nhưng Canberra mới chính thức được chọn làm thủ đô từ năm 1908.",
+    "topic": "Địa lý",
+    "level": 2
+  },
+  {
+    "id": 25,
+    "question": "Cao nguyên đá Đồng Văn thuộc tỉnh nào của Việt Nam?",
+    "options": [
+      "Hà Giang",
+      "Cao Bằng",
+      "Lạng Sơn",
+      "Sơn La"
+    ],
+    "answer": 0,
+    "fact": "Cao nguyên đá Đồng Văn là Công viên Địa chất Toàn cầu đầu tiên của Việt Nam được UNESCO công nhận.",
+    "topic": "Địa lý",
+    "level": 2
+  },
+  {
+    "id": 26,
+    "question": "Kênh đào nào nối liền Địa Trung Hải và Biển Đỏ?",
+    "options": [
+      "Kênh đào Panama",
+      "Kênh đào Suez",
+      "Kênh đào Kiel",
+      "Kênh đào Corinth"
+    ],
+    "answer": 1,
+    "fact": "Kênh đào Suez khánh thành năm 1869, giúp rút ngắn khoảng 7.000 km hải trình từ châu Âu sang châu Á.",
+    "topic": "Địa lý",
+    "level": 3
+  },
+  {
+    "id": 27,
+    "question": "Nước nào ở Đông Nam Á không giáp biển?",
+    "options": [
+      "Campuchia",
+      "Lào",
+      "Myanmar",
+      "Thái Lan"
+    ],
+    "answer": 1,
+    "fact": "Lào là quốc gia nội lục duy nhất tại khu vực Đông Nam Á, bao quanh bởi 5 nước láng giềng.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 28,
+    "question": "Châu lục nào lạnh nhất và khô nhất hành tinh?",
+    "options": [
+      "Châu Nam Cực",
+      "Châu Bắc Cực",
+      "Châu Âu",
+      "Châu Úc"
+    ],
+    "answer": 0,
+    "fact": "Châu Nam Cực vừa là nơi lạnh nhất (-89.2 °C), vừa được xem là hoang mạc lớn nhất vì lượng mưa cực thấp.",
+    "topic": "Địa lý",
+    "level": 2
+  },
+  {
+    "id": 29,
+    "question": "Đảo lớn nhất Việt Nam là đảo nào?",
+    "options": [
+      "Cát Bà",
+      "Phú Quốc",
+      "Côn Đảo",
+      "Lý Sơn"
+    ],
+    "answer": 1,
+    "fact": "Đảo Phú Quốc thuộc tỉnh Kiên Giang có diện tích gần 589 km², nổi tiếng với tiêu, nước mắm và du lịch.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 30,
+    "question": "Thác nước tự nhiên lớn nhất Đông Nam Á nằm ở biên giới Việt - Trung tên gì?",
+    "options": [
+      "Thác Bản Giốc",
+      "Thác Dray Nur",
+      "Thác Pongour",
+      "Thác Dambri"
+    ],
+    "answer": 0,
+    "fact": "Thác Bản Giốc nằm trên sông Quây Sơn thuộc huyện Trùng Khánh, tỉnh Cao Bằng.",
+    "topic": "Địa lý",
+    "level": 2
+  },
+  {
+    "id": 31,
+    "question": "Chiến thắng Điện Biên Phủ 'lừng lẫy năm châu' diễn ra vào năm nào?",
+    "options": [
+      "1945",
+      "1954",
+      "1968",
+      "1975"
+    ],
+    "answer": 1,
+    "fact": "Chiến dịch Điện Biên Phủ toàn thắng vào chiều ngày 7/5/1954 sau 56 ngày đêm khoét núi, ngủ hầm, mưa dầm, cơm vắt.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 32,
+    "question": "Vị vua nào đã ban 'Chiếu dời đô' từ Hoa Lư về Thăng Long năm 1010?",
+    "options": [
+      "Lý Thái Tổ",
+      "Lý Nhân Tông",
+      "Lê Lợi",
+      "Trần Hưng Đạo"
+    ],
+    "answer": 0,
+    "fact": "Lý Thái Tổ (Lý Công Uẩn) nhìn thấy rồng vàng bay lên khi thuyền rẽ vào bến Đại La nên đặt tên kinh thành là Thăng Long.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 33,
+    "question": "Ai là người lãnh đạo cuộc khởi nghĩa Lam Sơn chống quân Minh giành độc lập?",
+    "options": [
+      "Nguyễn Trãi",
+      "Lê Lợi",
+      "Trần Quốc Tuấn",
+      "Quang Trung"
+    ],
+    "answer": 1,
+    "fact": "Lê Lợi xưng là Bình Định Vương, dựng cờ khởi nghĩa ở Lam Sơn (Thanh Hóa) năm 1418 và lập ra nhà Hậu Lê.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 34,
+    "question": "Trận Bạch Đằng năm 938 do ai trực tiếp chỉ huy đánh tan quân Nam Hán?",
+    "options": [
+      "Ngô Quyền",
+      "Trần Hưng Đạo",
+      "Lê Hoàn",
+      "Đinh Bộ Lĩnh"
+    ],
+    "answer": 0,
+    "fact": "Chiến thắng Bạch Đằng năm 938 của Ngô Quyền đã chấm dứt hơn 1000 năm Bắc thuộc, mở ra kỷ nguyên độc lập lâu dài.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 35,
+    "question": "Vị tướng nào được phong danh hiệu Hưng Đạo Đại Vương?",
+    "options": [
+      "Trần Quang Khải",
+      "Trần Nhật Duật",
+      "Trần Quốc Tuấn",
+      "Trần Khánh Dư"
+    ],
+    "answer": 2,
+    "fact": "Trần Hưng Đạo có công lớn chỉ huy quân dân Đại Việt ba lần đánh tan quân xâm lược Nguyên Mông hung hãn.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 36,
+    "question": "Bản 'Tuyên ngôn Độc lập' khai sinh ra nước VNDCCH được Bác Hồ đọc vào ngày nào?",
+    "options": [
+      "19/08/1945",
+      "02/09/1945",
+      "30/04/1975",
+      "01/01/1946"
+    ],
+    "answer": 1,
+    "fact": "Bản Tuyên ngôn Độc lập được Chủ tịch Hồ Chí Minh đọc tại Quảng trường Ba Đình lịch sử trước hàng vạn đồng bào.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 37,
+    "question": "Ai là nữ tướng duy nhất trong cuộc khởi nghĩa Hai Bà Trưng giữ chức chỉ huy thủy quân?",
+    "options": [
+      "Lê Chân",
+      "Bát Nàn",
+      "Thánh Thiên",
+      "Thi Sách"
+    ],
+    "answer": 0,
+    "fact": "Nữ tướng Lê Chân là người có công khai hoang lập ấp, dựng nên trang An Biên xưa, tiền thân của Hải Phòng ngày nay.",
+    "topic": "Lịch sử",
+    "level": 3
+  },
+  {
+    "id": 38,
+    "question": "Chiến dịch Hồ Chí Minh lịch sử giải phóng hoàn toàn miền Nam kết thúc ngày nào?",
+    "options": [
+      "30/04/1975",
+      "01/05/1975",
+      "19/05/1975",
+      "02/09/1975"
+    ],
+    "answer": 0,
+    "fact": "Đúng 11 giờ 30 phút ngày 30/4/1975, lá cờ cách mạng tung bay trên nóc Dinh Độc Lập, non sông thu về một mối.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 39,
+    "question": "Hoàng đế Quang Trung đại phá 29 vạn quân Thanh vào mùa xuân năm nào?",
+    "options": [
+      "1788",
+      "1789",
+      "1792",
+      "1802"
+    ],
+    "answer": 1,
+    "fact": "Chiến thắng Ngọc Hồi - Đống Đa tết Kỷ Dậu 1789 là một trong những chiến công chói lọi nhất lịch sử quân sự Việt Nam.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 40,
+    "question": "Người dẹp loạn 12 sứ quân, xưng Hoàng đế và lập nên nước Đại Cồ Việt là ai?",
+    "options": [
+      "Đinh Bộ Lĩnh",
+      "Lê Hoàn",
+      "Ngô Quyền",
+      "Lý Công Uẩn"
+    ],
+    "answer": 0,
+    "fact": "Đinh Tiên Hoàng đóng đô ở Hoa Lư (Ninh Bình), đặt quốc hiệu Đại Cồ Việt và đúc tiền đồng đầu tiên của nước ta.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 41,
+    "question": "Bộ luật thành văn đầu tiên của nước ta tên là gì?",
+    "options": [
+      "Luật Hồng Đức",
+      "Hình thư",
+      "Hoàng Việt luật lệ",
+      "Quốc triều hình luật"
+    ],
+    "answer": 1,
+    "fact": "Bộ Hình thư được ban hành dưới thời vua Lý Thái Tông năm 1042, đánh dấu bước ngoặt lớn về tư pháp Đại Việt.",
+    "topic": "Lịch sử",
+    "level": 3
+  },
+  {
+    "id": 42,
+    "question": "Phong trào Đông Du do chí sĩ yêu nước nào khởi xướng?",
+    "options": [
+      "Phan Bội Châu",
+      "Phan Châu Trinh",
+      "Huỳnh Thúc Kháng",
+      "Nguyễn Thái Học"
+    ],
+    "answer": 0,
+    "fact": "Cụ Phan Bội Châu đưa thanh niên Việt Nam sang Nhật Bản học tập nhằm canh tân đất nước từ năm 1905 đến 1909.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 43,
+    "question": "Kiệt tác 'Truyện Kiều' là tác phẩm của đại thi hào nào?",
+    "options": [
+      "Nguyễn Du",
+      "Nguyễn Trãi",
+      "Hồ Xuân Hương",
+      "Bà Huyện Thanh Quan"
+    ],
+    "answer": 0,
+    "fact": "Nguyễn Du sáng tác Đoạn Trường Tân Thanh (Truyện Kiều) bằng chữ Nôm gồm 3.254 câu thơ lục bát bất hủ.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 44,
+    "question": "Tác phẩm 'Dế Mèn phiêu lưu ký' là của nhà văn nào?",
+    "options": [
+      "Tô Hoài",
+      "Nam Cao",
+      "Nguyễn Nhật Ánh",
+      "Vũ Trọng Phụng"
+    ],
+    "answer": 0,
+    "fact": "Tô Hoài viết 'Dế Mèn phiêu lưu ký' năm 1941, đến nay đã được dịch ra gần 40 thứ tiếng trên toàn thế giới.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 45,
+    "question": "Nhân vật Lão Hạc trong truyện ngắn cùng tên của Nam Cao nuôi con chó tên gì?",
+    "options": [
+      "Cậu Vàng",
+      "Cậu Bạc",
+      "Cậu Mực",
+      "Cậu Đốm"
+    ],
+    "answer": 0,
+    "fact": "Hình ảnh Lão Hạc khóc khi phải bán Cậu Vàng là một trong những chi tiết cảm động nhất văn học hiện thực Việt Nam.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 46,
+    "question": "Nữ sĩ nào được mệnh danh là 'Bà chúa thơ Nôm'?",
+    "options": [
+      "Đoàn Thị Điểm",
+      "Hồ Xuân Hương",
+      "Bà Huyện Thanh Quan",
+      "Sương Nguyệt Anh"
+    ],
+    "answer": 1,
+    "fact": "Hồ Xuân Hương nổi tiếng với phong cách thơ Nôm sắc sảo, độc đáo và giàu tính nhân văn bảo vệ phụ nữ.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 47,
+    "question": "Tập thơ 'Nhật ký trong tù' được Bác Hồ sáng tác bằng chữ gì?",
+    "options": [
+      "Chữ Quốc ngữ",
+      "Chữ Hán",
+      "Chữ Nôm",
+      "Tiếng Pháp"
+    ],
+    "answer": 1,
+    "fact": "Tập thơ gồm 133 bài thơ chữ Hán được Bác viết trong các nhà tù của chính quyền Tưởng Giới Thạch từ 1942 đến 1943.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 48,
+    "question": "Nhà văn nào là tác giả của tiểu thuyết kinh điển 'Số Đỏ'?",
+    "options": [
+      "Vũ Trọng Phụng",
+      "Ngô Tất Tố",
+      "Thạch Lam",
+      "Nguyễn Tuân"
+    ],
+    "answer": 0,
+    "fact": "Nhân vật Xuân Tóc Đỏ trong tiểu thuyết Số Đỏ phê phán sâu sắc thói giả dối, học đòi âu hóa thời bấy giờ.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 49,
+    "question": "Bộ tiểu thuyết 'Tam Quốc Diễn Nghĩa' là của tác giả nào?",
+    "options": [
+      "Thi Nại Am",
+      "La Quán Trung",
+      "Ngô Thừa Ân",
+      "Tào Tuyết Cần"
+    ],
+    "answer": 1,
+    "fact": "Tam Quốc Diễn Nghĩa là một trong Tứ đại danh tác của văn học cổ điển Trung Hoa, viết vào thế kỷ 14.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 50,
+    "question": "Tác phẩm nào được coi là bản 'Tuyên ngôn độc lập đầu tiên' của dân tộc Việt Nam?",
+    "options": [
+      "Bình Ngô đại cáo",
+      "Nam quốc sơn hà",
+      "Hịch tướng sĩ",
+      "Chiếu dời đô"
+    ],
+    "answer": 1,
+    "fact": "Bài thơ thần 'Nam quốc sơn hà' vang lên bên bờ sông Như Nguyệt năm 1077 khẳng định chủ quyền lãnh thổ thiêng liêng.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 51,
+    "question": "Bài thơ 'Tây Tiến' nổi tiếng của nhà thơ nào?",
+    "options": [
+      "Quang Dũng",
+      "Huy Cận",
+      "Xuân Diệu",
+      "Tố Hữu"
+    ],
+    "answer": 0,
+    "fact": "Quang Dũng viết Tây Tiến năm 1948 tại làng Phù Lưu Chanh khi nhớ về đơn vị cũ hành quân nơi núi rừng miền Tây.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 52,
+    "question": "Ai là tác giả của truyện cổ tích 'Nàng Bạch Tuyết và bảy chú lùn'?",
+    "options": [
+      "Anh em nhà Grimm",
+      "Andersen",
+      "Perrault",
+      "Aesop"
+    ],
+    "answer": 0,
+    "fact": "Hai anh em Jacob và Wilhelm Grimm người Đức đã dày công sưu tầm và xuất bản tuyển tập truyện cổ tích Grimm năm 1812.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 53,
+    "question": "Số nguyên tố chẵn duy nhất là số nào?",
+    "options": [
+      "0",
+      "2",
+      "4",
+      "6"
+    ],
+    "answer": 1,
+    "fact": "Số 2 là số nguyên tố duy nhất có tính chẵn và cũng là số nguyên tố nhỏ nhất trong toán học.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 54,
+    "question": "Kết quả của phép tính: 15 x 6 bằng bao nhiêu?",
+    "options": [
+      "80",
+      "90",
+      "85",
+      "95"
+    ],
+    "answer": 1,
+    "fact": "Mẹo nhẩm: lấy 15 x 2 = 30, sau đó nhân tiếp với 3 được 90 cực nhanh.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 55,
+    "question": "Một ngày có tất cả bao nhiêu phút?",
+    "options": [
+      "1.200 phút",
+      "1.440 phút",
+      "1.400 phút",
+      "1.500 phút"
+    ],
+    "answer": 1,
+    "fact": "Một ngày có 24 giờ, mỗi giờ 60 phút: 24 x 60 = 1.440 phút (tương đương 86.400 giây).",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 56,
+    "question": "Căn bậc hai của 144 bằng bao nhiêu?",
+    "options": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
+    "answer": 1,
+    "fact": "12 x 12 = 144. Trong đời sống, 144 còn được gọi là 1 gốt (gross - tá của tá).",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 57,
+    "question": "Phân số 3/4 đổi ra phần trăm là bao nhiêu?",
+    "options": [
+      "25%",
+      "50%",
+      "75%",
+      "80%"
+    ],
+    "answer": 2,
+    "fact": "3 chia 4 bằng 0.75, nhân với 100% ta được đúng 75%.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 58,
+    "question": "Tổng các góc trong một hình tam giác luôn bằng bao nhiêu độ?",
+    "options": [
+      "90 độ",
+      "180 độ",
+      "270 độ",
+      "360 độ"
+    ],
+    "answer": 1,
+    "fact": "Trong hình học Euclid phẳng, tổng 3 góc trong của mọi tam giác luôn bằng chính xác 180 độ.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 59,
+    "question": "Số tiếp theo trong dãy: 2, 4, 8, 16, ... là số nào?",
+    "options": [
+      "24",
+      "32",
+      "30",
+      "64"
+    ],
+    "answer": 1,
+    "fact": "Đây là cấp số nhân với công bội q = 2, mỗi số sau gấp đôi số liền trước.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 60,
+    "question": "Hình bát giác có bao nhiêu cạnh?",
+    "options": [
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "answer": 2,
+    "fact": "'Bát' trong tiếng Hán Việt nghĩa là 8, hình bát giác có 8 cạnh và 8 góc.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 61,
+    "question": "Số La Mã 'XL' biểu thị cho số nào?",
+    "options": [
+      "40",
+      "60",
+      "90",
+      "50"
+    ],
+    "answer": 0,
+    "fact": "L là 50, X là 10. Khi X đứng trước L nghĩa là lấy 50 trừ 10 bằng 40.",
+    "topic": "Toán nhẩm",
+    "level": 2
+  },
+  {
+    "id": 62,
+    "question": "Giá trị của 2 lũy thừa 10 (2^10) bằng bao nhiêu?",
+    "options": [
+      "512",
+      "1.000",
+      "1.024",
+      "2.048"
+    ],
+    "answer": 2,
+    "fact": "1.024 là con số quen thuộc trong công nghệ thông tin (1 Kilobyte = 1.024 bytes).",
+    "topic": "Toán nhẩm",
+    "level": 2
+  },
+  {
+    "id": 63,
+    "question": "Từ nào trong tiếng Anh có nghĩa là 'Thứ Tư'?",
+    "options": [
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "answer": 1,
+    "fact": "Wednesday bắt nguồn từ tiếng Anh cổ Wōdnesdæg, nghĩa là ngày của thần Woden (Odin trong thần thoại Bắc Âu).",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 64,
+    "question": "Quá khứ đơn của động từ 'go' là gì?",
+    "options": [
+      "Gone",
+      "Goed",
+      "Went",
+      "Going"
+    ],
+    "answer": 2,
+    "fact": "'Go' là động từ bất quy tắc cổ điển trong tiếng Anh: go - went - gone.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 65,
+    "question": "Từ trái nghĩa với 'Beautiful' (xinh đẹp) là gì?",
+    "options": [
+      "Pretty",
+      "Ugly",
+      "Smart",
+      "Cute"
+    ],
+    "answer": 1,
+    "fact": "'Ugly' có nghĩa là xấu xí, bắt nguồn từ tiếng Bắc Âu cổ 'uggligr' nghĩa là đáng sợ.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 66,
+    "question": "'Apple' dịch sang tiếng Việt là quả gì?",
+    "options": [
+      "Quả cam",
+      "Quả táo",
+      "Quả chuối",
+      "Quả lê"
+    ],
+    "answer": 1,
+    "fact": "Tục ngữ Anh có câu: 'An apple a day keeps the doctor away' (Mỗi ngày một quả táo giúp tránh xa bác sĩ).",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 67,
+    "question": "Số 'Twelve' trong tiếng Anh là số mấy?",
+    "options": [
+      "10",
+      "11",
+      "12",
+      "20"
+    ],
+    "answer": 2,
+    "fact": "Twelve là số 12. Trong văn hóa phương Tây, 12 là một con số tròn trịa (1 tá / dozen).",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 68,
+    "question": "Màu 'Purple' trong tiếng Việt là màu gì?",
+    "options": [
+      "Màu cam",
+      "Màu tím",
+      "Màu hồng",
+      "Màu nâu"
+    ],
+    "answer": 1,
+    "fact": "Thời xưa màu tím rất đắt đỏ vì phải chiết xuất từ hàng ngàn con ốc biển, nên là màu sắc của hoàng gia.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 69,
+    "question": "Đại từ nhân xưng ngôi thứ nhất số nhiều trong tiếng Anh là gì?",
+    "options": [
+      "They",
+      "He",
+      "We",
+      "You"
+    ],
+    "answer": 2,
+    "fact": "'We' dùng để chỉ 'chúng tôi' hoặc 'chúng ta', bao gồm cả người nói và người khác.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 70,
+    "question": "Từ 'Library' có nghĩa là nơi nào?",
+    "options": [
+      "Bệnh viện",
+      "Thư viện",
+      "Bảo tàng",
+      "Nhà hát"
+    ],
+    "answer": 1,
+    "fact": "'Library' bắt nguồn từ tiếng Latinh 'liber', nghĩa là cuốn sách.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 71,
+    "question": "Loài động vật có vú nào là loài duy nhất biết bay lượn thực sự?",
+    "options": [
+      "Sóc bay",
+      "Dơi",
+      "Chồn bay",
+      "Vượn cáo"
+    ],
+    "answer": 1,
+    "fact": "Dơi là loài thú duy nhất có cấu tạo chi trước biến thành cánh da giúp chúng bay lượn chủ động.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 72,
+    "question": "Mật ong tự nhiên để lâu có bị thiu hỏng không?",
+    "options": [
+      "Có, sau 6 tháng",
+      "Có, sau 1 năm",
+      "Gần như không bao giờ",
+      "Có, sau 2 năm"
+    ],
+    "answer": 2,
+    "fact": "Do hàm lượng đường rất cao và độ ẩm thấp, vi khuẩn không thể sống trong mật ong nguyên chất nên nó để được hàng ngàn năm.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 73,
+    "question": "Đèn tín hiệu giao thông gồm những màu nào?",
+    "options": [
+      "Đỏ - Vàng - Xanh lục",
+      "Đỏ - Cam - Xanh lam",
+      "Vàng - Trắng - Xanh",
+      "Đỏ - Tím - Xanh"
+    ],
+    "answer": 0,
+    "fact": "Hệ thống đèn giao thông hiện đại đầu tiên được lắp đặt tại London vào năm 1868 để điều tiết xe ngựa kéo.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 74,
+    "question": "Con người có bao nhiêu nhóm máu chính trong hệ ABO?",
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 2,
+    "fact": "Hệ nhóm máu ABO có 4 nhóm chính: A, B, AB và O do bác sĩ Karl Landsteiner tìm ra năm 1901.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 75,
+    "question": "Hoa sen được chọn là quốc hoa của quốc gia nào sau đây?",
+    "options": [
+      "Việt Nam và Ấn Độ",
+      "Thái Lan",
+      "Nhật Bản",
+      "Hàn Quốc"
+    ],
+    "answer": 0,
+    "fact": "Hoa sen tượng trưng cho sự thuần khiết, thanh cao, gần bùn mà chẳng hôi tanh mùi bùn.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 76,
+    "question": "Loài chim nào chạy nhanh nhất thế giới trên mặt đất?",
+    "options": [
+      "Chim đà điểu",
+      "Chim cánh cụt",
+      "Chim ưng",
+      "Gà lôi"
+    ],
+    "answer": 0,
+    "fact": "Đà điểu châu Phi có thể đạt tốc độ chạy lên tới 70 km/h nhờ đôi chân dài cực kỳ khỏe khoắn.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 77,
+    "question": "Môn võ cổ truyền Vovinam của Việt Nam còn có tên gọi khác là gì?",
+    "options": [
+      "Việt Võ Đạo",
+      "Bình Định Gia",
+      "Tân Khánh Bà Trà",
+      "Võ Thiếu Lâm"
+    ],
+    "answer": 0,
+    "fact": "Vovinam - Việt Võ Đạo do võ sư Nguyễn Lộc sáng lập vào năm 1938 tại Hà Nội.",
+    "topic": "Đời sống",
+    "level": 2
+  },
+  {
+    "id": 78,
+    "question": "Quốc phục truyền thống của phụ nữ Việt Nam là trang phục nào?",
+    "options": [
+      "Áo dài",
+      "Áo tứ thân",
+      "Áo bà ba",
+      "Áo yếm"
+    ],
+    "answer": 0,
+    "fact": "Chiếc áo dài tôn vinh nét đẹp kín đáo, duyên dáng và thướt tha của người phụ nữ Việt qua bao thế hệ.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 79,
+    "question": "Nhạc cụ nào sau đây chỉ có một dây duy nhất?",
+    "options": [
+      "Đàn nhị",
+      "Đàn bầu",
+      "Đàn tỳ bà",
+      "Đàn tranh"
+    ],
+    "answer": 1,
+    "fact": "Đàn bầu (Độc huyền cầm) là nhạc cụ độc đáo chỉ có 1 dây nhưng phát ra âm thanh luyến láy diệu kỳ nhờ cần đàn.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 80,
+    "question": "Quả gì được mệnh danh là 'Vua của các loại trái cây' ở Đông Nam Á?",
+    "options": [
+      "Măng cụt",
+      "Sầu riêng",
+      "Xoài cát",
+      "Chôm chôm"
+    ],
+    "answer": 1,
+    "fact": "Sầu riêng được tôn là vua trái cây bởi hương vị đậm đà độc nhất vô nhị, còn măng cụt được xem là hoàng hậu.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 81,
+    "question": "25 x 4 bằng bao nhiêu?",
+    "options": [
+      "80",
+      "100",
+      "120",
+      "90"
+    ],
+    "answer": 1,
+    "fact": "25 nhân 4 bằng tròn 100, một phép tính rất hay gặp.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 82,
+    "question": "100 chia cho 4 bằng bao nhiêu?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "15"
+    ],
+    "answer": 1,
+    "fact": "100 chia 4 được 25.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 83,
+    "question": "Số đối của số -15 là số nào?",
+    "options": [
+      "15",
+      "0",
+      "-15",
+      "1/15"
+    ],
+    "answer": 0,
+    "fact": "Hai số đối nhau có tổng bằng 0.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 84,
+    "question": "Hình vuông có cạnh 5cm thì diện tích bằng bao nhiêu cm²?",
+    "options": [
+      "20",
+      "25",
+      "30",
+      "15"
+    ],
+    "answer": 1,
+    "fact": "Diện tích hình vuông = cạnh x cạnh = 5 x 5 = 25 cm².",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 85,
+    "question": "Hình tròn có bao nhiêu đỉnh?",
+    "options": [
+      "0",
+      "1",
+      "Vô số",
+      "4"
+    ],
+    "answer": 0,
+    "fact": "Hình tròn là một đường cong khép kín hoàn hảo, không có đỉnh.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 86,
+    "question": "Góc vuông có số đo bằng bao nhiêu độ?",
+    "options": [
+      "45 độ",
+      "90 độ",
+      "180 độ",
+      "60 độ"
+    ],
+    "answer": 1,
+    "fact": "Góc vuông có số đo chính xác bằng 90 độ.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 87,
+    "question": "Số nhỏ nhất có 3 chữ số là số nào?",
+    "options": [
+      "100",
+      "101",
+      "999",
+      "111"
+    ],
+    "answer": 0,
+    "fact": "Số 100 là số tự nhiên nhỏ nhất có ba chữ số.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 88,
+    "question": "Số lớn nhất có 2 chữ số là số nào?",
+    "options": [
+      "90",
+      "98",
+      "99",
+      "100"
+    ],
+    "answer": 2,
+    "fact": "Số 99 là số lớn nhất có hai chữ số.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 89,
+    "question": "Một năm nhuận có bao nhiêu ngày?",
+    "options": [
+      "365 ngày",
+      "366 ngày",
+      "364 ngày",
+      "367 ngày"
+    ],
+    "answer": 1,
+    "fact": "Năm nhuận có thêm ngày 29 tháng 2 nên có 366 ngày.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 90,
+    "question": "Một thế kỷ tương đương bao nhiêu năm?",
+    "options": [
+      "50 năm",
+      "100 năm",
+      "500 năm",
+      "1.000 năm"
+    ],
+    "answer": 1,
+    "fact": "Một thế kỷ là khoảng thời gian kéo dài đúng 100 năm.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 91,
+    "question": "7 nhân 8 bằng bao nhiêu?",
+    "options": [
+      "54",
+      "56",
+      "58",
+      "64"
+    ],
+    "answer": 1,
+    "fact": "Trong bảng cửu chương 7: 7 x 8 = 56.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 92,
+    "question": "9 nhân 9 bằng bao nhiêu?",
+    "options": [
+      "72",
+      "81",
+      "90",
+      "89"
+    ],
+    "answer": 1,
+    "fact": "9 nhân 9 bằng 81.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 93,
+    "question": "125 x 8 bằng bao nhiêu?",
+    "options": [
+      "900",
+      "1.000",
+      "1.200",
+      "1.050"
+    ],
+    "answer": 1,
+    "fact": "125 x 8 = 1.000, đây là cặp số đẹp thường dùng để tính nhanh.",
+    "topic": "Toán nhẩm",
+    "level": 2
+  },
+  {
+    "id": 94,
+    "question": "Số nào sau đây chia hết cho cả 2 và 5?",
+    "options": [
+      "25",
+      "32",
+      "50",
+      "45"
+    ],
+    "answer": 2,
+    "fact": "Số chia hết cho cả 2 và 5 luôn có chữ số tận cùng là 0.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 95,
+    "question": "Căn bậc hai của 81 là bao nhiêu?",
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "answer": 2,
+    "fact": "9 x 9 = 81 nên căn bậc hai số học của 81 là 9.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 96,
+    "question": "3 mũ 3 (3^3) bằng bao nhiêu?",
+    "options": [
+      "9",
+      "18",
+      "27",
+      "81"
+    ],
+    "answer": 2,
+    "fact": "3 x 3 x 3 = 27.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 97,
+    "question": "Hình hộp chữ nhật có bao nhiêu mặt?",
+    "options": [
+      "4 mặt",
+      "6 mặt",
+      "8 mặt",
+      "12 mặt"
+    ],
+    "answer": 1,
+    "fact": "Hình hộp chữ nhật có 6 mặt, 8 đỉnh và 12 cạnh.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 98,
+    "question": "Số pi (π) thường được lấy xấp xỉ là bao nhiêu?",
+    "options": [
+      "3.12",
+      "3.14",
+      "3.16",
+      "3.18"
+    ],
+    "answer": 1,
+    "fact": "Số pi xấp xỉ 3.14159, biểu thị tỉ số giữa chu vi và đường kính của một đường tròn.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 99,
+    "question": "Nếu một tam giác có một góc 90 độ thì gọi là tam giác gì?",
+    "options": [
+      "Tam giác đều",
+      "Tam giác cân",
+      "Tam giác vuông",
+      "Tam giác tù"
+    ],
+    "answer": 2,
+    "fact": "Tam giác có một góc vuông được gọi là tam giác vuông.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 100,
+    "question": "Số tự nhiên nhỏ nhất là số nào?",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "Không xác định"
+    ],
+    "answer": 0,
+    "fact": "Tập hợp số tự nhiên N bắt đầu từ số 0.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 101,
+    "question": "Từ nào nghĩa là 'Mặt Trời' trong tiếng Anh?",
+    "options": [
+      "Moon",
+      "Sun",
+      "Star",
+      "Cloud"
+    ],
+    "answer": 1,
+    "fact": "'Sun' nghĩa là Mặt Trời, nguồn sáng và năng lượng chính của Trái Đất.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 102,
+    "question": "Từ nào nghĩa là 'Mặt Trăng' trong tiếng Anh?",
+    "options": [
+      "Sun",
+      "Moon",
+      "Sky",
+      "Earth"
+    ],
+    "answer": 1,
+    "fact": "'Moon' nghĩa là Mặt Trăng, vệ tinh tự nhiên duy nhất của Trái Đất.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 103,
+    "question": "Động từ 'Eat' có nghĩa là gì?",
+    "options": [
+      "Uống",
+      "Ăn",
+      "Ngủ",
+      "Đi"
+    ],
+    "answer": 1,
+    "fact": "'Eat' là ăn uống thức ăn rắn.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 104,
+    "question": "Động từ 'Drink' có nghĩa là gì?",
+    "options": [
+      "Ăn",
+      "Uống",
+      "Nói",
+      "Hát"
+    ],
+    "answer": 1,
+    "fact": "'Drink' có nghĩa là uống nước hoặc chất lỏng.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 105,
+    "question": "Từ nào là 'Màu vàng' trong tiếng Anh?",
+    "options": [
+      "Red",
+      "Blue",
+      "Yellow",
+      "Green"
+    ],
+    "answer": 2,
+    "fact": "'Yellow' là màu vàng, màu của hoa cúc và quả chuối chín.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 106,
+    "question": "Từ nào là 'Màu đỏ' trong tiếng Anh?",
+    "options": [
+      "Red",
+      "Pink",
+      "White",
+      "Black"
+    ],
+    "answer": 0,
+    "fact": "'Red' là màu đỏ, màu của tình yêu và sự nhiệt huyết.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 107,
+    "question": "Từ nào là 'Màu xanh lá cây' trong tiếng Anh?",
+    "options": [
+      "Blue",
+      "Green",
+      "Orange",
+      "Brown"
+    ],
+    "answer": 1,
+    "fact": "'Green' là màu xanh lá cây tượng trưng cho thiên nhiên.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 108,
+    "question": "Tháng đầu tiên trong năm bằng tiếng Anh là gì?",
+    "options": [
+      "January",
+      "February",
+      "March",
+      "December"
+    ],
+    "answer": 0,
+    "fact": "January (tháng 1) được đặt theo tên thần Janus trong thần thoại La Mã.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 109,
+    "question": "Tháng cuối cùng trong năm bằng tiếng Anh là gì?",
+    "options": [
+      "October",
+      "November",
+      "December",
+      "January"
+    ],
+    "answer": 2,
+    "fact": "December (tháng 12) là tháng mùa đông và lễ Giáng Sinh.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 110,
+    "question": "Từ 'Teacher' có nghĩa là nghề gì?",
+    "options": [
+      "Bác sĩ",
+      "Giáo viên",
+      "Kỹ sư",
+      "Công an"
+    ],
+    "answer": 1,
+    "fact": "'Teacher' là người thầy cô giáo truyền đạt tri thức.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 111,
+    "question": "Từ 'Doctor' có nghĩa là nghề gì?",
+    "options": [
+      "Bác sĩ",
+      "Nông dân",
+      "Luật sư",
+      "Họa sĩ"
+    ],
+    "answer": 0,
+    "fact": "'Doctor' là bác sĩ khám chữa bệnh cho mọi người.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 112,
+    "question": "Số 'Twenty' là số mấy?",
+    "options": [
+      "12",
+      "20",
+      "22",
+      "30"
+    ],
+    "answer": 1,
+    "fact": "Twenty là số 20.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 113,
+    "question": "Số 'Fifty' là số mấy?",
+    "options": [
+      "15",
+      "50",
+      "55",
+      "5"
+    ],
+    "answer": 1,
+    "fact": "Fifty là số 50.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 114,
+    "question": "Từ nào nghĩa là 'Gia đình'?",
+    "options": [
+      "School",
+      "Friend",
+      "Family",
+      "House"
+    ],
+    "answer": 2,
+    "fact": "'Family' là gia đình thiêng liêng và ấm áp của mỗi chúng ta.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 115,
+    "question": "Dạng so sánh hơn của từ 'Good' là gì?",
+    "options": [
+      "Gooder",
+      "Better",
+      "Best",
+      "More good"
+    ],
+    "answer": 1,
+    "fact": "'Good' chuyển sang so sánh hơn là 'Better', so sánh nhất là 'Best'.",
+    "topic": "Tiếng Anh",
+    "level": 2
+  },
+  {
+    "id": 116,
+    "question": "Dạng quá khứ của động từ 'Buy' (mua) là gì?",
+    "options": [
+      "Buyed",
+      "Bought",
+      "Brought",
+      "Buying"
+    ],
+    "answer": 1,
+    "fact": "'Buy' có dạng quá khứ là 'Bought'.",
+    "topic": "Tiếng Anh",
+    "level": 2
+  },
+  {
+    "id": 117,
+    "question": "Từ 'Always' có nghĩa là gì?",
+    "options": [
+      "Thỉnh thoảng",
+      "Hiếm khi",
+      "Luôn luôn",
+      "Không bao giờ"
+    ],
+    "answer": 2,
+    "fact": "'Always' chỉ tần suất 100% (luôn luôn).",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 118,
+    "question": "Từ 'Never' có nghĩa là gì?",
+    "options": [
+      "Thường xuyên",
+      "Đôi khi",
+      "Không bao giờ",
+      "Luôn luôn"
+    ],
+    "answer": 2,
+    "fact": "'Never' mang nghĩa là không bao giờ.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 119,
+    "question": "Từ 'Water' dịch ra tiếng Việt là gì?",
+    "options": [
+      "Nước",
+      "Lửa",
+      "Đất",
+      "Gió"
+    ],
+    "answer": 0,
+    "fact": "'Water' là nước, nguồn sống thiết yếu của mọi sinh vật.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 120,
+    "question": "Từ 'Friend' có nghĩa là gì?",
+    "options": [
+      "Kẻ thù",
+      "Bạn bè",
+      "Hàng xóm",
+      "Đồng nghiệp"
+    ],
+    "answer": 1,
+    "fact": "'Friend' nghĩa là người bạn thân thiết.",
+    "topic": "Tiếng Anh",
+    "level": 1
+  },
+  {
+    "id": 121,
+    "question": "Tỉnh nào có diện tích lớn nhất Việt Nam hiện nay?",
+    "options": [
+      "Nghệ An",
+      "Thanh Hóa",
+      "Gia Lai",
+      "Đắk Lắk"
+    ],
+    "answer": 0,
+    "fact": "Nghệ An là tỉnh rộng nhất nước ta với diện tích khoảng 16.490 km².",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 122,
+    "question": "Thành phố nào trực thuộc trung ương ở vùng Tây Nam Bộ?",
+    "options": [
+      "Cần Thơ",
+      "Cà Mau",
+      "Kiên Giang",
+      "An Giang"
+    ],
+    "answer": 0,
+    "fact": "Cần Thơ là thành phố trực thuộc trung ương duy nhất ở Đồng bằng sông Cửu Long.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 123,
+    "question": "Thủ đô của nước Pháp là thành phố nào?",
+    "options": [
+      "Berlin",
+      "London",
+      "Paris",
+      "Madrid"
+    ],
+    "answer": 2,
+    "fact": "Paris được mệnh danh là Kinh đô Ánh sáng, nổi tiếng với tháp Eiffel và bảo tàng Louvre.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 124,
+    "question": "Thủ đô của nước Anh (Vương quốc Anh) là gì?",
+    "options": [
+      "Manchester",
+      "Liverpool",
+      "London",
+      "Edinburgh"
+    ],
+    "answer": 2,
+    "fact": "London nằm bên bờ sông Thames thơ mộng, là trung tâm tài chính và văn hóa lớn thế giới.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 125,
+    "question": "Dãy núi nào cao nhất thế giới?",
+    "options": [
+      "Andes",
+      "Alps",
+      "Himalaya",
+      "Rocky"
+    ],
+    "answer": 2,
+    "fact": "Dãy Himalaya chứa đỉnh Everest cao nhất thế giới (8.848m) nằm giữa Nepal và Tây Tạng.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 126,
+    "question": "Sông nào dài nhất Việt Nam (chảy hoàn toàn trong lãnh thổ VN)?",
+    "options": [
+      "Sông Hồng",
+      "Sông Đồng Nai",
+      "Sông Thái Bình",
+      "Sông Mã"
+    ],
+    "answer": 1,
+    "fact": "Sông Đồng Nai là sông nội địa dài nhất Việt Nam với chiều dài 586 km.",
+    "topic": "Địa lý",
+    "level": 2
+  },
+  {
+    "id": 127,
+    "question": "Đèo nào nối liền tỉnh Thừa Thiên Huế và thành phố Đà Nẵng?",
+    "options": [
+      "Đèo Hải Vân",
+      "Đèo Ngang",
+      "Đèo Cù Mông",
+      "Đèo Cả"
+    ],
+    "answer": 0,
+    "fact": "Đèo Hải Vân được vua Lê Thánh Tông xưng tụng là 'Thiên hạ đệ nhất hùng quan'.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 128,
+    "question": "Châu lục nào có dân số đông nhất thế giới?",
+    "options": [
+      "Châu Phi",
+      "Châu Âu",
+      "Châu Á",
+      "Châu Mỹ"
+    ],
+    "answer": 2,
+    "fact": "Châu Á có hơn 4.7 tỷ người, chiếm khoảng 60% dân số toàn cầu.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 129,
+    "question": "Nước nào có hình dạng bản đồ giống hình chiếc ủng?",
+    "options": [
+      "Hy Lạp",
+      "Ý (Italy)",
+      "Tây Ban Nha",
+      "Bồ Đào Nha"
+    ],
+    "answer": 1,
+    "fact": "Bán đảo Ý vươn ra Địa Trung Hải có hình dáng giống hệt một chiếc ủng cao cổ.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 130,
+    "question": "Cố đô của Nhật Bản nổi tiếng với nhiều ngôi chùa cổ tên là gì?",
+    "options": [
+      "Tokyo",
+      "Kyoto",
+      "Osaka",
+      "Hiroshima"
+    ],
+    "answer": 1,
+    "fact": "Kyoto từng là thủ đô của Nhật Bản trong hơn một thiên niên kỷ (794 - 1868).",
+    "topic": "Địa lý",
+    "level": 2
+  },
+  {
+    "id": 131,
+    "question": "Đồng bằng nào lớn nhất nước ta?",
+    "options": [
+      "Đồng bằng sông Hồng",
+      "Đồng bằng sông Cửu Long",
+      "Đồng bằng duyên hải miền Trung",
+      "Đồng bằng Thanh Nghệ"
+    ],
+    "answer": 1,
+    "fact": "Đồng bằng sông Cửu Long có diện tích gần 40.000 km², là vựa lúa lớn nhất cả nước.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 132,
+    "question": "Mũi Cà Mau thuộc tỉnh nào?",
+    "options": [
+      "Bạc Liêu",
+      "Kiên Giang",
+      "Cà Mau",
+      "Sóc Trăng"
+    ],
+    "answer": 2,
+    "fact": "Mũi Cà Mau là điểm cực Nam trên đất liền của Tổ quốc.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 133,
+    "question": "Quần đảo Trường Sa và Hoàng Sa thuộc chủ quyền của nước nào?",
+    "options": [
+      "Việt Nam",
+      "Philippines",
+      "Malaysia",
+      "Brunei"
+    ],
+    "answer": 0,
+    "fact": "Hoàng Sa và Trường Sa là phần lãnh thổ thiêng liêng không thể tách rời của Tổ quốc Việt Nam.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 134,
+    "question": "Thành phố Đà Lạt thuộc tỉnh nào của vùng Tây Nguyên?",
+    "options": [
+      "Lâm Đồng",
+      "Đắk Nông",
+      "Kon Tum",
+      "Gia Lai"
+    ],
+    "answer": 0,
+    "fact": "Đà Lạt nằm trên cao nguyên Lâm Viên, khí hậu mát mẻ quanh năm và ngàn hoa khoe sắc.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 135,
+    "question": "Cực Đông trên đất liền của Việt Nam nằm ở tỉnh nào?",
+    "options": [
+      "Khánh Hòa",
+      "Bình Định",
+      "Phú Yên",
+      "Ninh Thuận"
+    ],
+    "answer": 0,
+    "fact": "Mũi Đôi (bán đảo Hòn Gốm, Vạn Ninh, Khánh Hòa) là điểm đón ánh bình minh đầu tiên trên đất liền.",
+    "topic": "Địa lý",
+    "level": 2
+  },
+  {
+    "id": 136,
+    "question": "Ai là tác giả bản 'Bình Ngô Đại Cáo' bất hủ?",
+    "options": [
+      "Nguyễn Trãi",
+      "Lê Lợi",
+      "Ngô Sĩ Liên",
+      "Trần Hưng Đạo"
+    ],
+    "answer": 0,
+    "fact": "Nguyễn Trãi thừa lệnh vua Lê Thái Tổ soạn Bình Ngô Đại Cáo tuyên bố độc lập năm 1428.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 137,
+    "question": "Nhà nước đầu tiên trong lịch sử dân tộc Việt Nam có tên là gì?",
+    "options": [
+      "Âu Lạc",
+      "Văn Lang",
+      "Vạn Xuân",
+      "Đại Việt"
+    ],
+    "answer": 1,
+    "fact": "Nhà nước Văn Lang do các Vua Hùng dựng nên, đóng đô ở Phong Châu (Phú Thọ).",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 138,
+    "question": "Năm 1911, Bác Hồ ra đi tìm đường cứu nước từ bến cảng nào?",
+    "options": [
+      "Cảng Hải Phòng",
+      "Bến Nhà Rồng",
+      "Cảng Đà Nẵng",
+      "Cảng Quy Nhơn"
+    ],
+    "answer": 1,
+    "fact": "Ngày 5/6/1911, người thanh niên Nguyễn Tất Thành rời bến cảng Nhà Rồng trên con tàu Đô đốc Latouche-Tréville.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 139,
+    "question": "Vị vua cuối cùng của triều đại phong kiến Việt Nam là ai?",
+    "options": [
+      "Vua Khải Định",
+      "Vua Bảo Đại",
+      "Vua Minh Mạng",
+      "Vua Tự Đức"
+    ],
+    "answer": 1,
+    "fact": "Vua Bảo Đại thoái vị vào tháng 8 năm 1945, chấm dứt chế độ quân chủ phong kiến tại Việt Nam.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 140,
+    "question": "Chiến thắng 'Hà Nội - Điện Biên Phủ trên không' diễn ra vào năm nào?",
+    "options": [
+      "1968",
+      "1972",
+      "1973",
+      "1975"
+    ],
+    "answer": 1,
+    "fact": "Trong 12 ngày đêm cuối năm 1972, quân dân Hà Nội đã bắn rơi hàng chục pháo đài bay B-52 của Mỹ.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 141,
+    "question": "Ai là người cắm cờ giải phóng trên nóc Dinh Độc Lập trưa ngày 30/4/1975?",
+    "options": [
+      "Bùi Quang Thận",
+      "Vũ Đăng Toàn",
+      "Phạm Xuân Thệ",
+      "Nguyễn Thành Trung"
+    ],
+    "answer": 0,
+    "fact": "Trung úy Bùi Quang Thận, Đại đội trưởng Đại đội 4 xe tăng, đã cắm lá cờ chiến thắng lịch sử.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 142,
+    "question": "Lý Bí xưng là Lý Nam Đế và đặt tên nước là gì vào năm 544?",
+    "options": [
+      "Đại Việt",
+      "Vạn Xuân",
+      "Đại Cồ Việt",
+      "Đại Ngu"
+    ],
+    "answer": 1,
+    "fact": "Vạn Xuân mang ý nghĩa mong đất nước trường tồn, bình yên và tươi đẹp như vạn mùa xuân.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 143,
+    "question": "Trần Quốc Toản bóp nát quả cam vì điều gì?",
+    "options": [
+      "Đói bụng",
+      "Tức giận vì không được dự bàn việc nước",
+      "Vui mừng",
+      "Bị trừng phạt"
+    ],
+    "answer": 1,
+    "fact": "Vì còn nhỏ tuổi không được vào dự hội nghị Bình Than, Trần Quốc Toản căm giận bóp nát quả cam lúc nào không hay.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 144,
+    "question": "Cuộc khởi nghĩa Hai Bà Trưng nổ ra vào năm nào?",
+    "options": [
+      "Năm 40",
+      "Năm 938",
+      "Năm 248",
+      "Năm 544"
+    ],
+    "answer": 0,
+    "fact": "Năm 40 sau Công nguyên, Trưng Trắc cùng em là Trưng Nhị phất cờ khởi nghĩa đền nợ nước, trả thù nhà.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 145,
+    "question": "Thành Cổ Loa có hình dạng kiến trúc đặc biệt như thế nào?",
+    "options": [
+      "Hình tròn 1 lớp",
+      "Hình xoáy trôn ốc 9 vòng",
+      "Hình vuông",
+      "Hình bát quái"
+    ],
+    "answer": 1,
+    "fact": "Thành Cổ Loa do An Dương Vương xây dựng có cấu trúc xoáy hình trôn ốc độc nhất vô nhị.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 146,
+    "question": "Trận chiến trên sông Như Nguyệt năm 1077 do danh tướng nào chỉ huy?",
+    "options": [
+      "Lý Thường Kiệt",
+      "Trần Hưng Đạo",
+      "Ngô Quyền",
+      "Lê Hoàn"
+    ],
+    "answer": 0,
+    "fact": "Thái úy Lý Thường Kiệt đã chặn đứng 10 vạn quân xâm lược Tống bên dòng sông Cầu (Như Nguyệt).",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 147,
+    "question": "Bác Hồ sinh ngày tháng năm nào?",
+    "options": [
+      "19/05/1890",
+      "02/09/1945",
+      "19/05/1900",
+      "03/02/1930"
+    ],
+    "answer": 0,
+    "fact": "Chủ tịch Hồ Chí Minh sinh ngày 19 tháng 5 năm 1890 tại làng Kim Liên, Nam Đàn, Nghệ An.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 148,
+    "question": "Đảng Cộng sản Việt Nam được thành lập vào ngày tháng năm nào?",
+    "options": [
+      "03/02/1930",
+      "19/08/1945",
+      "02/09/1945",
+      "30/04/1975"
+    ],
+    "answer": 0,
+    "fact": "Hội nghị hợp nhất các tổ chức cộng sản do Nguyễn Ái Quốc chủ trì diễn ra tại Cửu Long (Hương Cảng).",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 149,
+    "question": "Chiến thắng Ngọc Hồi - Đống Đa diễn ra vào mùa xuân năm Kỷ Dậu nào?",
+    "options": [
+      "1788",
+      "1789",
+      "1790",
+      "1802"
+    ],
+    "answer": 1,
+    "fact": "Vua Quang Trung tiến quân thần tốc quét sạch quân Thanh trong dịp Tết Kỷ Dậu 1789.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 150,
+    "question": "Trận Đống Đa lịch sử gắn liền với loài cây nào thiêu rụi đồn giặc?",
+    "options": [
+      "Rơm rạ",
+      "Bùi nhùi rơm cuốn rơm",
+      "Củi lửa",
+      "Dầu hỏa"
+    ],
+    "answer": 1,
+    "fact": "Nghĩa quân Tây Sơn dùng rơm bện thành con rồng lửa xông lên thiêu cháy đồn trại quân xâm lược.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 151,
+    "question": "Mặt Trời mọc ở hướng nào và lặn ở hướng nào?",
+    "options": [
+      "Đông sang Tây",
+      "Tây sang Đông",
+      "Bắc sang Nam",
+      "Nam sang Bắc"
+    ],
+    "answer": 0,
+    "fact": "Do Trái Đất tự quay từ Tây sang Đông quanh trục, nên ta thấy Mặt Trời mọc ở phía Đông và lặn ở phía Tây.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 152,
+    "question": "Cơ quan nào trong cơ thể người lọc máu tạo ra nước tiểu?",
+    "options": [
+      "Gan",
+      "Thận",
+      "Tim",
+      "Phổi"
+    ],
+    "answer": 1,
+    "fact": "Hai quả thận lọc khoảng 180 lít dịch máu mỗi ngày để bài tiết chất cặn bã qua nước tiểu.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 153,
+    "question": "Động vật biến nhiệt (máu lạnh) gồm những nhóm nào sau đây?",
+    "options": [
+      "Bò sát và lưỡng cư",
+      "Chim và thú",
+      "Chó và mèo",
+      "Khỉ và cá heo"
+    ],
+    "answer": 0,
+    "fact": "Nhiệt độ cơ thể động vật biến nhiệt thay đổi linh hoạt theo nhiệt độ của môi trường sống.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 154,
+    "question": "Trong cơ thể người, xương nào dài và khỏe nhất?",
+    "options": [
+      "Xương cánh tay",
+      "Xương đùi",
+      "Xương sống",
+      "Xương sườn"
+    ],
+    "answer": 1,
+    "fact": "Xương đùi có thể chịu được tải trọng gấp nhiều lần trọng lượng cơ thể người khi chạy nhảy.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 155,
+    "question": "Chất nào giúp xương và răng chắc khỏe?",
+    "options": [
+      "Sắt",
+      "Canxi",
+      "Kẽm",
+      "Natri"
+    ],
+    "answer": 1,
+    "fact": "99% lượng Canxi trong cơ thể con người nằm tập trung ở xương và răng.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 156,
+    "question": "Vitamin nào được cơ thể tự tổng hợp khi da tiếp xúc ánh nắng mặt trời?",
+    "options": [
+      "Vitamin A",
+      "Vitamin C",
+      "Vitamin D",
+      "Vitamin B12"
+    ],
+    "answer": 2,
+    "fact": "Vitamin D giúp ruột hấp thụ canxi, bảo vệ hệ xương khớp phát triển toàn diện.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 157,
+    "question": "Hiện tượng nhật thực xảy ra khi thiên thể nào nằm ở giữa?",
+    "options": [
+      "Mặt Trăng",
+      "Trái Đất",
+      "Sao Kim",
+      "Sao Hỏa"
+    ],
+    "answer": 0,
+    "fact": "Khi Mặt Trăng đi qua giữa Trái Đất và Mặt Trời, bóng của nó che khuất ánh sáng mặt trời tới Trái Đất.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 158,
+    "question": "Hiện tượng nguyệt thực xảy ra khi thiên thể nào nằm ở giữa?",
+    "options": [
+      "Mặt Trời",
+      "Mặt Trăng",
+      "Trái Đất",
+      "Sao Mộc"
+    ],
+    "answer": 2,
+    "fact": "Nguyệt thực diễn ra khi Trái Đất nằm giữa Mặt Trời và Mặt Trăng, che khuất ánh sáng tới Mặt Trăng.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 159,
+    "question": "Khí nào cần thiết cho quá trình hô hấp của con người và động vật?",
+    "options": [
+      "Nitơ",
+      "Oxy (O2)",
+      "Cacbonic",
+      "Khí gas"
+    ],
+    "answer": 1,
+    "fact": "Khí Oxy được hồng cầu vận chuyển từ phổi đến từng tế bào trong cơ thể để tạo năng lượng sống.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 160,
+    "question": "Băng tinh khiết nổi trên mặt nước lỏng vì lý do gì?",
+    "options": [
+      "Khối lượng riêng nhỏ hơn",
+      "Nặng hơn nước",
+      "Có bọt khí",
+      "Do gió thổi"
+    ],
+    "answer": 0,
+    "fact": "Nước nở ra khi đóng băng dưới 4°C, làm giảm khối lượng riêng nên băng nổi trên nước lỏng.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 161,
+    "question": "Thiết bị nào chuyển đổi quang năng thành điện năng?",
+    "options": [
+      "Pin mặt trời",
+      "Máy phát điện",
+      "Tuabin gió",
+      "Động cơ hơi nước"
+    ],
+    "answer": 0,
+    "fact": "Tế bào quang điện (Solar cell) sử dụng hiệu ứng quang điện để tạo ra dòng điện từ ánh sáng.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 162,
+    "question": "Kim loại quý nào có tính trơ hóa học cao, không bị gỉ sét?",
+    "options": [
+      "Sắt",
+      "Vàng",
+      "Đồng",
+      "Kẽm"
+    ],
+    "answer": 1,
+    "fact": "Vàng không bị oxy hóa trong không khí hay nước, luôn giữ được vẻ sáng lấp lánh qua hàng thiên niên kỷ.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 163,
+    "question": "Khí gây ra hiệu ứng nhà kính chủ yếu nhất hiện nay là gì?",
+    "options": [
+      "Oxy",
+      "CO2 (Cacbonic)",
+      "Nitơ",
+      "Argon"
+    ],
+    "answer": 1,
+    "fact": "Khí CO2 từ việc đốt nhiên liệu hóa thạch giữ nhiệt trong khí quyển, làm Trái Đất nóng lên.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 164,
+    "question": "Áp suất khí quyển đo bằng dụng cụ nào?",
+    "options": [
+      "Nhiệt kế",
+      "Áp kế",
+      "Ẩm kế",
+      "Tốc kế"
+    ],
+    "answer": 1,
+    "fact": "Áp kế thủy ngân do nhà khoa học Evangelista Torricelli phát minh năm 1643.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 165,
+    "question": "Nam châm luôn có hai cực nào?",
+    "options": [
+      "Cực Đông và Tây",
+      "Cực Bắc và Nam",
+      "Cực Âm và Dương",
+      "Cực Lớn và Nhỏ"
+    ],
+    "answer": 1,
+    "fact": "Hai cực cùng tên đẩy nhau, hai cực khác tên hút nhau.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 166,
+    "question": "Nhân vật Chí Phèo trong truyện ngắn của Nam Cao ước ao điều gì?",
+    "options": [
+      "Giàu có",
+      "Làm quan",
+      "Làm người lương thiện",
+      "Đi chu du thiên hạ"
+    ],
+    "answer": 2,
+    "fact": "Câu nói xé lòng của Chí Phèo: 'Ai cho tao lương thiện?' thể hiện bi kịch bị cự tuyệt quyền làm người.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 167,
+    "question": "Ai là tác giả của truyện cổ tích 'Tấm Cám'?",
+    "options": [
+      "Dân gian Việt Nam",
+      "Nguyễn Dữ",
+      "Tô Hoài",
+      "Nguyễn Huy Tưởng"
+    ],
+    "answer": 0,
+    "fact": "Tấm Cám là truyện cổ tích dân gian tiêu biểu cho ước mơ cái thiện luôn chiến thắng cái ác.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 168,
+    "question": "Bài ca dao 'Thân em như tấm lụa đào' nói về thân phận của ai?",
+    "options": [
+      "Người nông dân",
+      "Người phụ nữ xưa",
+      "Người lính",
+      "Thầy đồ nghèo"
+    ],
+    "answer": 1,
+    "fact": "Bài ca dao diễn tả thân phận bấp bênh, phụ thuộc của người phụ nữ trong xã hội phong kiến xưa.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 169,
+    "question": "Truyện ngụ ngôn 'Thầy bói xem voi' khuyên răn chúng ta điều gì?",
+    "options": [
+      "Phải nhìn nhận sự việc toàn diện",
+      "Chăm chỉ làm việc",
+      "Tiết kiệm tiền bạc",
+      "Không nói dối"
+    ],
+    "answer": 0,
+    "fact": "Mỗi thầy chỉ sờ một bộ phận rồi phán cả con voi, nhắc nhở ta tránh thói phiến diện, hồ đồ.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 170,
+    "question": "Tác giả của bài thơ 'Đoàn thuyền đánh cá' là ai?",
+    "options": [
+      "Huy Cận",
+      "Xuân Diệu",
+      "Chế Lan Viên",
+      "Hàn Mặc Tử"
+    ],
+    "answer": 0,
+    "fact": "Huy Cận viết 'Đoàn thuyền đánh cá' năm 1958 trong chuyến đi thực tế tại vùng biển Quảng Ninh.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 171,
+    "question": "Ai là tác giả bài thơ 'Sóng' được học trong chương trình Ngữ văn 12?",
+    "options": [
+      "Xuân Quỳnh",
+      "Anh Thơ",
+      "Lâm Thị Mỹ Dạ",
+      "Phan Thị Thanh Nhàn"
+    ],
+    "answer": 0,
+    "fact": "Xuân Quỳnh viết bài thơ 'Sóng' năm 1967 tại vùng biển Diêm Điền (Thái Bình).",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 172,
+    "question": "Vở kịch 'Hồn Trương Ba, da hàng thịt' do ai sáng tác?",
+    "options": [
+      "Lưu Quang Vũ",
+      "Xuân Trình",
+      "Đào Hồng Cẩm",
+      "Tào Mạt"
+    ],
+    "answer": 0,
+    "fact": "Lưu Quang Vũ đặt ra vấn đề triết lý sâu sắc: con người phải được sống là chính mình toàn vẹn.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 173,
+    "question": "Nhân vật Thúy Kiều mang họ gì trong 'Truyện Kiều' của Nguyễn Du?",
+    "options": [
+      "Họ Nguyễn",
+      "Họ Trần",
+      "Họ Vương",
+      "Họ Lê"
+    ],
+    "answer": 2,
+    "fact": "Gia đình Kiều mang họ Vương: Vương Thúy Kiều, Vương Thúy Vân và người em trai Vương Quan.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 174,
+    "question": "Thạch Sanh đã dùng vũ khí gì bắn rơi đại bàng cứu công chúa?",
+    "options": [
+      "Cung tên vàng",
+      "Cung tên thần",
+      "Súng thần công",
+      "Gươm báu"
+    ],
+    "answer": 1,
+    "fact": "Thạch Sanh dùng cung tên thần bắn bị thương đại bàng rồi lần theo vết máu đến tận hang sâu.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 175,
+    "question": "Ai là tác giả của 'Lục Vân Tiên' - tác phẩm thơ Nôm nổi tiếng Nam Bộ?",
+    "options": [
+      "Nguyễn Đình Chiểu",
+      "Nguyễn Khuyến",
+      "Trần Tế Xương",
+      "Bùi Hữu Nghĩa"
+    ],
+    "answer": 0,
+    "fact": "Cụ đồ Nguyễn Đình Chiểu sáng tác Lục Vân Tiên để đề cao đạo lý làm người và lòng trung nghĩa.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 176,
+    "question": "Ai được mệnh danh là 'Ông hoàng thơ tình' Việt Nam?",
+    "options": [
+      "Xuân Diệu",
+      "Hàn Mặc Tử",
+      "Nguyễn Bính",
+      "Thế Lữ"
+    ],
+    "answer": 0,
+    "fact": "Xuân Diệu đem đến cho phong trào Thơ mới nguồn sống dạt dào, nồng nàn và tha thiết.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 177,
+    "question": "Bức tranh nàng 'Mona Lisa' nổi tiếng là kiệt tác của danh họa nào?",
+    "options": [
+      "Leonardo da Vinci",
+      "Pablo Picasso",
+      "Vincent van Gogh",
+      "Michelangelo"
+    ],
+    "answer": 0,
+    "fact": "Bức tranh nụ cười bí ẩn nàng Mona Lisa được Leonardo da Vinci vẽ vào thời kỳ Phục hưng Ý.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 178,
+    "question": "Nhà soạn nhạc thiên tài Ludwig van Beethoven là người nước nào?",
+    "options": [
+      "Nước Đức",
+      "Nước Áo",
+      "Nước Pháp",
+      "Nước Nga"
+    ],
+    "answer": 0,
+    "fact": "Beethoven sinh ra tại Bonn (Đức), sáng tác nhiều bản giao hưởng vĩ đại ngay cả khi đã bị điếc hoàn toàn.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 179,
+    "question": "Tập truyện cổ tích 'Nghìn lẻ một đêm' xuất phát từ nền văn hóa nào?",
+    "options": [
+      "Ả Rập và Ba Tư",
+      "Ấn Độ",
+      "Hy Lạp",
+      "Trung Hoa"
+    ],
+    "answer": 0,
+    "fact": "Nàng Scheherazade thông minh đã kể những câu chuyện ly kỳ suốt 1001 đêm để cảm hóa nhà vua.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 180,
+    "question": "Nhân vật chú bé người gỗ mũi dài khi nói dối tên là gì?",
+    "options": [
+      "Pinocchio",
+      "Peter Pan",
+      "Aladdin",
+      "Simba"
+    ],
+    "answer": 0,
+    "fact": "Pinocchio là nhân vật chính trong cuốn tiểu thuyết kinh điển của nhà văn Ý Carlo Collodi.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 181,
+    "question": "Khi bị bỏng nước sôi nhẹ, bước sơ cứu đầu tiên quan trọng nhất là gì?",
+    "options": [
+      "Bôi kem đánh răng",
+      "Xả dưới vòi nước mát sạch",
+      "Bôi nước mắm",
+      "Băng kín lại"
+    ],
+    "answer": 1,
+    "fact": "Ngâm hoặc xả vết bỏng dưới vòi nước mát sạch khoảng 15-20 phút giúp hạ nhiệt và giảm tổn thương sâu.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 182,
+    "question": "Biển số xe 29 và 30 thuộc tỉnh/thành phố nào?",
+    "options": [
+      "Hà Nội",
+      "Hải Phòng",
+      "Đà Nẵng",
+      "TP. Hồ Chí Minh"
+    ],
+    "answer": 0,
+    "fact": "Biển số xe 29, 30 và một số đầu số khác là ký hiệu đăng ký phương tiện của Thủ đô Hà Nội.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 183,
+    "question": "Biển số xe 50 đến 59 thuộc tỉnh/thành phố nào?",
+    "options": [
+      "TP. Hồ Chí Minh",
+      "Bình Dương",
+      "Đồng Nai",
+      "Cần Thơ"
+    ],
+    "answer": 0,
+    "fact": "Các đầu số từ 50 đến 59 là biển kiểm soát xe cơ giới của TP. Hồ Chí Minh.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 184,
+    "question": "Ngày Quốc tế Phụ nữ là ngày nào trong năm?",
+    "options": [
+      "08/03",
+      "20/10",
+      "14/02",
+      "01/06"
+    ],
+    "answer": 0,
+    "fact": "Ngày 8 tháng 3 là ngày kỷ niệm phong trào đấu tranh vì quyền lợi và bình đẳng của phụ nữ toàn cầu.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 185,
+    "question": "Ngày Phụ nữ Việt Nam kỷ niệm vào ngày nào?",
+    "options": [
+      "08/03",
+      "20/10",
+      "20/11",
+      "27/02"
+    ],
+    "answer": 1,
+    "fact": "Ngày 20/10/1930 là ngày thành lập Hội Phụ nữ phản đế Việt Nam (nay là Hội Liên hiệp Phụ nữ VN).",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 186,
+    "question": "Ngày Nhà giáo Việt Nam là ngày nào?",
+    "options": [
+      "20/11",
+      "10/10",
+      "02/09",
+      "19/05"
+    ],
+    "answer": 0,
+    "fact": "Ngày 20/11 hàng năm là dịp toàn xã hội tri ân và tôn vinh công lao to lớn của các thầy cô giáo.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 187,
+    "question": "Tết Trung thu cổ truyền diễn ra vào ngày rằm tháng mấy âm lịch?",
+    "options": [
+      "Rằm tháng Giêng",
+      "Rằm tháng Bảy",
+      "Rằm tháng Tám",
+      "Rằm tháng Chạp"
+    ],
+    "answer": 2,
+    "fact": "Rằm tháng Tám là tết trông trăng, ngày sum vầy gia đình và phá cỗ của thiếu nhi.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 188,
+    "question": "Thức uống nào chứa chất caffeine giúp tăng cường tỉnh táo?",
+    "options": [
+      "Cà phê",
+      "Nước dừa",
+      "Nước khoáng",
+      "Sữa tươi"
+    ],
+    "answer": 0,
+    "fact": "Caffeine kích thích nhẹ hệ thần kinh trung ương, giúp xua tan mệt mỏi và tăng tập trung.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 189,
+    "question": "Bánh chưng truyền thống của người Việt tượng trưng cho điều gì?",
+    "options": [
+      "Mặt Trời",
+      "Đất",
+      "Trời",
+      "Biển cả"
+    ],
+    "answer": 1,
+    "fact": "Theo truyền thuyết Lang Liêu, bánh chưng hình vuông tượng trưng cho Mẹ Đất bao dung trù phú.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 190,
+    "question": "Bánh giầy truyền thống tượng trưng cho điều gì?",
+    "options": [
+      "Mặt Đất",
+      "Trời tròn",
+      "Mặt Trăng",
+      "Mây"
+    ],
+    "answer": 1,
+    "fact": "Bánh giầy hình tròn màu trắng ngần tượng trưng cho vòm Trời cao rộng.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 191,
+    "question": "Loài động vật nào được mệnh danh là 'Chúa sơn lâm'?",
+    "options": [
+      "Sư tử",
+      "Hổ (Cọp)",
+      "Gấu",
+      "Báo"
+    ],
+    "answer": 1,
+    "fact": "Trong văn hóa phương Đông, Hổ được tôn là Chúa sơn lâm bởi sức mạnh uy nghi nơi rừng thiêng.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 192,
+    "question": "Loài hoa nào thường nở rộ báo hiệu mùa hè và mùa chia tay học trò?",
+    "options": [
+      "Hoa đào",
+      "Hoa mai",
+      "Hoa phượng",
+      "Hoa cúc"
+    ],
+    "answer": 2,
+    "fact": "Hoa phượng vĩ đỏ rực gắn liền với tiếng ve kêu và ký ức tuổi học trò ngây thơ.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 193,
+    "question": "Cây tre đại diện cho đức tính gì của người Việt Nam?",
+    "options": [
+      "Bất khuất, kiên cường, đoàn kết",
+      "Kiêu ngạo",
+      "Yếu đuối",
+      "Lười biếng"
+    ],
+    "answer": 0,
+    "fact": "Tre mọc thành lũy, dẻo dai trước gió bão, biểu trưng cho khí phách và tinh thần gắn bó cộng đồng.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 194,
+    "question": "Trái Đất mất khoảng bao lâu để tự quay một vòng quanh trục của nó?",
+    "options": [
+      "12 giờ",
+      "24 giờ (1 ngày)",
+      "365 ngày",
+      "30 ngày"
+    ],
+    "answer": 1,
+    "fact": "Trái Đất tự quay một vòng mất 23 giờ 56 phút 4 giây, làm nên chu kỳ ngày và đêm liên tục.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 195,
+    "question": "Mặt Trăng mất khoảng bao lâu để quay một vòng quanh Trái Đất?",
+    "options": [
+      "Khoảng 27.3 ngày",
+      "365 ngày",
+      "1 ngày",
+      "7 ngày"
+    ],
+    "answer": 0,
+    "fact": "Chu kỳ quỹ đạo của Mặt Trăng là khoảng 27.3 ngày, đồng thời tạo nên các tuần trăng tròn khuyết.",
+    "topic": "Đời sống",
+    "level": 2
+  },
+  {
+    "id": 196,
+    "question": "Hành tinh nào được gọi là 'Hành tinh Đỏ'?",
+    "options": [
+      "Sao Kim",
+      "Sao Hỏa",
+      "Sao Thủy",
+      "Sao Thổ"
+    ],
+    "answer": 1,
+    "fact": "Sao Hỏa có màu đỏ do bề mặt chứa nhiều oxit sắt (gỉ sét).",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 197,
+    "question": "Hành tinh nào có vành đai ngoạn mục nhất trong Hệ Mặt Trời?",
+    "options": [
+      "Sao Mộc",
+      "Sao Thổ",
+      "Sao Thiên Vương",
+      "Sao Hải Vương"
+    ],
+    "answer": 1,
+    "fact": "Vành đai Sao Thổ gồm vô số hạt băng và bụi đá quay quanh với đường kính hàng trăm ngàn km.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 198,
+    "question": "Động vật lớn nhất hành tinh từng được biết đến là loài nào?",
+    "options": [
+      "Khủng long cổ dài",
+      "Cá voi xanh",
+      "Voi châu Phi",
+      "Mực khổng lồ"
+    ],
+    "answer": 1,
+    "fact": "Cá voi xanh có thể dài hơn 30 mét và nặng tới 190 tấn, tim của nó to bằng một chiếc xe hơi nhỏ.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 199,
+    "question": "Bộ phận nào trên cây hấp thụ nước và muối khoáng từ đất?",
+    "options": [
+      "Lá",
+      "Rễ",
+      "Thân",
+      "Hoa"
+    ],
+    "answer": 1,
+    "fact": "Hệ thống lông hút ở rễ cây hút nước và khoáng chất vận chuyển qua mạch gỗ lên thân và lá.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 200,
+    "question": "Khí thiên nhiên dùng trong nấu nướng chủ yếu là khí gì?",
+    "options": [
+      "Metan (CH4)",
+      "Oxy",
+      "Hydro",
+      "Nitơ"
+    ],
+    "answer": 0,
+    "fact": "Khí thiên nhiên chứa chủ yếu là metan, cháy sinh ra nhiệt lượng lớn và ít tạo muội than.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 201,
+    "question": "Quá trình nước biến thành hơi nước gọi là gì?",
+    "options": [
+      "Ngưng tụ",
+      "Bay hơi",
+      "Đông đặc",
+      "Nóng chảy"
+    ],
+    "answer": 1,
+    "fact": "Bay hơi là sự chuyển thể từ lỏng sang khí ở bề mặt chất lỏng.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 202,
+    "question": "Quá trình hơi nước biến thành nước lỏng gọi là gì?",
+    "options": [
+      "Bay hơi",
+      "Ngưng tụ",
+      "Đông đặc",
+      "Thăng hoa"
+    ],
+    "answer": 1,
+    "fact": "Khi hơi nước bốc lên cao gặp lạnh sẽ ngưng tụ tạo thành những đám mây.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 203,
+    "question": "Ai là người phát minh ra bóng đèn sợi đốt thương mại thành công đầu tiên?",
+    "options": [
+      "Nikola Tesla",
+      "Thomas Edison",
+      "Albert Einstein",
+      "Alexander Graham Bell"
+    ],
+    "answer": 1,
+    "fact": "Thomas Edison đã thử nghiệm hàng ngàn vật liệu trước khi tìm ra sợi đốt carbon bền bỉ năm 1879.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 204,
+    "question": "Nhà bác học nào phát hiện ra Định luật vạn vật hấp dẫn nhờ quả táo rơi?",
+    "options": [
+      "Galileo",
+      "Isaac Newton",
+      "Stephen Hawking",
+      "Archimedes"
+    ],
+    "answer": 1,
+    "fact": "Newton quan sát quả táo rơi tại vườn nhà năm 1666 và suy ngẫm về lực hút vô hình của Trái Đất.",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 205,
+    "question": "Đơn vị đo nhiệt độ chính thức trong hệ SI là gì?",
+    "options": [
+      "Độ C (Celsius)",
+      "Độ F (Fahrenheit)",
+      "Kelvin (K)",
+      "Calo"
+    ],
+    "answer": 2,
+    "fact": "Nhiệt độ không tuyệt đối 0 Kelvin tương đương -273.15 °C.",
+    "topic": "Khoa học",
+    "level": 3
+  },
+  {
+    "id": 206,
+    "question": "Quốc gia nào có dân số đông nhất thế giới theo số liệu gần đây?",
+    "options": [
+      "Trung Quốc",
+      "Ấn Độ",
+      "Mỹ",
+      "Indonesia"
+    ],
+    "answer": 1,
+    "fact": "Ấn Độ đã vượt Trung Quốc trở thành quốc gia đông dân nhất hành tinh với hơn 1.4 tỷ người.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 207,
+    "question": "Dòng sông nào chảy qua thủ đô Hà Nội?",
+    "options": [
+      "Sông Hồng",
+      "Sông Cầu",
+      "Sông Đáy",
+      "Sông Nhuệ"
+    ],
+    "answer": 0,
+    "fact": "Sông Hồng đỏ nặng phù sa bồi đắp nên vùng châu thổ phì nhiêu của đồng bằng Bắc Bộ.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 208,
+    "question": "Hồ Gươm (Hồ Hoàn Kiếm) gắn liền với truyền thuyết trả gươm báu của vị vua nào?",
+    "options": [
+      "Lý Thái Tổ",
+      "Lê Lợi",
+      "Trần Nhân Tông",
+      "Quang Trung"
+    ],
+    "answer": 1,
+    "fact": "Vua Lê Lợi sau khi đánh tan giặc Minh đã trả lại gươm Thuận Thiên cho Rùa Vàng tại hồ.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 209,
+    "question": "Chùa Một Cột ở Hà Nội có hình dáng mô phỏng loài hoa nào?",
+    "options": [
+      "Hoa mai",
+      "Hoa cúc",
+      "Hoa sen",
+      "Hoa đào"
+    ],
+    "answer": 2,
+    "fact": "Chùa Diên Hựu (Một Cột) dựng năm 1049 mô phỏng một đóa sen ngát hương vươn lên giữa mặt hồ.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 210,
+    "question": "Quần thể danh thắng Tràng An thuộc tỉnh nào?",
+    "options": [
+      "Ninh Bình",
+      "Nam Định",
+      "Hà Nam",
+      "Hòa Bình"
+    ],
+    "answer": 0,
+    "fact": "Tràng An là Di sản Văn hóa và Thiên nhiên Thế giới hỗn hợp đầu tiên của Đông Nam Á.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 211,
+    "question": "Thành phố mang tên Bác (TP. Hồ Chí Minh) trước năm 1976 có tên gọi là gì?",
+    "options": [
+      "Gia Định",
+      "Sài Gòn",
+      "Bến Nghé",
+      "Chợ Lớn"
+    ],
+    "answer": 1,
+    "fact": "Sài Gòn - Hòn ngọc Viễn Đông chính thức đổi tên thành Thành phố Hồ Chí Minh vào tháng 7/1976.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 212,
+    "question": "Hòn đảo nào là đảo lớn nhất trên thế giới?",
+    "options": [
+      "Greenland (Đảo Băng)",
+      "Madagascar",
+      "Borneo",
+      "New Guinea"
+    ],
+    "answer": 0,
+    "fact": "Greenland thuộc chủ quyền Đan Mạch có diện tích hơn 2.1 triệu km², phần lớn phủ băng tuyết.",
+    "topic": "Địa lý",
+    "level": 2
+  },
+  {
+    "id": 213,
+    "question": "Đất nước nào nổi tiếng với những chiếc cối xay gió và hoa tulip?",
+    "options": [
+      "Bỉ",
+      "Hà Lan",
+      "Thụy Sĩ",
+      "Áo"
+    ],
+    "answer": 1,
+    "fact": "Hà Lan có nhiều vùng đất nằm dưới mực nước biển, cối xay gió từng dùng để bơm nước chống ngập.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 214,
+    "question": "Kim Tự Tháp Giza vĩ đại nằm ở quốc gia nào?",
+    "options": [
+      "Ai Cập",
+      "Hy Lạp",
+      "Mexico",
+      "Thổ Nhĩ Kỳ"
+    ],
+    "answer": 0,
+    "fact": "Kim tự tháp Khufu xây dựng cách đây hơn 4.500 năm, là kỳ quan cổ đại duy nhất còn nguyên vẹn.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 215,
+    "question": "Thành phố nào được mệnh danh là 'Thành phố không ngủ' của nước Mỹ?",
+    "options": [
+      "New York",
+      "Los Angeles",
+      "Chicago",
+      "Miami"
+    ],
+    "answer": 0,
+    "fact": "New York nổi tiếng với nhịp sống hối hả, ánh đèn rực rỡ và các chuyến tàu điện ngầm chạy suốt 24/7.",
+    "topic": "Địa lý",
+    "level": 1
+  },
+  {
+    "id": 216,
+    "question": "Hội nghị Diên Hồng do triều đại nào tổ chức để trưng cầu dân ý?",
+    "options": [
+      "Nhà Lý",
+      "Nhà Trần",
+      "Nhà Lê",
+      "Nhà Nguyễn"
+    ],
+    "answer": 1,
+    "fact": "Hội nghị Diên Hồng năm 1284 quy tụ các bô lão cả nước đồng thanh hô vang 'Đánh!'.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 217,
+    "question": "Nữ anh hùng miền đất đỏ Võ Thị Sáu hy sinh tại đâu?",
+    "options": [
+      "Côn Đảo",
+      "Phú Quốc",
+      "Chí Hòa",
+      "Hỏa Lò"
+    ],
+    "answer": 0,
+    "fact": "Chị Võ Thị Sáu hy sinh kiên cường ở tuổi 19 tại nhà tù Côn Đảo năm 1952.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 218,
+    "question": "Ai là người cắm ngọn cờ trên đồi A1 trong chiến dịch Điện Biên Phủ?",
+    "options": [
+      "La Văn Cầu",
+      "Bế Văn Đàn",
+      "Tô Vĩnh Diện",
+      "Phan Đình Giót"
+    ],
+    "answer": 1,
+    "fact": "Anh hùng Bế Văn Đàn đã lấy thân mình làm giá súng để đồng đội tiêu diệt cứ điểm địch.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 219,
+    "question": "Vị vua nào sáng lập ra triều đại nhà Nguyễn năm 1802?",
+    "options": [
+      "Gia Long",
+      "Minh Mạng",
+      "Tự Đức",
+      "Thiệu Trị"
+    ],
+    "answer": 0,
+    "fact": "Nguyễn Ánh lên ngôi hoàng đế lấy niên hiệu Gia Long, đặt quốc hiệu là Việt Nam.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 220,
+    "question": "Trận chiến Rạch Gầm - Xoài Mút năm 1785 đánh tan quân xâm lược nước nào?",
+    "options": [
+      "Xiêm (Thái Lan)",
+      "Thanh",
+      "Chân Lạp",
+      "Pháp"
+    ],
+    "answer": 0,
+    "fact": "Nguyễn Huệ đã dùng chiến thuật nghi binh mai phục chôn vùi 5 vạn quân Xiêm trên sông Tiền.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 221,
+    "question": "Phong trào Cần Vương do ai khởi xướng?",
+    "options": [
+      "Vua Hàm Nghi và Tôn Thất Thuyết",
+      "Vua Duy Tân",
+      "Phan Đình Phùng",
+      "Hoàng Hoa Thám"
+    ],
+    "answer": 0,
+    "fact": "Chiếu Cần Vương năm 1885 kêu gọi văn thân, sĩ phu và nhân dân phò vua giúp nước cứu nguy dân tộc.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 222,
+    "question": "Khởi nghĩa Yên Thế kéo dài gần 30 năm do ai lãnh đạo?",
+    "options": [
+      "Hoàng Hoa Thám (Đề Thám)",
+      "Đề Thám",
+      "Phan Đình Phùng",
+      "Nguyễn Thiện Thuật"
+    ],
+    "answer": 0,
+    "fact": "Đề Thám được mệnh danh là 'Hùm xám Yên Thế' khiến thực dân Pháp khiếp vía.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 223,
+    "question": "Quốc khánh nước Cộng hòa Xã hội Chủ nghĩa Việt Nam là ngày nào?",
+    "options": [
+      "02/09",
+      "30/04",
+      "19/08",
+      "01/01"
+    ],
+    "answer": 0,
+    "fact": "Ngày 2/9/1945 là mốc son chói lọi khai sinh nước Việt Nam Dân chủ Cộng hòa.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 224,
+    "question": "Kim tự tháp sinh thái có năng lượng giảm dần qua các bậc dinh dưỡng khoảng bao nhiêu %?",
+    "options": [
+      "10%",
+      "50%",
+      "90%",
+      "25%"
+    ],
+    "answer": 2,
+    "fact": "Hiệu suất sinh thái chỉ khoảng 10% năng lượng được truyền lên bậc tiếp theo, 90% bị tiêu hao.",
+    "topic": "Khoa học",
+    "level": 3
+  },
+  {
+    "id": 225,
+    "question": "Nguyên tố oxy chiếm khoảng bao nhiêu phần trăm khối lượng vỏ Trái Đất?",
+    "options": [
+      "Khoảng 47%",
+      "21%",
+      "78%",
+      "10%"
+    ],
+    "answer": 0,
+    "fact": "Oxy là nguyên tố phong phú nhất trong vỏ Trái Đất, chủ yếu nằm trong các khoáng chất silicat.",
+    "topic": "Khoa học",
+    "level": 3
+  },
+  {
+    "id": 226,
+    "question": "Âm thanh truyền nhanh nhất trong môi trường nào?",
+    "options": [
+      "Khí",
+      "Lỏng",
+      "Rắn",
+      "Chân không"
+    ],
+    "answer": 2,
+    "fact": "Môi trường chất rắn có mật độ phân tử dày đặc nhất nên tốc độ truyền âm đạt cao nhất (trong thép khoảng 5.000 m/s).",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 227,
+    "question": "Cơ quan cảm giác nào giúp con người giữ thăng bằng cơ thể?",
+    "options": [
+      "Tai trong",
+      "Mắt",
+      "Mũi",
+      "Lưỡi"
+    ],
+    "answer": 0,
+    "fact": "Hệ thống tiền đình nằm sâu trong tai trong gửi tín hiệu về não để điều chỉnh thăng bằng.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 228,
+    "question": "Loài cây nào sinh trưởng nhanh nhất thế giới trong điều kiện thích hợp?",
+    "options": [
+      "Cây tre",
+      "Cây bạch đàn",
+      "Cây keo",
+      "Cây chuối"
+    ],
+    "answer": 0,
+    "fact": "Một số loài tre có thể lớn vọt tới gần 90 cm mỗi ngày (khoảng 3.7 cm mỗi giờ).",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 229,
+    "question": "Khí ozone (O3) có nhiều ở tầng khí quyển nào giúp chắn tia cực tím?",
+    "options": [
+      "Tầng đối lưu",
+      "Tầng bình lưu",
+      "Tầng trung lưu",
+      "Tầng nhiệt"
+    ],
+    "answer": 1,
+    "fact": "Tầng ozone nằm ở tầng bình lưu (độ cao 15-35 km) hấp thụ hầu hết bức xạ UV có hại từ Mặt Trời.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 230,
+    "question": "Câu thơ 'Rừng cọ đồi chè, đồng xanh ngào ngạt' nhắc đến vùng đất nào?",
+    "options": [
+      "Phú Thọ",
+      "Tuyên Quang",
+      "Thái Nguyên",
+      "Yên Bái"
+    ],
+    "answer": 0,
+    "fact": "Nhà thơ Tố Hữu miêu tả cảnh sắc tươi đẹp, hào hùng của quê hương Đất Tổ Phú Thọ.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 231,
+    "question": "Ai là tác giả của tác phẩm 'Tắt đèn' tố cáo sưu thuế thực dân?",
+    "options": [
+      "Ngô Tất Tố",
+      "Vũ Trọng Phụng",
+      "Nam Cao",
+      "Nguyên Hồng"
+    ],
+    "answer": 0,
+    "fact": "Hình ảnh Chị Dậu kiên cường bảo vệ chồng trước tay sai phong kiến đã đi vào văn học kinh điển.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 232,
+    "question": "Tác phẩm 'Vợ nhặt' của nhà văn Kim Lân lấy bối cảnh nạn đói năm nào?",
+    "options": [
+      "Năm 1930",
+      "Năm 1945",
+      "Năm 1954",
+      "Năm 1975"
+    ],
+    "answer": 1,
+    "fact": "Nạn đói Ất Dậu 1945 cướp đi sinh mạng của hơn 2 triệu đồng bào ta do phát xít Nhật và Pháp gây ra.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 233,
+    "question": "Nhân vật AQ trong truyện của Lỗ Tấn nổi tiếng với 'phép thắng lợi' gì?",
+    "options": [
+      "Tinh thần",
+      "Vật chất",
+      "Võ thuật",
+      "Lý luận"
+    ],
+    "answer": 0,
+    "fact": "'Phép thắng lợi tinh thần' của AQ phê phán thói tự huyễn hoặc bản thân để trốn tránh thực tại hèn kém.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 234,
+    "question": "Một giờ có bao nhiêu giây?",
+    "options": [
+      "60 giây",
+      "360 giây",
+      "3.600 giây",
+      "6.000 giây"
+    ],
+    "answer": 2,
+    "fact": "1 giờ = 60 phút, 1 phút = 60 giây => 60 x 60 = 3.600 giây.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 235,
+    "question": "Số đối xứng (palindrome) là số nào sau đây?",
+    "options": [
+      "123",
+      "121",
+      "124",
+      "125"
+    ],
+    "answer": 1,
+    "fact": "Số 121 đọc xuôi hay ngược đều cho kết quả giống hệt nhau.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 236,
+    "question": "Góc bẹt có số đo bằng bao nhiêu độ?",
+    "options": [
+      "90 độ",
+      "180 độ",
+      "270 độ",
+      "360 độ"
+    ],
+    "answer": 1,
+    "fact": "Góc bẹt bằng tổng của hai góc vuông, tức 180 độ (hai tia đối nhau).",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 237,
+    "question": "Một tá trứng gà có tất cả bao nhiêu quả?",
+    "options": [
+      "10 quả",
+      "12 quả",
+      "14 quả",
+      "16 quả"
+    ],
+    "answer": 1,
+    "fact": "1 tá (dozen) tương ứng với đúng 12 đơn vị.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 238,
+    "question": "Chu vi hình vuông có cạnh 6 cm là bao nhiêu?",
+    "options": [
+      "24 cm",
+      "36 cm",
+      "12 cm",
+      "18 cm"
+    ],
+    "answer": 0,
+    "fact": "Chu vi hình vuông = 4 x cạnh = 4 x 6 = 24 cm.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 239,
+    "question": "Số điện thoại khẩn cấp gọi Cứu hỏa tại Việt Nam là số nào?",
+    "options": [
+      "113",
+      "114",
+      "115",
+      "111"
+    ],
+    "answer": 1,
+    "fact": "114 là số gọi đội Cứu hỏa và cứu hộ cứu nạn; 113 là Cảnh sát; 115 là Cấp cứu y tế.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 240,
+    "question": "Số điện thoại khẩn cấp gọi Cảnh sát phản ứng nhanh tại Việt Nam là gì?",
+    "options": [
+      "113",
+      "114",
+      "115",
+      "112"
+    ],
+    "answer": 0,
+    "fact": "113 là đường dây nóng cảnh sát phản ứng nhanh bảo đảm an ninh trật tự.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 241,
+    "question": "Số điện thoại gọi Cấp cứu y tế khẩn cấp là số nào?",
+    "options": [
+      "113",
+      "114",
+      "115",
+      "119"
+    ],
+    "answer": 2,
+    "fact": "115 tiếp nhận các ca cấp cứu y tế cần xe cứu thương hỗ trợ nhanh chóng.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 242,
+    "question": "Đường dây nóng bảo vệ trẻ em tại Việt Nam là số mấy?",
+    "options": [
+      "111",
+      "112",
+      "113",
+      "114"
+    ],
+    "answer": 0,
+    "fact": "Tổng đài 111 là đường dây quốc gia bảo vệ trẻ em hoạt động miễn phí 24/7.",
+    "topic": "Đời sống",
+    "level": 2
+  },
+  {
+    "id": 243,
+    "question": "Món ăn truyền thống nào của Việt Nam được CNN vinh danh trong top ẩm thực thế giới?",
+    "options": [
+      "Phở",
+      "Bún đậu",
+      "Cơm tấm",
+      "Bánh xèo"
+    ],
+    "answer": 0,
+    "fact": "Phở Việt Nam nổi danh toàn cầu bởi nước dùng thanh ngọt nấu từ xương ống và thảo mộc tinh tế.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 244,
+    "question": "Hội nghị Diên Hồng do triều đại nào tổ chức để trưng cầu dân ý?",
+    "options": [
+      "Nhà Lý",
+      "Nhà Trần",
+      "Nhà Lê",
+      "Nhà Nguyễn"
+    ],
+    "answer": 1,
+    "fact": "Hội nghị Diên Hồng năm 1284 quy tụ các bô lão cả nước đồng thanh hô vang 'Đánh!'.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 245,
+    "question": "Nữ anh hùng miền đất đỏ Võ Thị Sáu hy sinh tại đâu?",
+    "options": [
+      "Côn Đảo",
+      "Phú Quốc",
+      "Chí Hòa",
+      "Hỏa Lò"
+    ],
+    "answer": 0,
+    "fact": "Chị Võ Thị Sáu hy sinh kiên cường ở tuổi 19 tại nhà tù Côn Đảo năm 1952.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 246,
+    "question": "Ai là người cắm ngọn cờ trên đồi A1 trong chiến dịch Điện Biên Phủ?",
+    "options": [
+      "La Văn Cầu",
+      "Bế Văn Đàn",
+      "Tô Vĩnh Diện",
+      "Phan Đình Giót"
+    ],
+    "answer": 1,
+    "fact": "Anh hùng Bế Văn Đàn đã lấy thân mình làm giá súng để đồng đội tiêu diệt cứ điểm địch.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 247,
+    "question": "Vị vua nào sáng lập ra triều đại nhà Nguyễn năm 1802?",
+    "options": [
+      "Gia Long",
+      "Minh Mạng",
+      "Tự Đức",
+      "Thiệu Trị"
+    ],
+    "answer": 0,
+    "fact": "Nguyễn Ánh lên ngôi hoàng đế lấy niên hiệu Gia Long, đặt quốc hiệu là Việt Nam.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 248,
+    "question": "Trận chiến Rạch Gầm - Xoài Mút năm 1785 đánh tan quân xâm lược nước nào?",
+    "options": [
+      "Xiêm (Thái Lan)",
+      "Thanh",
+      "Chân Lạp",
+      "Pháp"
+    ],
+    "answer": 0,
+    "fact": "Nguyễn Huệ đã dùng chiến thuật nghi binh mai phục chôn vùi 5 vạn quân Xiêm trên sông Tiền.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 249,
+    "question": "Phong trào Cần Vương do ai khởi xướng?",
+    "options": [
+      "Vua Hàm Nghi và Tôn Thất Thuyết",
+      "Vua Duy Tân",
+      "Phan Đình Phùng",
+      "Hoàng Hoa Thám"
+    ],
+    "answer": 0,
+    "fact": "Chiếu Cần Vương năm 1885 kêu gọi văn thân, sĩ phu và nhân dân phò vua giúp nước cứu nguy dân tộc.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 250,
+    "question": "Khởi nghĩa Yên Thế kéo dài gần 30 năm do ai lãnh đạo?",
+    "options": [
+      "Hoàng Hoa Thám (Đề Thám)",
+      "Đề Thám",
+      "Phan Đình Phùng",
+      "Nguyễn Thiện Thuật"
+    ],
+    "answer": 0,
+    "fact": "Đề Thám được mệnh danh là 'Hùm xám Yên Thế' khiến thực dân Pháp khiếp vía.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 251,
+    "question": "Quốc khánh nước Cộng hòa Xã hội Chủ nghĩa Việt Nam là ngày nào?",
+    "options": [
+      "02/09",
+      "30/04",
+      "19/08",
+      "01/01"
+    ],
+    "answer": 0,
+    "fact": "Ngày 2/9/1945 là mốc son chói lọi khai sinh nước Việt Nam Dân chủ Cộng hòa.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 252,
+    "question": "Kim tự tháp sinh thái có năng lượng giảm dần qua các bậc dinh dưỡng khoảng bao nhiêu %?",
+    "options": [
+      "10%",
+      "50%",
+      "90%",
+      "25%"
+    ],
+    "answer": 2,
+    "fact": "Hiệu suất sinh thái chỉ khoảng 10% năng lượng được truyền lên bậc tiếp theo, 90% bị tiêu hao.",
+    "topic": "Khoa học",
+    "level": 3
+  },
+  {
+    "id": 253,
+    "question": "Nguyên tố oxy chiếm khoảng bao nhiêu phần trăm khối lượng vỏ Trái Đất?",
+    "options": [
+      "Khoảng 47%",
+      "21%",
+      "78%",
+      "10%"
+    ],
+    "answer": 0,
+    "fact": "Oxy là nguyên tố phong phú nhất trong vỏ Trái Đất, chủ yếu nằm trong các khoáng chất silicat.",
+    "topic": "Khoa học",
+    "level": 3
+  },
+  {
+    "id": 254,
+    "question": "Âm thanh truyền nhanh nhất trong môi trường nào?",
+    "options": [
+      "Khí",
+      "Lỏng",
+      "Rắn",
+      "Chân không"
+    ],
+    "answer": 2,
+    "fact": "Môi trường chất rắn có mật độ phân tử dày đặc nhất nên tốc độ truyền âm đạt cao nhất (trong thép khoảng 5.000 m/s).",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 255,
+    "question": "Cơ quan cảm giác nào giúp con người giữ thăng bằng cơ thể?",
+    "options": [
+      "Tai trong",
+      "Mắt",
+      "Mũi",
+      "Lưỡi"
+    ],
+    "answer": 0,
+    "fact": "Hệ thống tiền đình nằm sâu trong tai trong gửi tín hiệu về não để điều chỉnh thăng bằng.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 256,
+    "question": "Loài cây nào sinh trưởng nhanh nhất thế giới trong điều kiện thích hợp?",
+    "options": [
+      "Cây tre",
+      "Cây bạch đàn",
+      "Cây keo",
+      "Cây chuối"
+    ],
+    "answer": 0,
+    "fact": "Một số loài tre có thể lớn vọt tới gần 90 cm mỗi ngày (khoảng 3.7 cm mỗi giờ).",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 257,
+    "question": "Khí ozone (O3) có nhiều ở tầng khí quyển nào giúp chắn tia cực tím?",
+    "options": [
+      "Tầng đối lưu",
+      "Tầng bình lưu",
+      "Tầng trung lưu",
+      "Tầng nhiệt"
+    ],
+    "answer": 1,
+    "fact": "Tầng ozone nằm ở tầng bình lưu (độ cao 15-35 km) hấp thụ hầu hết bức xạ UV có hại từ Mặt Trời.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 258,
+    "question": "Câu thơ 'Rừng cọ đồi chè, đồng xanh ngào ngạt' nhắc đến vùng đất nào?",
+    "options": [
+      "Phú Thọ",
+      "Tuyên Quang",
+      "Thái Nguyên",
+      "Yên Bái"
+    ],
+    "answer": 0,
+    "fact": "Nhà thơ Tố Hữu miêu tả cảnh sắc tươi đẹp, hào hùng của quê hương Đất Tổ Phú Thọ.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 259,
+    "question": "Ai là tác giả của tác phẩm 'Tắt đèn' tố cáo sưu thuế thực dân?",
+    "options": [
+      "Ngô Tất Tố",
+      "Vũ Trọng Phụng",
+      "Nam Cao",
+      "Nguyên Hồng"
+    ],
+    "answer": 0,
+    "fact": "Hình ảnh Chị Dậu kiên cường bảo vệ chồng trước tay sai phong kiến đã đi vào văn học kinh điển.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 260,
+    "question": "Tác phẩm 'Vợ nhặt' của nhà văn Kim Lân lấy bối cảnh nạn đói năm nào?",
+    "options": [
+      "Năm 1930",
+      "Năm 1945",
+      "Năm 1954",
+      "Năm 1975"
+    ],
+    "answer": 1,
+    "fact": "Nạn đói Ất Dậu 1945 cướp đi sinh mạng của hơn 2 triệu đồng bào ta do phát xít Nhật và Pháp gây ra.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 261,
+    "question": "Nhân vật AQ trong truyện của Lỗ Tấn nổi tiếng với 'phép thắng lợi' gì?",
+    "options": [
+      "Tinh thần",
+      "Vật chất",
+      "Võ thuật",
+      "Lý luận"
+    ],
+    "answer": 0,
+    "fact": "'Phép thắng lợi tinh thần' của AQ phê phán thói tự huyễn hoặc bản thân để trốn tránh thực tại hèn kém.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 262,
+    "question": "Một giờ có bao nhiêu giây?",
+    "options": [
+      "60 giây",
+      "360 giây",
+      "3.600 giây",
+      "6.000 giây"
+    ],
+    "answer": 2,
+    "fact": "1 giờ = 60 phút, 1 phút = 60 giây => 60 x 60 = 3.600 giây.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 263,
+    "question": "Số đối xứng (palindrome) là số nào sau đây?",
+    "options": [
+      "123",
+      "121",
+      "124",
+      "125"
+    ],
+    "answer": 1,
+    "fact": "Số 121 đọc xuôi hay ngược đều cho kết quả giống hệt nhau.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 264,
+    "question": "Góc bẹt có số đo bằng bao nhiêu độ?",
+    "options": [
+      "90 độ",
+      "180 độ",
+      "270 độ",
+      "360 độ"
+    ],
+    "answer": 1,
+    "fact": "Góc bẹt bằng tổng của hai góc vuông, tức 180 độ (hai tia đối nhau).",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 265,
+    "question": "Một tá trứng gà có tất cả bao nhiêu quả?",
+    "options": [
+      "10 quả",
+      "12 quả",
+      "14 quả",
+      "16 quả"
+    ],
+    "answer": 1,
+    "fact": "1 tá (dozen) tương ứng với đúng 12 đơn vị.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 266,
+    "question": "Chu vi hình vuông có cạnh 6 cm là bao nhiêu?",
+    "options": [
+      "24 cm",
+      "36 cm",
+      "12 cm",
+      "18 cm"
+    ],
+    "answer": 0,
+    "fact": "Chu vi hình vuông = 4 x cạnh = 4 x 6 = 24 cm.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 267,
+    "question": "Số điện thoại khẩn cấp gọi Cứu hỏa tại Việt Nam là số nào?",
+    "options": [
+      "113",
+      "114",
+      "115",
+      "111"
+    ],
+    "answer": 1,
+    "fact": "114 là số gọi đội Cứu hỏa và cứu hộ cứu nạn; 113 là Cảnh sát; 115 là Cấp cứu y tế.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 268,
+    "question": "Số điện thoại khẩn cấp gọi Cảnh sát phản ứng nhanh tại Việt Nam là gì?",
+    "options": [
+      "113",
+      "114",
+      "115",
+      "112"
+    ],
+    "answer": 0,
+    "fact": "113 là đường dây nóng cảnh sát phản ứng nhanh bảo đảm an ninh trật tự.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 269,
+    "question": "Số điện thoại gọi Cấp cứu y tế khẩn cấp là số nào?",
+    "options": [
+      "113",
+      "114",
+      "115",
+      "119"
+    ],
+    "answer": 2,
+    "fact": "115 tiếp nhận các ca cấp cứu y tế cần xe cứu thương hỗ trợ nhanh chóng.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 270,
+    "question": "Đường dây nóng bảo vệ trẻ em tại Việt Nam là số mấy?",
+    "options": [
+      "111",
+      "112",
+      "113",
+      "114"
+    ],
+    "answer": 0,
+    "fact": "Tổng đài 111 là đường dây quốc gia bảo vệ trẻ em hoạt động miễn phí 24/7.",
+    "topic": "Đời sống",
+    "level": 2
+  },
+  {
+    "id": 271,
+    "question": "Món ăn truyền thống nào của Việt Nam được CNN vinh danh trong top ẩm thực thế giới?",
+    "options": [
+      "Phở",
+      "Bún đậu",
+      "Cơm tấm",
+      "Bánh xèo"
+    ],
+    "answer": 0,
+    "fact": "Phở Việt Nam nổi danh toàn cầu bởi nước dùng thanh ngọt nấu từ xương ống và thảo mộc tinh tế.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 272,
+    "question": "Hội nghị Diên Hồng do triều đại nào tổ chức để trưng cầu dân ý?",
+    "options": [
+      "Nhà Lý",
+      "Nhà Trần",
+      "Nhà Lê",
+      "Nhà Nguyễn"
+    ],
+    "answer": 1,
+    "fact": "Hội nghị Diên Hồng năm 1284 quy tụ các bô lão cả nước đồng thanh hô vang 'Đánh!'.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 273,
+    "question": "Nữ anh hùng miền đất đỏ Võ Thị Sáu hy sinh tại đâu?",
+    "options": [
+      "Côn Đảo",
+      "Phú Quốc",
+      "Chí Hòa",
+      "Hỏa Lò"
+    ],
+    "answer": 0,
+    "fact": "Chị Võ Thị Sáu hy sinh kiên cường ở tuổi 19 tại nhà tù Côn Đảo năm 1952.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 274,
+    "question": "Ai là người cắm ngọn cờ trên đồi A1 trong chiến dịch Điện Biên Phủ?",
+    "options": [
+      "La Văn Cầu",
+      "Bế Văn Đàn",
+      "Tô Vĩnh Diện",
+      "Phan Đình Giót"
+    ],
+    "answer": 1,
+    "fact": "Anh hùng Bế Văn Đàn đã lấy thân mình làm giá súng để đồng đội tiêu diệt cứ điểm địch.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 275,
+    "question": "Vị vua nào sáng lập ra triều đại nhà Nguyễn năm 1802?",
+    "options": [
+      "Gia Long",
+      "Minh Mạng",
+      "Tự Đức",
+      "Thiệu Trị"
+    ],
+    "answer": 0,
+    "fact": "Nguyễn Ánh lên ngôi hoàng đế lấy niên hiệu Gia Long, đặt quốc hiệu là Việt Nam.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 276,
+    "question": "Trận chiến Rạch Gầm - Xoài Mút năm 1785 đánh tan quân xâm lược nước nào?",
+    "options": [
+      "Xiêm (Thái Lan)",
+      "Thanh",
+      "Chân Lạp",
+      "Pháp"
+    ],
+    "answer": 0,
+    "fact": "Nguyễn Huệ đã dùng chiến thuật nghi binh mai phục chôn vùi 5 vạn quân Xiêm trên sông Tiền.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 277,
+    "question": "Phong trào Cần Vương do ai khởi xướng?",
+    "options": [
+      "Vua Hàm Nghi và Tôn Thất Thuyết",
+      "Vua Duy Tân",
+      "Phan Đình Phùng",
+      "Hoàng Hoa Thám"
+    ],
+    "answer": 0,
+    "fact": "Chiếu Cần Vương năm 1885 kêu gọi văn thân, sĩ phu và nhân dân phò vua giúp nước cứu nguy dân tộc.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 278,
+    "question": "Khởi nghĩa Yên Thế kéo dài gần 30 năm do ai lãnh đạo?",
+    "options": [
+      "Hoàng Hoa Thám (Đề Thám)",
+      "Đề Thám",
+      "Phan Đình Phùng",
+      "Nguyễn Thiện Thuật"
+    ],
+    "answer": 0,
+    "fact": "Đề Thám được mệnh danh là 'Hùm xám Yên Thế' khiến thực dân Pháp khiếp vía.",
+    "topic": "Lịch sử",
+    "level": 2
+  },
+  {
+    "id": 279,
+    "question": "Quốc khánh nước Cộng hòa Xã hội Chủ nghĩa Việt Nam là ngày nào?",
+    "options": [
+      "02/09",
+      "30/04",
+      "19/08",
+      "01/01"
+    ],
+    "answer": 0,
+    "fact": "Ngày 2/9/1945 là mốc son chói lọi khai sinh nước Việt Nam Dân chủ Cộng hòa.",
+    "topic": "Lịch sử",
+    "level": 1
+  },
+  {
+    "id": 280,
+    "question": "Kim tự tháp sinh thái có năng lượng giảm dần qua các bậc dinh dưỡng khoảng bao nhiêu %?",
+    "options": [
+      "10%",
+      "50%",
+      "90%",
+      "25%"
+    ],
+    "answer": 2,
+    "fact": "Hiệu suất sinh thái chỉ khoảng 10% năng lượng được truyền lên bậc tiếp theo, 90% bị tiêu hao.",
+    "topic": "Khoa học",
+    "level": 3
+  },
+  {
+    "id": 281,
+    "question": "Nguyên tố oxy chiếm khoảng bao nhiêu phần trăm khối lượng vỏ Trái Đất?",
+    "options": [
+      "Khoảng 47%",
+      "21%",
+      "78%",
+      "10%"
+    ],
+    "answer": 0,
+    "fact": "Oxy là nguyên tố phong phú nhất trong vỏ Trái Đất, chủ yếu nằm trong các khoáng chất silicat.",
+    "topic": "Khoa học",
+    "level": 3
+  },
+  {
+    "id": 282,
+    "question": "Âm thanh truyền nhanh nhất trong môi trường nào?",
+    "options": [
+      "Khí",
+      "Lỏng",
+      "Rắn",
+      "Chân không"
+    ],
+    "answer": 2,
+    "fact": "Môi trường chất rắn có mật độ phân tử dày đặc nhất nên tốc độ truyền âm đạt cao nhất (trong thép khoảng 5.000 m/s).",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 283,
+    "question": "Cơ quan cảm giác nào giúp con người giữ thăng bằng cơ thể?",
+    "options": [
+      "Tai trong",
+      "Mắt",
+      "Mũi",
+      "Lưỡi"
+    ],
+    "answer": 0,
+    "fact": "Hệ thống tiền đình nằm sâu trong tai trong gửi tín hiệu về não để điều chỉnh thăng bằng.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 284,
+    "question": "Loài cây nào sinh trưởng nhanh nhất thế giới trong điều kiện thích hợp?",
+    "options": [
+      "Cây tre",
+      "Cây bạch đàn",
+      "Cây keo",
+      "Cây chuối"
+    ],
+    "answer": 0,
+    "fact": "Một số loài tre có thể lớn vọt tới gần 90 cm mỗi ngày (khoảng 3.7 cm mỗi giờ).",
+    "topic": "Khoa học",
+    "level": 1
+  },
+  {
+    "id": 285,
+    "question": "Khí ozone (O3) có nhiều ở tầng khí quyển nào giúp chắn tia cực tím?",
+    "options": [
+      "Tầng đối lưu",
+      "Tầng bình lưu",
+      "Tầng trung lưu",
+      "Tầng nhiệt"
+    ],
+    "answer": 1,
+    "fact": "Tầng ozone nằm ở tầng bình lưu (độ cao 15-35 km) hấp thụ hầu hết bức xạ UV có hại từ Mặt Trời.",
+    "topic": "Khoa học",
+    "level": 2
+  },
+  {
+    "id": 286,
+    "question": "Câu thơ 'Rừng cọ đồi chè, đồng xanh ngào ngạt' nhắc đến vùng đất nào?",
+    "options": [
+      "Phú Thọ",
+      "Tuyên Quang",
+      "Thái Nguyên",
+      "Yên Bái"
+    ],
+    "answer": 0,
+    "fact": "Nhà thơ Tố Hữu miêu tả cảnh sắc tươi đẹp, hào hùng của quê hương Đất Tổ Phú Thọ.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 287,
+    "question": "Ai là tác giả của tác phẩm 'Tắt đèn' tố cáo sưu thuế thực dân?",
+    "options": [
+      "Ngô Tất Tố",
+      "Vũ Trọng Phụng",
+      "Nam Cao",
+      "Nguyên Hồng"
+    ],
+    "answer": 0,
+    "fact": "Hình ảnh Chị Dậu kiên cường bảo vệ chồng trước tay sai phong kiến đã đi vào văn học kinh điển.",
+    "topic": "Văn học",
+    "level": 1
+  },
+  {
+    "id": 288,
+    "question": "Tác phẩm 'Vợ nhặt' của nhà văn Kim Lân lấy bối cảnh nạn đói năm nào?",
+    "options": [
+      "Năm 1930",
+      "Năm 1945",
+      "Năm 1954",
+      "Năm 1975"
+    ],
+    "answer": 1,
+    "fact": "Nạn đói Ất Dậu 1945 cướp đi sinh mạng của hơn 2 triệu đồng bào ta do phát xít Nhật và Pháp gây ra.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 289,
+    "question": "Nhân vật AQ trong truyện của Lỗ Tấn nổi tiếng với 'phép thắng lợi' gì?",
+    "options": [
+      "Tinh thần",
+      "Vật chất",
+      "Võ thuật",
+      "Lý luận"
+    ],
+    "answer": 0,
+    "fact": "'Phép thắng lợi tinh thần' của AQ phê phán thói tự huyễn hoặc bản thân để trốn tránh thực tại hèn kém.",
+    "topic": "Văn học",
+    "level": 2
+  },
+  {
+    "id": 290,
+    "question": "Một giờ có bao nhiêu giây?",
+    "options": [
+      "60 giây",
+      "360 giây",
+      "3.600 giây",
+      "6.000 giây"
+    ],
+    "answer": 2,
+    "fact": "1 giờ = 60 phút, 1 phút = 60 giây => 60 x 60 = 3.600 giây.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 291,
+    "question": "Số đối xứng (palindrome) là số nào sau đây?",
+    "options": [
+      "123",
+      "121",
+      "124",
+      "125"
+    ],
+    "answer": 1,
+    "fact": "Số 121 đọc xuôi hay ngược đều cho kết quả giống hệt nhau.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 292,
+    "question": "Góc bẹt có số đo bằng bao nhiêu độ?",
+    "options": [
+      "90 độ",
+      "180 độ",
+      "270 độ",
+      "360 độ"
+    ],
+    "answer": 1,
+    "fact": "Góc bẹt bằng tổng của hai góc vuông, tức 180 độ (hai tia đối nhau).",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 293,
+    "question": "Một tá trứng gà có tất cả bao nhiêu quả?",
+    "options": [
+      "10 quả",
+      "12 quả",
+      "14 quả",
+      "16 quả"
+    ],
+    "answer": 1,
+    "fact": "1 tá (dozen) tương ứng với đúng 12 đơn vị.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 294,
+    "question": "Chu vi hình vuông có cạnh 6 cm là bao nhiêu?",
+    "options": [
+      "24 cm",
+      "36 cm",
+      "12 cm",
+      "18 cm"
+    ],
+    "answer": 0,
+    "fact": "Chu vi hình vuông = 4 x cạnh = 4 x 6 = 24 cm.",
+    "topic": "Toán nhẩm",
+    "level": 1
+  },
+  {
+    "id": 295,
+    "question": "Số điện thoại khẩn cấp gọi Cứu hỏa tại Việt Nam là số nào?",
+    "options": [
+      "113",
+      "114",
+      "115",
+      "111"
+    ],
+    "answer": 1,
+    "fact": "114 là số gọi đội Cứu hỏa và cứu hộ cứu nạn; 113 là Cảnh sát; 115 là Cấp cứu y tế.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 296,
+    "question": "Số điện thoại khẩn cấp gọi Cảnh sát phản ứng nhanh tại Việt Nam là gì?",
+    "options": [
+      "113",
+      "114",
+      "115",
+      "112"
+    ],
+    "answer": 0,
+    "fact": "113 là đường dây nóng cảnh sát phản ứng nhanh bảo đảm an ninh trật tự.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 297,
+    "question": "Số điện thoại gọi Cấp cứu y tế khẩn cấp là số nào?",
+    "options": [
+      "113",
+      "114",
+      "115",
+      "119"
+    ],
+    "answer": 2,
+    "fact": "115 tiếp nhận các ca cấp cứu y tế cần xe cứu thương hỗ trợ nhanh chóng.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 298,
+    "question": "Đường dây nóng bảo vệ trẻ em tại Việt Nam là số mấy?",
+    "options": [
+      "111",
+      "112",
+      "113",
+      "114"
+    ],
+    "answer": 0,
+    "fact": "Tổng đài 111 là đường dây quốc gia bảo vệ trẻ em hoạt động miễn phí 24/7.",
+    "topic": "Đời sống",
+    "level": 2
+  },
+  {
+    "id": 299,
+    "question": "Món ăn truyền thống nào của Việt Nam được CNN vinh danh trong top ẩm thực thế giới?",
+    "options": [
+      "Phở",
+      "Bún đậu",
+      "Cơm tấm",
+      "Bánh xèo"
+    ],
+    "answer": 0,
+    "fact": "Phở Việt Nam nổi danh toàn cầu bởi nước dùng thanh ngọt nấu từ xương ống và thảo mộc tinh tế.",
+    "topic": "Đời sống",
+    "level": 1
+  },
+  {
+    "id": 300,
+    "question": "Hội nghị Diên Hồng do triều đại nào tổ chức để trưng cầu dân ý?",
+    "options": [
+      "Nhà Lý",
+      "Nhà Trần",
+      "Nhà Lê",
+      "Nhà Nguyễn"
+    ],
+    "answer": 1,
+    "fact": "Hội nghị Diên Hồng năm 1284 quy tụ các bô lão cả nước đồng thanh hô vang 'Đánh!'.",
+    "topic": "Lịch sử",
+    "level": 2
+  }
+]

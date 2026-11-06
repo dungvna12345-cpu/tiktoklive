@@ -1,0 +1,49 @@
+{
+  "mappings": [
+    {
+      "id": "thang_tre",
+      "name": "Hoa hồng / Thang tre",
+      "effect": "ladder",
+      "description": "Mỗi 1 quà = leo ngay 1 tầng (tặng bao nhiêu hoa hồng leo bấy nhiêu tầng)",
+      "giftNames": ["Rose", "Hoa hồng", "TikTok", "Tik Tok", "Pencil", "Bút chì", "Heart Me", "GG", "Default"],
+      "giftIds": [5655, 5269, 5879],
+      "climbPerUnit": 1
+    },
+    {
+      "id": "goi_y_5050",
+      "name": "Gợi ý 50:50",
+      "effect": "hint_5050",
+      "description": "Bỏ 2 đáp án sai của câu đang hỏi (1 lần mỗi câu)",
+      "giftNames": ["Finger Heart", "Bắn tim", "Thả tim", "Heart", "Ice Cream", "Kem"],
+      "giftIds": [5487, 5827],
+      "climbPerUnit": 0
+    },
+    {
+      "id": "gio_day_x2",
+      "name": "Gió đẩy x2",
+      "effect": "wind_x2",
+      "description": "Câu hiện tại ai đúng thì số tầng leo được nhân đôi",
+      "giftNames": ["Doughnut", "Bánh rán", "Mini Speaker", "Loa mini", "Confetti"],
+      "giftIds": [5281, 5585],
+      "climbPerUnit": 0
+    },
+    {
+      "id": "dong_bang",
+      "name": "Đóng băng",
+      "effect": "freeze_leader",
+      "description": "Người đang dẫn đầu đứng yên ở câu tiếp theo",
+      "giftNames": ["Cap", "Nón", "Panda", "Gấu trúc", "Sun Glasses", "Kính râm"],
+      "giftIds": [5372, 5760],
+      "climbPerUnit": 0
+    },
+    {
+      "id": "cap_treo",
+      "name": "Cáp treo VIP",
+      "effect": "cable_car",
+      "description": "Mỗi quà lớn phóng vút lên ngay +50 tầng",
+      "giftNames": ["Fireworks", "Pháo hoa", "Whale", "Cá voi", "Dragon", "Rồng", "Universe", "Vũ trụ", "Lion", "Sư tử"],
+      "giftIds": [5650, 6059, 6100],
+      "climbPerUnit": 50
+    }
+  ]
+}

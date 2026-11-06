@@ -1,0 +1,23 @@
+{
+  "targetFloor": 7749,
+  "timings": {
+    "readDuration": 3,
+    "answerDuration": 15,
+    "revealDuration": 7,
+    "victoryDuration": 7
+  },
+  "challengeInterval": 5,
+  "maxClimbersPerFloor": 12,
+  "maxLeaderboard": 6,
+  "soundEnabled": true,
+  "scoring": {
+    "normalCorrect": 1,
+    "fastestTop3Bonus": 1,
+    "challengeCorrect": 2,
+    "challengeWrongPenalty": 1
+  },
+  "spamFilter": {
+    "sameUserCommentIntervalMs": 2000,
+    "maxEventsPerSecond": 60
+  }
+}
